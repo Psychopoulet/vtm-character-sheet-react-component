@@ -13,19 +13,19 @@
     // locals
     import type { UsedCharacteristic } from "../types";
 
-    export type CharacteristicsProps = {
-      "title": string;
-      "globalMinValue": number;
-      "cols": ReadonlyArray<{
+    export interface CharacteristicsProps {
         "title": string;
-        "characteristics": UsedCharacteristic[];
-        "minValue"?: number;
-      }>;
-    };
+        "globalMinValue": number;
+        "cols": ReadonlyArray<{
+            "title": string;
+            "characteristics": UsedCharacteristic[];
+            "minValue"?: number;
+        }>;
+    }
 
 // module
 
-export function Characteristics({
+export function Characteristics ({
     title,
     globalMinValue,
     cols
@@ -44,7 +44,12 @@ export function Characteristics({
                     <h3 className={styles.subTitle}>{col.title}</h3>
 
                     { col.characteristics.map((characteristic: UsedCharacteristic, characteristicIndex: number): React.JSX.Element => {
-                        return <NamedDotProgress key={ characteristicIndex } name={ characteristic.name } value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ 5 } />;
+
+                        return <NamedDotProgress key={ characteristicIndex }
+                            name={ characteristic.name }
+                            value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ 5 }
+                        />;
+
                     }) }
 
                 </div>;

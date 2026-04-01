@@ -19,44 +19,44 @@
     // locals
     import type { Secte, Clan, UsedCharacteristic } from "../types";
 
-    export type CharacterSheetProps = {
-      name: string;
-      player: string;
-      secte: Secte;
-      clan: Clan;
-      characteristics?: UsedCharacteristic[];
-      bloodPool?: {
-        current?: number;
-        characterMax?: number;
-      }
-      humanity?: number;
-      willpower?: {
-        current?: number;
-        characterMax?: number;
-      }
-      dammages?: number;
-    };
+    export interface CharacterSheetProps {
+        "name": string;
+        "player": string;
+        "secte": Secte;
+        "clan": Clan;
+        "characteristics"?: UsedCharacteristic[];
+        "bloodPool"?: {
+            "current"?: number;
+            "characterMax"?: number;
+        }
+        "humanity"?: number;
+        "willpower"?: {
+            "current"?: number;
+            "characterMax"?: number;
+        }
+        "dammages"?: number;
+    }
 
 // module
 
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
-export function CharacterSheet({
-  name,
-  player,
-  secte,
-  clan,
-  characteristics = [],
-  bloodPool = {
-    current: 15,
-    characterMax: 15,
-  },
-  humanity = 7,
-  willpower = {
-    current: 5,
-    characterMax: 6,
-  },
-  dammages = 0,
-}: CharacterSheetProps) {
+export function CharacterSheet ({
+    name,
+    player,
+    secte,
+    clan,
+    characteristics = [],
+    bloodPool = {
+      "current": 15,
+      "characterMax": 15
+    },
+    humanity = 7,
+    willpower = {
+      "current": 5,
+      "characterMax": 6
+    },
+    dammages = 0
+}: CharacterSheetProps): React.JSX.Element {
 
   return <article
       className={ styles.sheet }
@@ -82,11 +82,11 @@ export function CharacterSheet({
         </div>
       </header>
 
-      <Attributes characteristics={  characteristics } />
-      <Abilities characteristics={  characteristics } />
-      <Advantages characteristics={  characteristics } />
+      <Attributes characteristics={ characteristics } />
+      <Abilities characteristics={ characteristics } />
+      <Advantages characteristics={ characteristics } />
 
-      <div className={  styles.twoCol  }>
+      <div className={ styles.twoCol }>
 
         <div className={ styles.sheetCol }>
 

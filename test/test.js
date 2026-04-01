@@ -67,6 +67,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
 .vC3oA0jJqxjanErWeldK {
   display: grid;
   gap: 0.35rem;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .z8neMkPyiRfBFPXlXkoY,
@@ -91,7 +92,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
   background: transparent;
   border: 1px solid #555;
 }
-`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;;EAEE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\r\n  border: 1px solid #2a2a2a;\r\n  padding: 0.75rem 1rem;\r\n  background: #faf8f5;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: #111;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: #222;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);\r\n  border: 1px solid #1a0506;\r\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid #555;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,iDAAiD;AACnD;;AAEA;;EAEE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\r\n  border: 1px solid #2a2a2a;\r\n  padding: 0.75rem 1rem;\r\n  background: #faf8f5;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: #111;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: #222;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);\r\n  border: 1px solid #1a0506;\r\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid #555;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `I8Nu5e2rAtqKn8tdH69d`,
@@ -486,14 +487,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
 
 .DPqV5UqXwflre3DElczH {
   display: grid;
-  gap: 0.25rem;
+  gap: 0.3rem;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .Vz2KfKDYJivncng225wC,
 .RYxlKYFkrCjLEpEOpVFc {
   aspect-ratio: 1;
-  max-width: 0.9rem;
-  max-height: 0.9rem;
+  max-width: 0.95rem;
+  max-height: 0.95rem;
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -502,16 +504,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
 }
 
 .Vz2KfKDYJivncng225wC {
-  background: radial-gradient(circle at 35% 30%, #3d3d42, #1a1a1c);
-  border: 1px solid #0d0d0f;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);
+  border: 1px solid #0a0f18;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
 .RYxlKYFkrCjLEpEOpVFc {
   background: transparent;
   border: 1px solid #555;
 }
-`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,YAAY;EACZ,qBAAqB;AACvB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;;EAEE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,oDAAoD;AACtD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\n  border: 1px solid #2a2a2a;\n  padding: 0.65rem 0.85rem;\n  background: #faf8f5;\n}\n\n.header {\n  display: flex;\n  align-items: baseline;\n  justify-content: space-between;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n\n.title {\n  margin: 0;\n  font-size: 0.7rem;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: #111;\n}\n\n.values {\n  margin: 0;\n  font-size: 0.8125rem;\n  font-variant-numeric: tabular-nums;\n  color: #222;\n}\n\n.current {\n  font-weight: 700;\n}\n\n.sep {\n  margin: 0 0.12rem;\n  opacity: 0.55;\n}\n\n.max {\n  font-weight: 500;\n}\n\n.grid {\n  display: grid;\n  gap: 0.25rem;\n}\n\n.cellFilled,\n.cellEmpty {\n  aspect-ratio: 1;\n  max-width: 0.9rem;\n  max-height: 0.9rem;\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n  box-sizing: border-box;\n  margin: 0 auto;\n}\n\n.cellFilled {\n  background: radial-gradient(circle at 35% 30%, #3d3d42, #1a1a1c);\n  border: 1px solid #0d0d0f;\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);\n}\n\n.cellEmpty {\n  background: transparent;\n  border: 1px solid #555;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,YAAY;EACZ,qBAAqB;AACvB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,iDAAiD;AACnD;;AAEA;;EAEE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\n  border: 1px solid #2a2a2a;\n  padding: 0.65rem 0.85rem;\n  background: #faf8f5;\n}\n\n.header {\n  display: flex;\n  align-items: baseline;\n  justify-content: space-between;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n\n.title {\n  margin: 0;\n  font-size: 0.7rem;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: #111;\n}\n\n.values {\n  margin: 0;\n  font-size: 0.8125rem;\n  font-variant-numeric: tabular-nums;\n  color: #222;\n}\n\n.current {\n  font-weight: 700;\n}\n\n.sep {\n  margin: 0 0.12rem;\n  opacity: 0.55;\n}\n\n.max {\n  font-weight: 500;\n}\n\n.grid {\n  display: grid;\n  gap: 0.3rem;\n  grid-template-columns: repeat(10, minmax(0, 1fr));\n}\n\n.cellFilled,\n.cellEmpty {\n  aspect-ratio: 1;\n  max-width: 0.95rem;\n  max-height: 0.95rem;\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n  box-sizing: border-box;\n  margin: 0 auto;\n}\n\n.cellFilled {\n  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);\n  border: 1px solid #0a0f18;\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\n}\n\n.cellEmpty {\n  background: transparent;\n  border: 1px solid #555;\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `ByxR8vf3nATielaHog4J`,
@@ -32196,16 +32198,16 @@ const BLOOD_POOL_MAX = 40;
 // module
 /** Blood pool grid: shows current vs max as filled / empty cells. */
 function BloodPool({ current, max }) {
-    const safeMax = Math.max(0, Math.floor(max));
-    const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Points de sang: ${clamped} of ${max}` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Points de sang: ${current} of ${max}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Points de sang"),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, clamped),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, current),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sep }, "/"),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, max))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, style: { gridTemplateColumns: `repeat(10, minmax(0, 1fr))` }, role: "presentation" }, Array.from({ length: BLOOD_POOL_MAX }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true }))))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
+        })));
 }
 
 
@@ -32248,12 +32250,12 @@ __webpack_require__.r(__webpack_exports__);
 // module
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
 function CharacterSheet({ name, player, secte, clan, characteristics = [], bloodPool = {
-    current: 15,
-    characterMax: 15,
+    "current": 15,
+    "characterMax": 15
 }, humanity = 7, willpower = {
-    current: 5,
-    characterMax: 6,
-}, dammages = 0, }) {
+    "current": 5,
+    "characterMax": 6
+}, dammages = 0 }) {
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sheet, "aria-label": "Character sheet" },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].fieldPair },
@@ -32342,54 +32344,67 @@ __webpack_require__.r(__webpack_exports__);
 // consts
 const TRAITS_PER_BOX = 3;
 const DEFAULT_STAGES = [
-    { label: "Bruised", boxes: [{ traits: 0 }], penalty: "" },
-    { label: "Hurt", boxes: [{ traits: 0 }], penalty: "-1" },
-    { label: "Injured", boxes: [{ traits: 0 }], penalty: "-1" },
-    { label: "Wounded", boxes: [{ traits: 0 }], penalty: "-2" },
-    { label: "Mauled", boxes: [{ traits: 0 }], penalty: "-2" },
-    { label: "Crippled", boxes: [{ traits: 0 }], penalty: "-5" },
-    { label: "Incapacitated", boxes: [{ traits: 0 }], penalty: "" },
+    { "label": "Bruised", "boxes": [{ "traits": 0 }], "penalty": "" },
+    { "label": "Hurt", "boxes": [{ "traits": 0 }], "penalty": "-1" },
+    { "label": "Injured", "boxes": [{ "traits": 0 }], "penalty": "-1" },
+    { "label": "Wounded", "boxes": [{ "traits": 0 }], "penalty": "-2" },
+    { "label": "Mauled", "boxes": [{ "traits": 0 }], "penalty": "-2" },
+    { "label": "Crippled", "boxes": [{ "traits": 0 }], "penalty": "-5" },
+    { "label": "Incapacitated", "boxes": [{ "traits": 0 }], "penalty": "" }
 ];
-// module
+// private
 function clampTraits(n) {
     return Math.min(Math.max(0, Math.floor(n)), TRAITS_PER_BOX);
 }
 function countSlots(stages) {
-    return stages.reduce((acc, stage) => acc + Math.max(1, stage.boxes.length) * TRAITS_PER_BOX, 0);
+    return stages.reduce((acc, stage) => {
+        return acc + (Math.max(1, stage.boxes.length) * TRAITS_PER_BOX);
+    }, 0);
 }
 /** Mark health slots left-to-right to mirror the printed VTM sheet strip. */
 function applyDamage(template, totalDamage) {
     let remaining = Math.max(0, Math.floor(totalDamage));
     remaining = Math.min(remaining, countSlots(template));
-    return template.map((stage) => ({
-        ...stage,
-        boxes: (stage.boxes.length > 0 ? stage.boxes : [{ traits: 0 }]).map((box) => {
-            const assigned = Math.min(TRAITS_PER_BOX, remaining);
-            remaining = Math.max(0, remaining - assigned);
-            return { ...box, traits: assigned };
-        }),
-    }));
+    return template.map((stage) => {
+        return {
+            ...stage,
+            "boxes": (0 < stage.boxes.length ? stage.boxes : [{ "traits": 0 }]).map((box) => {
+                const assigned = Math.min(TRAITS_PER_BOX, remaining);
+                remaining = Math.max(0, remaining - assigned);
+                return { ...box, "traits": assigned };
+            })
+        };
+    });
 }
 function BoxCell({ traits }) {
     const level = clampTraits(traits);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traits, "aria-hidden": true }, Array.from({ length: TRAITS_PER_BOX }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOn : _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOff }))))));
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traits, "aria-hidden": true }, Array.from({ "length": TRAITS_PER_BOX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOn : _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOff });
+        })));
 }
+// module
 /** Classic health strip with wound penalties matching the official PDF order. */
-function HealthTrack({ dammages, stages = DEFAULT_STAGES, className, }) {
-    const normalizedStages = stages.map((stage) => ({
-        ...stage,
-        boxes: stage.boxes.length > 0 ? stage.boxes : [{ traits: 0 }],
-    }));
+function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
+    const normalizedStages = stages.map((stage) => {
+        return {
+            ...stage,
+            "boxes": 0 < stage.boxes.length ? stage.boxes : [{ "traits": 0 }]
+        };
+    });
     const rendered = applyDamage(normalizedStages, dammages);
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Health"),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].table }, rendered.map((stage) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].stageLabel }, stage.label),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].penalty }, stage.penalty ?? ""),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].markerRow }, stage.boxes.map((box, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits })))))))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].table }, rendered.map((stage) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].stageLabel }, stage.label),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].penalty }, stage.penalty ?? ""),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].markerRow }, stage.boxes.map((box, i) => {
+                    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits });
+                })));
+        })));
 }
 
 
@@ -32421,18 +32436,17 @@ const HUMANITY_MAX = 10;
 /**
  * Humanity track: ten positions, filled from the left up to the current rating (VTM-style).
  */
-function Humanity({ value, }) {
-    const clamped = Math.min(Math.max(0, Math.floor(value)), HUMANITY_MAX);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Humanity: ${clamped} of ${HUMANITY_MAX}` },
+function Humanity({ value }) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Humanity: ${value} of ${HUMANITY_MAX}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Humanit\u00E9"),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, clamped),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, value),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sep }, "/"),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, HUMANITY_MAX))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, style: {
-                gridTemplateColumns: `repeat(${HUMANITY_MAX}, minmax(0, 1fr))`,
-            }, role: "presentation" }, Array.from({ length: HUMANITY_MAX }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true })))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": HUMANITY_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
+        })));
 }
 
 
@@ -32460,12 +32474,12 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Horizontal dot rating for a named stat (VTM-style OOOOO track).
  */
-function NamedDotProgress({ name, value = 0, max = 5, }) {
-    const safeMax = Math.max(1, max);
-    const clamped = Math.min(Math.max(0, value), safeMax);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: [_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row].filter(Boolean).join(" "), role: "group", "aria-label": `${name}: ${clamped} of ${safeMax}` },
+function NamedDotProgress({ name, value = 0, max = 5 }) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row, role: "group", "aria-label": `${name}: ${value} of ${max}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].label, title: name }, name),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dots, "aria-hidden": true }, Array.from({ length: safeMax }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotFilled : _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotEmpty }))))));
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dots, "aria-hidden": true }, Array.from({ "length": max }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotFilled : _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotEmpty });
+        })));
 }
 
 

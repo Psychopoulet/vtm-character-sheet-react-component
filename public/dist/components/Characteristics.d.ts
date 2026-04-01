@@ -1,6 +1,6 @@
 import React from "react";
 import type { UsedCharacteristic } from "../types";
-export type CharacteristicsProps = {
+export interface CharacteristicsProps {
     "title": string;
     "globalMinValue": number;
     "cols": ReadonlyArray<{
@@ -8,5 +8,5 @@ export type CharacteristicsProps = {
         "characteristics": UsedCharacteristic[];
         "minValue"?: number;
     }>;
-};
+}
 export declare function Characteristics({ title, globalMinValue, cols }: CharacteristicsProps): React.JSX.Element;

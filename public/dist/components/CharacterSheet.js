@@ -14,12 +14,12 @@ import { Advantages } from "./Advantages";
 // module
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
 export function CharacterSheet({ name, player, secte, clan, characteristics = [], bloodPool = {
-    current: 15,
-    characterMax: 15,
+    "current": 15,
+    "characterMax": 15
 }, humanity = 7, willpower = {
-    current: 5,
-    characterMax: 6,
-}, dammages = 0, }) {
+    "current": 5,
+    "characterMax": 6
+}, dammages = 0 }) {
     return React.createElement("article", { className: styles.sheet, "aria-label": "Character sheet" },
         React.createElement("header", { className: styles.header },
             React.createElement("div", { className: styles.fieldPair },

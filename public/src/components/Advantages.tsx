@@ -87,7 +87,7 @@ export function Advantages ({
                         return {
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                              return characteristic.name === attribute;
+                                return characteristic.name === attribute;
                             })?.value
                         };
 

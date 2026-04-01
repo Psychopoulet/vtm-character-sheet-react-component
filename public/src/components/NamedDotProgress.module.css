@@ -1,0 +1,48 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 1.25rem;
+  min-width: 0;
+}
+
+.label {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 7.25rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.03em;
+  color: #1a1a1a;
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 0.125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dots {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 0.22rem;
+  align-items: center;
+}
+
+.dotFilled,
+.dotEmpty {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.dotFilled {
+  background: #111;
+  border: 1px solid #111;
+}
+
+.dotEmpty {
+  background: transparent;
+  border: 1px solid #333;
+}

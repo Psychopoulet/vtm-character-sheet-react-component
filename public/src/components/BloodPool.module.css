@@ -1,0 +1,70 @@
+.wrap {
+  border: 1px solid #2a2a2a;
+  padding: 0.75rem 1rem;
+  background: #faf8f5;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.65rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.values {
+  margin: 0;
+  font-size: 0.9375rem;
+  font-variant-numeric: tabular-nums;
+  color: #222;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.sep {
+  margin: 0 0.15rem;
+  opacity: 0.55;
+}
+
+.max {
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cellFilled,
+.cellEmpty {
+  aspect-ratio: 1;
+  max-width: 1.1rem;
+  max-height: 1.1rem;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cellFilled {
+  background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);
+  border: 1px solid #1a0506;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.cellEmpty {
+  background: transparent;
+  border: 1px solid #555;
+}

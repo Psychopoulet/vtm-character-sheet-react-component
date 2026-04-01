@@ -32198,7 +32198,7 @@ const BLOOD_POOL_MAX = 40;
 function BloodPool({ current, max }) {
     const safeMax = Math.max(0, Math.floor(max));
     const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap].filter(Boolean).join(" "), "aria-label": `Points de sang: ${clamped} of ${max}` },
+    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Points de sang: ${clamped} of ${max}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Points de sang"),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
@@ -32254,7 +32254,7 @@ function CharacterSheet({ name, player, secte, clan, characteristics = [], blood
     current: 5,
     characterMax: 6,
 }, dammages = 0, }) {
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: [_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sheet].filter(Boolean).join(" "), "aria-label": "Character sheet" },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sheet, "aria-label": "Character sheet" },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].fieldPair },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].fieldLabel }, _languages_fr_fr_json__WEBPACK_IMPORTED_MODULE_2__.name),
@@ -32276,7 +32276,7 @@ function CharacterSheet({ name, player, secte, clan, characteristics = [], blood
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Humanity__WEBPACK_IMPORTED_MODULE_4__.Humanity, { value: humanity }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Willpower__WEBPACK_IMPORTED_MODULE_5__.Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages }))));
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages })));
 }
 
 
@@ -32305,14 +32305,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // module
-function Characteristics({ title, globalMinValue, cols, }) {
+function Characteristics({ title, globalMinValue, cols }) {
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].section, "aria-label": "Characteristics" },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Separator__WEBPACK_IMPORTED_MODULE_3__.Separator, { title: title }),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].columns }, cols.map((col) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].list },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].columns }, cols.map((col, colIndex) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: colIndex, className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].list },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].subTitle }, col.title),
-                col.characteristics.map((characteristic, index) => {
-                    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NamedDotProgress__WEBPACK_IMPORTED_MODULE_2__.NamedDotProgress, { key: index, name: characteristic.name, value: characteristic.value ?? col.minValue ?? globalMinValue, max: 5 });
+                col.characteristics.map((characteristic, characteristicIndex) => {
+                    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NamedDotProgress__WEBPACK_IMPORTED_MODULE_2__.NamedDotProgress, { key: characteristicIndex, name: characteristic.name, value: characteristic.value ?? col.minValue ?? globalMinValue, max: 5 });
                 }));
         })));
 }
@@ -32384,12 +32384,12 @@ function HealthTrack({ dammages, stages = DEFAULT_STAGES, className, }) {
     const rendered = applyDamage(normalizedStages, dammages);
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, className].filter(Boolean).join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Health"),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].table }, rendered.map((stage) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].stageLabel }, stage.label),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].penalty }, stage.penalty ?? ""),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].markerRow }, stage.boxes.map((box, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits }))))))))));
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].markerRow }, stage.boxes.map((box, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits })))))))));
 }
 
 
@@ -32423,7 +32423,7 @@ const HUMANITY_MAX = 10;
  */
 function Humanity({ value, }) {
     const clamped = Math.min(Math.max(0, Math.floor(value)), HUMANITY_MAX);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap].filter(Boolean).join(" "), "aria-label": `Humanity: ${clamped} of ${HUMANITY_MAX}` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Humanity: ${clamped} of ${HUMANITY_MAX}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Humanit\u00E9"),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
@@ -32432,7 +32432,7 @@ function Humanity({ value, }) {
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, HUMANITY_MAX))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, style: {
                 gridTemplateColumns: `repeat(${HUMANITY_MAX}, minmax(0, 1fr))`,
-            }, role: "presentation" }, Array.from({ length: HUMANITY_MAX }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true }))))));
+            }, role: "presentation" }, Array.from({ length: HUMANITY_MAX }, (_, i) => (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true })))));
 }
 
 
@@ -32527,7 +32527,7 @@ const WILLPOWER_MAX = 10;
 function Willpower({ current, max }) {
     const safeMax = Math.max(0, Math.floor(max));
     const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Willpower: ${clamped} of ${safeMax}` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Willpower: ${clamped} of ${safeMax}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Volont\u00E9"),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
@@ -32536,7 +32536,7 @@ function Willpower({ current, max }) {
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, safeMax))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
             return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
-        }))));
+        })));
 }
 
 

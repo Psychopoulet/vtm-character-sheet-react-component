@@ -35,9 +35,7 @@ export function Willpower ({
   const safeMax = Math.max(0, Math.floor(max));
   const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
 
-  return (
-
-    <section
+  return <section
       className={ styles.wrap }
       aria-label={`Willpower: ${clamped} of ${safeMax}`}
     >
@@ -71,7 +69,6 @@ export function Willpower ({
 
       </div>
 
-    </section>
+    </section>;
 
-  );
 }

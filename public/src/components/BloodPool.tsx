@@ -33,7 +33,7 @@ export function BloodPool ({
   return (
 
     <section
-      className={[styles.wrap].filter(Boolean).join(" ")}
+      className={ styles.wrap }
       aria-label={`Points de sang: ${clamped} of ${max}`}
     >
 

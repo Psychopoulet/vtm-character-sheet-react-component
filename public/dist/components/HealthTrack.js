@@ -48,11 +48,11 @@ export function HealthTrack({ dammages, stages = DEFAULT_STAGES, className, }) {
     const rendered = applyDamage(normalizedStages, dammages);
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
-    return (React.createElement("section", { className: [styles.wrap, className].filter(Boolean).join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
+    return React.createElement("section", { className: styles.wrap, "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
         React.createElement("h3", { className: styles.title }, "Health"),
         React.createElement("div", { className: styles.table }, rendered.map((stage) => (React.createElement("div", { key: stage.label, className: styles.row },
             React.createElement("div", { className: styles.stageLabel }, stage.label),
             React.createElement("div", { className: styles.penalty }, stage.penalty ?? ""),
-            React.createElement("div", { className: styles.markerRow }, stage.boxes.map((box, i) => (React.createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits }))))))))));
+            React.createElement("div", { className: styles.markerRow }, stage.boxes.map((box, i) => (React.createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits })))))))));
 }
 export { TRAITS_PER_BOX };

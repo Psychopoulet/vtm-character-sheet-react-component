@@ -58,10 +58,8 @@ export function CharacterSheet({
   dammages = 0,
 }: CharacterSheetProps) {
 
-  return (
-
-    <article
-      className={ [styles.sheet].filter(Boolean).join(" ")}
+  return <article
+      className={ styles.sheet }
       aria-label="Character sheet"
     >
 
@@ -95,8 +93,8 @@ export function CharacterSheet({
           <Humanity value={ humanity } />
 
           <Willpower
-            current={  willpower.current ?? willpower.characterMax ?? 6 }
-            max={  willpower.characterMax ?? 6 }
+            current={ willpower.current ?? willpower.characterMax ?? 6 }
+            max={ willpower.characterMax ?? 6 }
           />
 
           <BloodPool
@@ -110,8 +108,6 @@ export function CharacterSheet({
 
       </div>
 
-    </article>
-
-  );
+  </article>;
 
 }

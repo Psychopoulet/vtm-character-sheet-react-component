@@ -28,7 +28,7 @@
 export function Characteristics({
     title,
     globalMinValue,
-    cols,
+    cols
 }: CharacteristicsProps): React.JSX.Element {
 
     return <section className={ styles.section } aria-label="Characteristics">
@@ -37,14 +37,14 @@ export function Characteristics({
 
         <div className={ styles.columns }>
 
-            { cols.map((col): React.JSX.Element => {
+            { cols.map((col, colIndex: number): React.JSX.Element => {
 
-                return <div className={styles.list}>
+                return <div key={ colIndex } className={ styles.list }>
 
                     <h3 className={styles.subTitle}>{col.title}</h3>
 
-                    { col.characteristics.map((characteristic: UsedCharacteristic, index: number): React.JSX.Element => {
-                        return <NamedDotProgress key={ index } name={ characteristic.name } value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ 5 } />;
+                    { col.characteristics.map((characteristic: UsedCharacteristic, characteristicIndex: number): React.JSX.Element => {
+                        return <NamedDotProgress key={ characteristicIndex } name={ characteristic.name } value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ 5 } />;
                     }) }
 
                 </div>;

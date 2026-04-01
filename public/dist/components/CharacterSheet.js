@@ -20,7 +20,7 @@ export function CharacterSheet({ name, player, secte, clan, characteristics = []
     current: 5,
     characterMax: 6,
 }, dammages = 0, }) {
-    return (React.createElement("article", { className: [styles.sheet].filter(Boolean).join(" "), "aria-label": "Character sheet" },
+    return React.createElement("article", { className: styles.sheet, "aria-label": "Character sheet" },
         React.createElement("header", { className: styles.header },
             React.createElement("div", { className: styles.fieldPair },
                 React.createElement("span", { className: styles.fieldLabel }, language.name),
@@ -42,5 +42,5 @@ export function CharacterSheet({ name, player, secte, clan, characteristics = []
                 React.createElement(Humanity, { value: humanity }),
                 React.createElement(Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
                 React.createElement(BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
-            React.createElement(HealthTrack, { dammages: dammages }))));
+            React.createElement(HealthTrack, { dammages: dammages })));
 }

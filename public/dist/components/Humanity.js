@@ -11,7 +11,7 @@ export const HUMANITY_MAX = 10;
  */
 export function Humanity({ value, }) {
     const clamped = Math.min(Math.max(0, Math.floor(value)), HUMANITY_MAX);
-    return (React.createElement("section", { className: [styles.wrap].filter(Boolean).join(" "), "aria-label": `Humanity: ${clamped} of ${HUMANITY_MAX}` },
+    return React.createElement("section", { className: styles.wrap, "aria-label": `Humanity: ${clamped} of ${HUMANITY_MAX}` },
         React.createElement("header", { className: styles.header },
             React.createElement("h3", { className: styles.title }, "Humanit\u00E9"),
             React.createElement("p", { className: styles.values },
@@ -20,5 +20,5 @@ export function Humanity({ value, }) {
                 React.createElement("span", { className: styles.max }, HUMANITY_MAX))),
         React.createElement("div", { className: styles.grid, style: {
                 gridTemplateColumns: `repeat(${HUMANITY_MAX}, minmax(0, 1fr))`,
-            }, role: "presentation" }, Array.from({ length: HUMANITY_MAX }, (_, i) => (React.createElement("span", { key: i, className: i < clamped ? styles.cellFilled : styles.cellEmpty, "aria-hidden": true }))))));
+            }, role: "presentation" }, Array.from({ length: HUMANITY_MAX }, (_, i) => (React.createElement("span", { key: i, className: i < clamped ? styles.cellFilled : styles.cellEmpty, "aria-hidden": true })))));
 }

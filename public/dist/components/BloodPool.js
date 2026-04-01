@@ -10,7 +10,7 @@ export const BLOOD_POOL_MAX = 40;
 export function BloodPool({ current, max }) {
     const safeMax = Math.max(0, Math.floor(max));
     const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return (React.createElement("section", { className: [styles.wrap].filter(Boolean).join(" "), "aria-label": `Points de sang: ${clamped} of ${max}` },
+    return (React.createElement("section", { className: styles.wrap, "aria-label": `Points de sang: ${clamped} of ${max}` },
         React.createElement("header", { className: styles.header },
             React.createElement("h3", { className: styles.title }, "Points de sang"),
             React.createElement("p", { className: styles.values },

@@ -102,12 +102,13 @@ export function HealthTrack({
   const maxDamage = countSlots(normalizedStages);
   const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
 
-  return (
-    <section
-      className={[styles.wrap, className].filter(Boolean).join(" ")}
-      aria-label={`Health track, ${filled} of ${maxDamage} levels marked`}
-    >
+  return <section
+    className={ styles.wrap }
+    aria-label={`Health track, ${filled} of ${maxDamage} levels marked`}
+  >
+
       <h3 className={styles.title}>Health</h3>
+
       <div className={styles.table}>
         {rendered.map((stage) => (
           <div key={stage.label} className={styles.row}>
@@ -121,8 +122,9 @@ export function HealthTrack({
           </div>
         ))}
       </div>
-    </section>
-  );
+
+    </section>;
+
 }
 
 export { TRAITS_PER_BOX };

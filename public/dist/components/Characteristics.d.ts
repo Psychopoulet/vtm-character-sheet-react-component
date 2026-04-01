@@ -9,4 +9,4 @@ export type CharacteristicsProps = {
         "minValue"?: number;
     }>;
 };
-export declare function Characteristics({ title, globalMinValue, cols, }: CharacteristicsProps): React.JSX.Element;
+export declare function Characteristics({ title, globalMinValue, cols }: CharacteristicsProps): React.JSX.Element;

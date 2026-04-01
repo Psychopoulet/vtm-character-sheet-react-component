@@ -22,16 +22,17 @@
 export function Humanity({
   value,
 }: HumanityProps): React.JSX.Element {
+
   const clamped = Math.min(
     Math.max(0, Math.floor(value)),
     HUMANITY_MAX
   );
 
-  return (
-    <section
-      className={[styles.wrap].filter(Boolean).join(" ")}
+  return <section
+      className={ styles.wrap }
       aria-label={`Humanity: ${clamped} of ${HUMANITY_MAX}`}
-    >
+  >
+
       <header className={styles.header}>
         <h3 className={styles.title}>Humanité</h3>
         <p className={styles.values}>
@@ -40,6 +41,7 @@ export function Humanity({
           <span className={styles.max}>{HUMANITY_MAX}</span>
         </p>
       </header>
+
       <div
         className={styles.grid}
         style={{
@@ -55,6 +57,7 @@ export function Humanity({
           />
         ))}
       </div>
-    </section>
-  );
+
+    </section>;
+
 }

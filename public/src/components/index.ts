@@ -3,7 +3,7 @@
     // locals
 
     export { CharacterSheet, type CharacterSheetProps } from "./CharacterSheet";
-export { Separator, type SeparatorProps } from "./Separator";
+    export { Separator, type SeparatorProps } from "./Separator";
     export { NamedDotProgress, type NamedDotProgressProps } from "./NamedDotProgress";
     export { BloodPool, type BloodPoolProps } from "./BloodPool";
     export { Humanity, HUMANITY_MAX, type HumanityProps } from "./Humanity";

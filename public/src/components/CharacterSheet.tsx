@@ -5,7 +5,7 @@
 
     // locals
     import styles from "./CharacterSheet.module.css";
-    import language from "../../languages/fr-fr.json";
+    import language from "../languages/fr-fr.json";
     import { BloodPool } from "./BloodPool";
     import { Humanity } from "./Humanity";
     import { Willpower } from "./Willpower";

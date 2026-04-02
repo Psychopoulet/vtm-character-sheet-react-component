@@ -22,7 +22,7 @@ export function Attributes({ characteristics }) {
         "perception",
         "wits"
     ];
-    return React.createElement(Characteristics, { title: "Attributs", globalMinValue: 1, cols: [
+    return React.createElement(Characteristics, { title: t("characteristics.attributes.title"), globalMinValue: 1, cols: [
             {
                 "title": t("characteristics.attributes.physical.title"),
                 "characteristics": PHYSICAL.map((attribute) => {

@@ -6,6 +6,7 @@
     "secte": "secte",
     "characteristics": {
         "attributes": {
+            "title": "attributes",
             "physical": {
                 "title": "physical",
                 "strength": "strength",

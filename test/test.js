@@ -570,6 +570,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   max-width: 7.25rem;
   font-size: 0.6875rem;
   letter-spacing: 0.03em;
+  text-transform: capitalize;
   color: #1a1a1a;
   border-bottom: 1px solid #2a2a2a;
   padding-bottom: 0.125rem;
@@ -604,7 +605,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   background: transparent;
   border: 1px solid #333;
 }
-`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,kBAAkB;EAClB,oBAAoB;EACpB,sBAAsB;EACtB,cAAc;EACd,gCAAgC;EAChC,wBAAwB;EACxB,gBAAgB;EAChB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,iBAAiB;EACjB,cAAc;EACd,YAAY;EACZ,mBAAmB;AACrB;;AAEA;;EAEE,cAAc;EACd,eAAe;EACf,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  color: #1a1a1a;\r\n  border-bottom: 1px solid #2a2a2a;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: #111;\r\n  border: 1px solid #111;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid #333;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,kBAAkB;EAClB,oBAAoB;EACpB,sBAAsB;EACtB,0BAA0B;EAC1B,cAAc;EACd,gCAAgC;EAChC,wBAAwB;EACxB,gBAAgB;EAChB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,iBAAiB;EACjB,cAAc;EACd,YAAY;EACZ,mBAAmB;AACrB;;AAEA;;EAEE,cAAc;EACd,eAAe;EACf,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  text-transform: capitalize;\r\n  color: #1a1a1a;\r\n  border-bottom: 1px solid #2a2a2a;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: #111;\r\n  border: 1px solid #111;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid #333;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"row": `qmimk41mDbpCpf6yrPJc`,
@@ -32196,7 +32197,7 @@ function Attributes({ characteristics }) {
         "perception",
         "wits"
     ];
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Characteristics__WEBPACK_IMPORTED_MODULE_2__.Characteristics, { title: "Attributs", globalMinValue: 1, cols: [
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Characteristics__WEBPACK_IMPORTED_MODULE_2__.Characteristics, { title: t("characteristics.attributes.title"), globalMinValue: 1, cols: [
             {
                 "title": t("characteristics.attributes.physical.title"),
                 "characteristics": PHYSICAL.map((attribute) => {
@@ -37421,7 +37422,7 @@ const withTranslation = (ns, options = {}) => function Extend(WrappedComponent) 
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}}}}');
 
 /***/ },
 
@@ -37432,7 +37433,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","n
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}}}}');
 
 /***/ }
 

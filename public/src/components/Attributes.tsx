@@ -43,7 +43,7 @@ export function Attributes ({
     ];
 
     return <Characteristics
-        title="Attributs"
+        title={ t("characteristics.attributes.title") }
         globalMinValue={ 1 }
         cols={
             [

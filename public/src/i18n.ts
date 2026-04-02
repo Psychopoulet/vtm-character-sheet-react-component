@@ -6,8 +6,8 @@
     import LanguageDetector from "i18next-browser-languagedetector";
 
     // locals
-    import fr from "../languages/fr.json";
-    import en from "../languages/en.json";
+    import fr from "./languages/fr.json";
+    import en from "./languages/en.json";
 
 // module
 

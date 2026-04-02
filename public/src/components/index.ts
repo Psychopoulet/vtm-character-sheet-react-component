@@ -10,9 +10,9 @@
     export { Willpower, type WillpowerProps } from "./Willpower";
 
     export {
-      HealthTrack,
-      TRAITS_PER_BOX,
-      type HealthTrackProps,
-      type HealthStage,
-      type HealthBoxState
+        HealthTrack,
+        TRAITS_PER_BOX,
+        type HealthTrackProps,
+        type HealthStage,
+        type HealthBoxState
     } from "./HealthTrack";

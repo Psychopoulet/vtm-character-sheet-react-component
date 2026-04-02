@@ -1,11 +1,11 @@
 // deps
 
     // externals
-    import React from "react";
+    import React, { Suspense } from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import styles from "./CharacterSheet.module.css";
-    import language from "../languages/fr-fr.json";
     import { BloodPool } from "./BloodPool";
     import { Humanity } from "./Humanity";
     import { Willpower } from "./Willpower";
@@ -47,67 +47,78 @@ export function CharacterSheet ({
     clan,
     characteristics = [],
     bloodPool = {
-      "current": 15,
-      "characterMax": 15
+        "current": 15,
+        "characterMax": 15
     },
     humanity = 7,
     willpower = {
-      "current": 5,
-      "characterMax": 6
+        "current": 5,
+        "characterMax": 6
     },
     dammages = 0
 }: CharacterSheetProps): React.JSX.Element {
 
-  return <article
-      className={ styles.sheet }
-      aria-label="Character sheet"
-    >
+    const { t } = useTranslation();
 
-      <header className={ styles.header }>
-        <div className={ styles.fieldPair }>
-          <span className={ styles.fieldLabel }>{ language.name }</span>
-          <span className={ styles.fieldLine }>{ name }</span>
-        </div>
-        <div className={ styles.fieldPair }>
-          <span className={ styles.fieldLabel }>{ language.player }</span>
-          <span className={ styles.fieldLine }>{ player }</span>
-        </div>
-        <div className={ styles.fieldPair }>
-          <span className={ styles.fieldLabel }>{ language.clan }</span>
-          <span className={ styles.fieldLine }>{ clan }</span>
-        </div>
-        <div className={ styles.fieldPair }>
-          <span className={ styles.fieldLabel }>{ language.secte }</span>
-          <span className={ styles.fieldLine }>{ secte }</span>
-        </div>
-      </header>
+    return <Suspense>
 
-      <Attributes characteristics={ characteristics } />
-      <Abilities characteristics={ characteristics } />
-      <Advantages characteristics={ characteristics } />
+        <article
+            className={ styles.sheet }
+            aria-label={ t("characterSheet") }
+        >
 
-      <div className={ styles.twoCol }>
+            <header className={ styles.header }>
 
-        <div className={ styles.sheetCol }>
+                <div className={ styles.fieldPair }>
+                    <span className={ styles.fieldLabel }>{ t("name") }</span>
+                    <span className={ styles.fieldLine }>{ name }</span>
+                </div>
 
-          <Humanity value={ humanity } />
+                <div className={ styles.fieldPair }>
+                    <span className={ styles.fieldLabel }>{ t("player") }</span>
+                    <span className={ styles.fieldLine }>{ player }</span>
+                </div>
 
-          <Willpower
-            current={ willpower.current ?? willpower.characterMax ?? 6 }
-            max={ willpower.characterMax ?? 6 }
-          />
+                <div className={ styles.fieldPair }>
+                    <span className={ styles.fieldLabel }>{ t("clan") }</span>
+                    <span className={ styles.fieldLine }>{ clan }</span>
+                </div>
 
-          <BloodPool
-            current={ bloodPool.current ?? bloodPool.characterMax ?? 15 }
-            max={ bloodPool.characterMax ?? 15 }
-          />
+                <div className={ styles.fieldPair }>
+                    <span className={ styles.fieldLabel }>{ t("secte") }</span>
+                    <span className={ styles.fieldLine }>{ secte }</span>
+                </div>
 
-        </div>
+            </header>
 
-        <HealthTrack dammages={ dammages } />
+            <Attributes characteristics={ characteristics } />
+            <Abilities characteristics={ characteristics } />
+            <Advantages characteristics={ characteristics } />
 
-      </div>
+            <div className={ styles.twoCol }>
 
-  </article>;
+                <div className={ styles.sheetCol }>
+
+                    <Humanity value={ humanity } />
+
+                    <Willpower
+                        current={ willpower.current ?? willpower.characterMax ?? 6 }
+                        max={ willpower.characterMax ?? 6 }
+                    />
+
+                    <BloodPool
+                        current={ bloodPool.current ?? bloodPool.characterMax ?? 15 }
+                        max={ bloodPool.characterMax ?? 15 }
+                    />
+
+                </div>
+
+                <HealthTrack dammages={ dammages } />
+
+            </div>
+
+        </article>
+
+    </Suspense>;
 
 }

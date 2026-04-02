@@ -34,9 +34,10 @@ export function Advantages({ characteristics }) {
                 "title": "Disciplines",
                 "characteristics": DISCIPLINES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -45,9 +46,10 @@ export function Advantages({ characteristics }) {
                 "title": "Historiques",
                 "characteristics": BACKGROUNDS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -57,9 +59,10 @@ export function Advantages({ characteristics }) {
                 "minValue": 1,
                 "characteristics": VIRTUES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })

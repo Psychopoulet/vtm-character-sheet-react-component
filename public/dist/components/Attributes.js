@@ -1,55 +1,60 @@
 // deps
 // externals
 import React from "react";
+import { useTranslation } from "react-i18next";
 // locals
 import { Characteristics } from "./Characteristics";
 // module
 export function Attributes({ characteristics }) {
+    const { t } = useTranslation();
     const PHYSICAL = [
-        "Force",
-        "Dextérité",
-        "Vigueur"
+        "strength",
+        "dexterity",
+        "stamina"
     ];
     const SOCIAL = [
-        "Charisme",
-        "Manipulation",
-        "Apparence"
+        "charisma",
+        "manipulation",
+        "appearance"
     ];
     const MENTAL = [
-        "Intelligence",
-        "Perception",
-        "Astuce"
+        "intelligence",
+        "perception",
+        "wits"
     ];
     return React.createElement(Characteristics, { title: "Attributs", globalMinValue: 1, cols: [
             {
-                "title": "Physique",
+                "title": t("characteristics.attributes.physical.title"),
                 "characteristics": PHYSICAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.physical.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
             },
             {
-                "title": "Social",
+                "title": t("characteristics.attributes.social.title"),
                 "characteristics": SOCIAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.social.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
             },
             {
-                "title": "Mental",
+                "title": t("characteristics.attributes.mental.title"),
                 "characteristics": MENTAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.mental.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })

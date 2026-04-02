@@ -3,5 +3,27 @@
     "name": "name",
     "player": "player",
     "clan": "clan",
-    "secte": "secte"
+    "secte": "secte",
+    "characteristics": {
+        "attributes": {
+            "physical": {
+                "title": "physical",
+                "strength": "strength",
+                "dexterity": "dexterity",
+                "stamina": "stamina"
+            },
+            "social": {
+                "title": "social",
+                "charisma": "charisma",
+                "manipulation": "manipulation",
+                "appearance": "appearance"
+            },
+            "mental": {
+                "title": "mental",
+                "perception": "perception",
+                "intelligence": "intelligence",
+                "wits": "wits"
+            }
+        }
+    }
 }

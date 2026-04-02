@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import { Characteristics } from "./Characteristics";
@@ -9,7 +10,7 @@
 // types & interfaces
 
     // locals
-    import type { AttributePhysical, AttributeSocial, AttributeMental, UsedCharacteristic } from "../types";
+    import type { AttributePhysical, AttributeSocial, AttributeMental, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
 
     export interface AttributesProps {
         readonly "characteristics": UsedCharacteristic[];
@@ -21,22 +22,24 @@ export function Attributes ({
     characteristics
 }: AttributesProps): React.JSX.Element {
 
+    const { t } = useTranslation();
+
     const PHYSICAL: AttributePhysical[] = [
-        "Force",
-        "Dextérité",
-        "Vigueur"
+        "strength",
+        "dexterity",
+        "stamina"
     ];
 
     const SOCIAL: AttributeSocial[] = [
-        "Charisme",
-        "Manipulation",
-        "Apparence"
+        "charisma",
+        "manipulation",
+        "appearance"
     ];
 
     const MENTAL: AttributeMental[] = [
-        "Intelligence",
-        "Perception",
-        "Astuce"
+        "intelligence",
+        "perception",
+        "wits"
     ];
 
     return <Characteristics
@@ -45,39 +48,42 @@ export function Attributes ({
         cols={
             [
                 {
-                    "title": "Physique",
-                    "characteristics": PHYSICAL.map((attribute: AttributePhysical): UsedCharacteristic => {
+                    "title": t("characteristics.attributes.physical.title"),
+                    "characteristics": PHYSICAL.map((attribute: AttributePhysical): NamedUsedCharacteristic => {
 
                         return {
-                            "name": attribute,
+                            "code": attribute,
+                            "name": t(`characteristics.attributes.physical.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
                     })
                 },
                 {
-                    "title": "Social",
-                    "characteristics": SOCIAL.map((attribute: AttributeSocial): UsedCharacteristic => {
+                    "title": t("characteristics.attributes.social.title"),
+                    "characteristics": SOCIAL.map((attribute: AttributeSocial): NamedUsedCharacteristic => {
 
                         return {
-                            "name": attribute,
+                            "code": attribute,
+                            "name": t(`characteristics.attributes.social.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
                     })
                 },
                 {
-                    "title": "Mental",
-                    "characteristics": MENTAL.map((attribute: AttributeMental): UsedCharacteristic => {
+                    "title": t("characteristics.attributes.mental.title"),
+                    "characteristics": MENTAL.map((attribute: AttributeMental): NamedUsedCharacteristic => {
 
                         return {
-                            "name": attribute,
+                            "code": attribute,
+                            "name": t(`characteristics.attributes.mental.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 

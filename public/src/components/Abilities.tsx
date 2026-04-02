@@ -9,7 +9,7 @@
 // types & interfaces
 
     // locals
-    import type { AbilityTalent, AbilitySkill, AbilityKnowledge, UsedCharacteristic } from "../types";
+    import type { AbilityTalent, AbilitySkill, AbilityKnowledge, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
 
     export interface AbilitiesProps {
         readonly "characteristics": UsedCharacteristic[];
@@ -67,12 +67,13 @@ export function Abilities ({
             [
                 {
                     "title": "Talents",
-                    "characteristics": TALENTS.map((attribute: AbilityTalent): UsedCharacteristic => {
+                    "characteristics": TALENTS.map((attribute: AbilityTalent): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
@@ -80,12 +81,13 @@ export function Abilities ({
                 },
                 {
                     "title": "Compétences",
-                    "characteristics": SKILLS.map((attribute: AbilitySkill): UsedCharacteristic => {
+                    "characteristics": SKILLS.map((attribute: AbilitySkill): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
@@ -93,12 +95,13 @@ export function Abilities ({
                 },
                 {
                     "title": "Connaissances",
-                    "characteristics": KNOWLEDGES.map((attribute: AbilityKnowledge): UsedCharacteristic => {
+                    "characteristics": KNOWLEDGES.map((attribute: AbilityKnowledge): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 

@@ -1,11 +1,11 @@
 import React from "react";
-import type { UsedCharacteristic } from "../types";
+import type { NamedUsedCharacteristic } from "../types";
 export interface CharacteristicsProps {
     "title": string;
     "globalMinValue": number;
     "cols": ReadonlyArray<{
         "title": string;
-        "characteristics": UsedCharacteristic[];
+        "characteristics": NamedUsedCharacteristic[];
         "minValue"?: number;
     }>;
 }

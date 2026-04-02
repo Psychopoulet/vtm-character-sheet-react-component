@@ -3,9 +3,9 @@ export type Clan = "Brujah" | "Gangrel" | "Malkavien" | "Nosferatu" | "Toreador"
     | "Lasombra" | "Tzimisce"
     | "Assamite" | "Banu Haqim" | "Disciples de Set" | "Ravnos";
 
-export type AttributePhysical = "Force" | "Dextérité" | "Vigueur";
-export type AttributeSocial = "Charisme" | "Manipulation" | "Apparence";
-export type AttributeMental = "Intelligence" | "Perception" | "Astuce";
+export type AttributePhysical = "strength" | "dexterity" | "stamina";
+export type AttributeSocial = "charisma" | "manipulation" | "appearance";
+export type AttributeMental = "intelligence" | "perception" | "wits";
 export type AbilityTalent = "Athlétisme" | "Bagarre" | "Commandement" | "Empathie" | "Esquive" | "Expression de la rue" | "Expression" | "Intimidation" | "Subterfuge" | "Vigilance";
 export type AbilitySkill = "Animaux" | "Armes à feu" | "Artisanat" | "Conduite" | "Etiquette" | "Furtivité" | "Mêlée" | "Représentation" | "Sécurité" | "Survie";
 export type AbilityKnowledge = "Erudition" | "Finance" | "Informatique" | "Investigation" | "Loi" | "Médecine" | "Linguistique" | "Occultisme" | "Politique" | "Science";
@@ -20,6 +20,10 @@ export type Characteristic = AttributePhysical | AttributeSocial | AttributeMent
     | Will;
 
 export interface UsedCharacteristic {
-    "name": Characteristic;
+    "code": Characteristic;
     "value"?: number | undefined;
+}
+
+export interface NamedUsedCharacteristic extends UsedCharacteristic {
+    "name": string;
 }

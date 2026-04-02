@@ -9,7 +9,7 @@
 // types & interfaces
 
     // locals
-    import type { AdvantageDiscipline, AdvantageBackground, AdvantageVirtues, UsedCharacteristic } from "../types";
+    import type { AdvantageDiscipline, AdvantageBackground, AdvantageVirtues, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
 
     export interface AdvantagesProps {
         readonly "characteristics": UsedCharacteristic[];
@@ -55,12 +55,13 @@ export function Advantages ({
             [
                 {
                     "title": "Disciplines",
-                    "characteristics": DISCIPLINES.map((attribute: AdvantageDiscipline): UsedCharacteristic => {
+                    "characteristics": DISCIPLINES.map((attribute: AdvantageDiscipline): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
@@ -68,12 +69,13 @@ export function Advantages ({
                 },
                 {
                     "title": "Historiques",
-                    "characteristics": BACKGROUNDS.map((attribute: AdvantageBackground): UsedCharacteristic => {
+                    "characteristics": BACKGROUNDS.map((attribute: AdvantageBackground): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 
@@ -82,12 +84,13 @@ export function Advantages ({
                 {
                     "title": "Vertus",
                     "minValue": 1,
-                    "characteristics": VIRTUES.map((attribute: AdvantageVirtues): UsedCharacteristic => {
+                    "characteristics": VIRTUES.map((attribute: AdvantageVirtues): NamedUsedCharacteristic => {
 
                         return {
+                            "code": attribute,
                             "name": attribute,
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.name === attribute;
+                                return characteristic.code === attribute;
                             })?.value
                         };
 

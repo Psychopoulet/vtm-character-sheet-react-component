@@ -32030,9 +32030,10 @@ function Abilities({ characteristics }) {
                 "title": "Talents",
                 "characteristics": TALENTS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32041,9 +32042,10 @@ function Abilities({ characteristics }) {
                 "title": "Compétences",
                 "characteristics": SKILLS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32052,9 +32054,10 @@ function Abilities({ characteristics }) {
                 "title": "Connaissances",
                 "characteristics": KNOWLEDGES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32115,9 +32118,10 @@ function Advantages({ characteristics }) {
                 "title": "Disciplines",
                 "characteristics": DISCIPLINES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32126,9 +32130,10 @@ function Advantages({ characteristics }) {
                 "title": "Historiques",
                 "characteristics": BACKGROUNDS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32138,9 +32143,10 @@ function Advantages({ characteristics }) {
                 "minValue": 1,
                 "characteristics": VIRTUES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32164,59 +32170,65 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Characteristics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Characteristics */ "./public/src/components/Characteristics.tsx");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _Characteristics__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Characteristics */ "./public/src/components/Characteristics.tsx");
 // deps
 // externals
+
 
 // locals
 
 // module
 function Attributes({ characteristics }) {
+    const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     const PHYSICAL = [
-        "Force",
-        "Dextérité",
-        "Vigueur"
+        "strength",
+        "dexterity",
+        "stamina"
     ];
     const SOCIAL = [
-        "Charisme",
-        "Manipulation",
-        "Apparence"
+        "charisma",
+        "manipulation",
+        "appearance"
     ];
     const MENTAL = [
-        "Intelligence",
-        "Perception",
-        "Astuce"
+        "intelligence",
+        "perception",
+        "wits"
     ];
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Characteristics__WEBPACK_IMPORTED_MODULE_1__.Characteristics, { title: "Attributs", globalMinValue: 1, cols: [
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Characteristics__WEBPACK_IMPORTED_MODULE_2__.Characteristics, { title: "Attributs", globalMinValue: 1, cols: [
             {
-                "title": "Physique",
+                "title": t("characteristics.attributes.physical.title"),
                 "characteristics": PHYSICAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.physical.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
             },
             {
-                "title": "Social",
+                "title": t("characteristics.attributes.social.title"),
                 "characteristics": SOCIAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.social.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
             },
             {
-                "title": "Mental",
+                "title": t("characteristics.attributes.mental.title"),
                 "characteristics": MENTAL.map((attribute) => {
                     return {
-                        "name": attribute,
+                        "code": attribute,
+                        "name": t(`characteristics.attributes.mental.${attribute}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -32686,7 +32698,7 @@ __webpack_require__.r(__webpack_exports__);
 i18next__WEBPACK_IMPORTED_MODULE_0__["default"].use(i18next_browser_languagedetector__WEBPACK_IMPORTED_MODULE_2__["default"])
     .use(react_i18next__WEBPACK_IMPORTED_MODULE_1__.initReactI18next)
     .init({
-    "debug": true,
+    "debug": false,
     "fallbackLng": "en",
     "resources": {
         "fr": { "translation": _languages_fr_json__WEBPACK_IMPORTED_MODULE_3__ },
@@ -37409,7 +37421,7 @@ const withTranslation = (ns, options = {}) => function Extend(WrappedComponent) 
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte"}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}}}}');
 
 /***/ },
 
@@ -37420,7 +37432,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","n
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte"}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}}}}');
 
 /***/ }
 
@@ -37543,69 +37555,69 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
         return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_public_src_main__WEBPACK_IMPORTED_MODULE_2__.CharacterSheet, { name: "Jacques Henri Delafeuille", player: "S\u00E9bastien VIDAL", secte: "Camarilla", clan: "Ventrue", characteristics: [
                 // Attributs
                 // Physique
-                { name: "Force", value: 2 },
-                { name: "Dextérité", value: 3 },
-                { name: "Vigueur", value: 3 },
+                { "code": "strength", "value": 2 },
+                { "code": "dexterity", "value": 3 },
+                { "code": "stamina", "value": 3 },
                 // Social
-                { name: "Charisme", value: 3 },
-                { name: "Manipulation", value: 4 },
-                { name: "Apparence", value: 4 },
+                { "code": "charisma", "value": 3 },
+                { "code": "manipulation", "value": 4 },
+                { "code": "appearance", "value": 4 },
                 // Mental
-                { name: "Perception", value: 3 },
-                { name: "Intelligence", value: 3 },
-                { name: "Astuce", value: 2 },
+                { "code": "perception", "value": 3 },
+                { "code": "intelligence", "value": 3 },
+                { "code": "wits", "value": 2 },
                 // Capacités
                 // Talents
-                { name: "Commandement", value: 1 },
-                { name: "Empathie", value: 2 },
-                { name: "Esquive", value: 3 },
-                { name: "Expression", value: 1 },
-                { name: "Intimidation", value: 3 },
-                { name: "Subterfuge", value: 1 },
-                { name: "Vigilance", value: 3 },
+                { "code": "Commandement", "value": 1 },
+                { "code": "Empathie", "value": 2 },
+                { "code": "Esquive", "value": 3 },
+                { "code": "Expression", "value": 1 },
+                { "code": "Intimidation", "value": 3 },
+                { "code": "Subterfuge", "value": 1 },
+                { "code": "Vigilance", "value": 3 },
                 // Compétences
-                { name: "Armes à feu", value: 2 },
-                { name: "Conduite", value: 2 },
-                { name: "Etiquette", value: 3 },
-                { name: "Mêlée", value: 5 },
-                { name: "Représentation", value: 3 },
+                { "code": "Armes à feu", "value": 2 },
+                { "code": "Conduite", "value": 2 },
+                { "code": "Etiquette", "value": 3 },
+                { "code": "Mêlée", "value": 5 },
+                { "code": "Représentation", "value": 3 },
                 // Connaissances
-                { name: "Erudition", value: 2 },
-                { name: "Finance", value: 2 },
-                { name: "Informatique", value: 2 },
-                { name: "Investigation", value: 2 },
-                { name: "Loi", value: 3 },
-                { name: "Linguistique", value: 3 },
-                { name: "Occultisme", value: 1 },
-                { name: "Politique", value: 4 },
+                { "code": "Erudition", "value": 2 },
+                { "code": "Finance", "value": 2 },
+                { "code": "Informatique", "value": 2 },
+                { "code": "Investigation", "value": 2 },
+                { "code": "Loi", "value": 3 },
+                { "code": "Linguistique", "value": 3 },
+                { "code": "Occultisme", "value": 1 },
+                { "code": "Politique", "value": 4 },
                 // Avantages
                 // Disciplines
-                { name: "Domination", value: 3 },
-                { name: "Force d'âme", value: 3 },
-                { name: "Présence", value: 4 },
-                { name: "Aliénation", value: 1 },
-                { name: "Célérité", value: 3 },
-                { name: "Occultation", value: 1 },
-                { name: "Occultisme", value: 1 },
+                { "code": "Domination", "value": 3 },
+                { "code": "Force d'âme", "value": 3 },
+                { "code": "Présence", "value": 4 },
+                { "code": "Aliénation", "value": 1 },
+                { "code": "Célérité", "value": 3 },
+                { "code": "Occultation", "value": 1 },
+                { "code": "Occultisme", "value": 1 },
                 // Historiques
-                { name: "Troupeau", value: 5 },
-                { name: "Génération", value: 5 },
-                { name: "Ressources", value: 5 },
-                { name: "Concacts", value: 2 },
-                { name: "Influence", value: 4 },
-                { name: "Statut", value: 5 },
-                { name: "Alliés", value: 2 },
-                { name: "Mentor", value: 2 },
+                { "code": "Troupeau", "value": 5 },
+                { "code": "Génération", "value": 5 },
+                { "code": "Ressources", "value": 5 },
+                { "code": "Concacts", "value": 2 },
+                { "code": "Influence", "value": 4 },
+                { "code": "Statut", "value": 5 },
+                { "code": "Alliés", "value": 2 },
+                { "code": "Mentor", "value": 2 },
                 // Vertues
-                { name: "Conscience/Conviction", value: 2 },
-                { name: "Maîtrise de soi / Instinct", value: 4 },
-                { name: "Courage", value: 2 }
+                { "code": "Conscience/Conviction", "value": 2 },
+                { "code": "Maîtrise de soi / Instinct", "value": 4 },
+                { "code": "Courage", "value": 2 }
             ], bloodPool: {
-                current: 10,
-                characterMax: 15,
+                "current": 10,
+                "characterMax": 15,
             }, humanity: 7, willpower: {
-                current: 5,
-                characterMax: 6
+                "current": 5,
+                "characterMax": 6
             }, dammages: 4 });
     }
 }

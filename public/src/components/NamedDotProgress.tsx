@@ -9,14 +9,16 @@
 // types & interfaces
 
     // locals
-    import type { UsedCharacteristic } from "../types";
 
-    export type NamedDotProgressProps = UsedCharacteristic & {
+    export interface NamedDotProgressProps {
+
+        "name": string;
+        "value": number;
 
         /** Total dots in the track (default 5, common for attributes). */
         "max"?: number;
 
-    };
+    }
 
 // module
 

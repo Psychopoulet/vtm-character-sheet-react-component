@@ -46,9 +46,10 @@ export function Abilities({ characteristics }) {
                 "title": "Talents",
                 "characteristics": TALENTS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -57,9 +58,10 @@ export function Abilities({ characteristics }) {
                 "title": "Compétences",
                 "characteristics": SKILLS.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })
@@ -68,9 +70,10 @@ export function Abilities({ characteristics }) {
                 "title": "Connaissances",
                 "characteristics": KNOWLEDGES.map((attribute) => {
                     return {
+                        "code": attribute,
                         "name": attribute,
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.name === attribute;
+                            return characteristic.code === attribute;
                         })?.value
                     };
                 })

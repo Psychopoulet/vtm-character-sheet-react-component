@@ -1,7 +1,7 @@
 // deps
 
     // externals
-    import React, { Suspense } from "react";
+    import React from "react";
     import { useTranslation } from "react-i18next";
 
     // locals
@@ -60,65 +60,61 @@ export function CharacterSheet ({
 
     const { t } = useTranslation();
 
-    return <Suspense>
+    return <article
+        className={ styles.sheet }
+        aria-label={ t("characterSheet") }
+    >
 
-        <article
-            className={ styles.sheet }
-            aria-label={ t("characterSheet") }
-        >
+        <header className={ styles.header }>
 
-            <header className={ styles.header }>
+            <div className={ styles.fieldPair }>
+                <span className={ styles.fieldLabel }>{ t("name") }</span>
+                <span className={ styles.fieldLine }>{ name }</span>
+            </div>
 
-                <div className={ styles.fieldPair }>
-                    <span className={ styles.fieldLabel }>{ t("name") }</span>
-                    <span className={ styles.fieldLine }>{ name }</span>
-                </div>
+            <div className={ styles.fieldPair }>
+                <span className={ styles.fieldLabel }>{ t("player") }</span>
+                <span className={ styles.fieldLine }>{ player }</span>
+            </div>
 
-                <div className={ styles.fieldPair }>
-                    <span className={ styles.fieldLabel }>{ t("player") }</span>
-                    <span className={ styles.fieldLine }>{ player }</span>
-                </div>
+            <div className={ styles.fieldPair }>
+                <span className={ styles.fieldLabel }>{ t("clan") }</span>
+                <span className={ styles.fieldLine }>{ clan }</span>
+            </div>
 
-                <div className={ styles.fieldPair }>
-                    <span className={ styles.fieldLabel }>{ t("clan") }</span>
-                    <span className={ styles.fieldLine }>{ clan }</span>
-                </div>
+            <div className={ styles.fieldPair }>
+                <span className={ styles.fieldLabel }>{ t("secte") }</span>
+                <span className={ styles.fieldLine }>{ secte }</span>
+            </div>
 
-                <div className={ styles.fieldPair }>
-                    <span className={ styles.fieldLabel }>{ t("secte") }</span>
-                    <span className={ styles.fieldLine }>{ secte }</span>
-                </div>
+        </header>
 
-            </header>
+        <Attributes characteristics={ characteristics } />
+        <Abilities characteristics={ characteristics } />
+        <Advantages characteristics={ characteristics } />
 
-            <Attributes characteristics={ characteristics } />
-            <Abilities characteristics={ characteristics } />
-            <Advantages characteristics={ characteristics } />
+        <div className={ styles.twoCol }>
 
-            <div className={ styles.twoCol }>
+            <div className={ styles.sheetCol }>
 
-                <div className={ styles.sheetCol }>
+                <Humanity value={ humanity } />
 
-                    <Humanity value={ humanity } />
+                <Willpower
+                    current={ willpower.current ?? willpower.characterMax ?? 6 }
+                    max={ willpower.characterMax ?? 6 }
+                />
 
-                    <Willpower
-                        current={ willpower.current ?? willpower.characterMax ?? 6 }
-                        max={ willpower.characterMax ?? 6 }
-                    />
-
-                    <BloodPool
-                        current={ bloodPool.current ?? bloodPool.characterMax ?? 15 }
-                        max={ bloodPool.characterMax ?? 15 }
-                    />
-
-                </div>
-
-                <HealthTrack dammages={ dammages } />
+                <BloodPool
+                    current={ bloodPool.current ?? bloodPool.characterMax ?? 15 }
+                    max={ bloodPool.characterMax ?? 15 }
+                />
 
             </div>
 
-        </article>
+            <HealthTrack dammages={ dammages } />
 
-    </Suspense>;
+        </div>
+
+    </article>;
 
 }

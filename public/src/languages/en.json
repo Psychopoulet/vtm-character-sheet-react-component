@@ -43,10 +43,30 @@
                 "subterfuge": "subterfuge"
             },
             "skills": {
-                "title": "skills"
+                "title": "skills",
+                "animal_ken": "animal ken",
+                "crafts": "crafts",
+                "etiquette": "etiquette",
+                "firearms": "firearms",
+                "larceny": "larceny",
+                "melee": "melee",
+                "performance": "performance",
+                "ride": "ride",
+                "stealth": "stealth",
+                "survival": "survival"
             },
             "knowledges": {
-                "title": "knowledges"
+                "title": "knowledges",
+                "academics": "academics",
+                "finance": "finance",
+                "investigation": "investigation",
+                "law": "law",
+                "linguistics": "linguistics",
+                "medicine": "medicine",
+                "occult": "occult",
+                "politics": "politics",
+                "science": "science",
+                "technology": "technology"
             }
         },
         "advantages": {
@@ -60,6 +80,8 @@
             "virtues": {
                 "title": "virtues"
             }
-        }
+        },
+        "humanity": "humanity",
+        "willpower": "willpower"
     }
 }

@@ -7,16 +7,17 @@ export interface Attribute {
 }
 export interface Ability {
     "talent": "alertness" | "athletics" | "awareness" | "brawl" | "dodge" | "empathy" | "expression" | "intimidation" | "leadership" | "streetwise" | "subterfuge";
-    "skill": "Animaux" | "Armes à feu" | "Artisanat" | "Conduite" | "Etiquette" | "Furtivité" | "Mêlée" | "Représentation" | "Sécurité" | "Survie";
-    "knowledge": "Erudition" | "Finance" | "Informatique" | "Investigation" | "Loi" | "Médecine" | "Linguistique" | "Occultisme" | "Politique" | "Science";
+    "skill": "animal_ken" | "crafts" | "etiquette" | "firearms" | "larceny" | "melee" | "performance" | "ride" | "stealth" | "survival";
+    "knowledge": "academics" | "finance" | "investigation" | "law" | "linguistics" | "medicine" | "occult" | "politics" | "science" | "technology";
 }
 export interface Advantage {
     "discipline": "Domination" | "Force d'âme" | "Présence" | "Aliénation" | "Célérité" | "Occultation" | "Occultisme";
     "background": "Troupeau" | "Génération" | "Ressources" | "Concacts" | "Influence" | "Statut" | "Alliés" | "Mentor";
     "virtue": "Conscience/Conviction" | "Maîtrise de soi / Instinct" | "Courage";
 }
-export type Will = "Volonté";
-export type Characteristic = Attribute["physical"] | Attribute["social"] | Attribute["mental"] | Ability["talent"] | Ability["skill"] | Ability["knowledge"] | Advantage["discipline"] | Advantage["background"] | Advantage["virtue"] | Will;
+export type Humanity = "humanity";
+export type WillPower = "willpower";
+export type Characteristic = Attribute["physical"] | Attribute["social"] | Attribute["mental"] | Ability["talent"] | Ability["skill"] | Ability["knowledge"] | Advantage["discipline"] | Advantage["background"] | Advantage["virtue"] | Humanity | WillPower;
 export interface UsedCharacteristic {
     "code": Characteristic;
     "value"?: number | undefined;

@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import styles from "./Humanity.module.css";
@@ -25,14 +26,16 @@ export function Humanity ({
     value
 }: HumanityProps): React.JSX.Element {
 
+    const { t } = useTranslation();
+
     return <section
         className={ styles.wrap }
-        aria-label={ `Humanity: ${value} of ${HUMANITY_MAX}` }
+        aria-label={ t("characteristics.humanity") + `: ${value} of ${HUMANITY_MAX}` }
     >
 
         <header className={ styles.header }>
 
-          <h3 className={ styles.title }>Humanité</h3>
+          <h3 className={ styles.title }>{ t("characteristics.humanity") }</h3>
 
             <p className={ styles.values }>
                 <span className={ styles.current }>{ value }</span>
@@ -47,7 +50,7 @@ export function Humanity ({
             role="presentation"
         >
 
-            { Array.from({ "length": HUMANITY_MAX }, (_, i): React.JSX.Element => {
+            { Array.from({ "length": HUMANITY_MAX }, (_: number, i: number): React.JSX.Element => {
 
                 return <span
                     key={ i }

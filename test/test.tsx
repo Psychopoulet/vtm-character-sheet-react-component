@@ -45,9 +45,9 @@ class App extends React.Component<{}> {
 					{ "code": "intelligence", "value": 3 },
 					{ "code": "wits", "value": 2 },
 
-				// Capacités
+				// abilities
 
-					// Talents
+					// talents
 					{ "code": "alertness", "value": 3 },
 					{ "code": "awareness", "value": 2 },
 					{ "code": "leadership", "value": 1 },
@@ -56,26 +56,25 @@ class App extends React.Component<{}> {
 					{ "code": "intimidation", "value": 3 },
 					{ "code": "subterfuge", "value": 1 },
 
-					// Compétences
-					{ "code": "Armes à feu", "value": 2 },
-					{ "code": "Conduite", "value": 2 },
-					{ "code": "Etiquette", "value": 3 },
-					{ "code": "Mêlée", "value": 5 },
-					{ "code": "Représentation", "value": 3 },
+					// skills
+					{ "code": "firearms", "value": 2 },
+					{ "code": "ride", "value": 2 },
+					{ "code": "etiquette", "value": 3 },
+					{ "code": "melee", "value": 5 },
+					{ "code": "performance", "value": 3 },
 
-					// Connaissances
-					{ "code": "Erudition", "value": 2 },
-					{ "code": "Finance", "value": 2 },
-					{ "code": "Informatique", "value": 2 },
-					{ "code": "Investigation", "value": 2 },
-					{ "code": "Loi", "value": 3 },
-					{ "code": "Linguistique", "value": 3 },
-					{ "code": "Occultisme", "value": 1 },
-					{ "code": "Politique", "value": 4 },
+					// knowledges
+					{ "code": "academics", "value": 2 },
+					{ "code": "finance", "value": 2 },
+					{ "code": "investigation", "value": 2 },
+					{ "code": "law", "value": 3 },
+					{ "code": "linguistics", "value": 3 },
+					{ "code": "occult", "value": 1 },
+					{ "code": "politics", "value": 4 },
 
-				// Avantages
+				// advantages
 
-					// Disciplines
+					// disciplines
 
 					{ "code": "Domination", "value": 3 },
 					{ "code": "Force d'âme", "value": 3 },
@@ -86,7 +85,7 @@ class App extends React.Component<{}> {
 					{ "code": "Occultation", "value": 1 },
 					{ "code": "Occultisme", "value": 1 },
 
-					// Historiques
+					// backgrounds
 
 					{ "code": "Troupeau", "value": 5 },
 					{ "code": "Génération", "value": 5 },
@@ -97,7 +96,7 @@ class App extends React.Component<{}> {
 					{ "code": "Alliés", "value": 2 },
 					{ "code": "Mentor", "value": 2 },
 
-					// Vertues
+					// virtues
 					{ "code": "Conscience/Conviction", "value": 2 },
 					{ "code": "Maîtrise de soi / Instinct", "value": 4 },
 					{ "code": "Courage", "value": 2 }

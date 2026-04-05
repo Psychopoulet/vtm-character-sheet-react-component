@@ -28,7 +28,7 @@
 
     "build-front": "npm run clean-front && npx tsc --project ./tsconfig.json",
     "build-tests": "npx webpack --config \"./webpack.config-test.js\"",
-    "build": "npm run build-front",
+    "build": "npm run build-front && npm run build-tests",
 
     "check-requires": "npx used-deps-analyzer ./package.json ./public/src --no-dev",
     "check-updates": "npx check-version-modules --no-fail-at-major --fail-at-minor --fail-at-patch",

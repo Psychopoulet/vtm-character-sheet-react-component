@@ -32007,28 +32007,28 @@ function Abilities({ characteristics }) {
         "subterfuge"
     ];
     const SKILLS = [
-        "Animaux",
-        "Armes à feu",
-        "Artisanat",
-        "Conduite",
-        "Etiquette",
-        "Furtivité",
-        "Mêlée",
-        "Représentation",
-        "Sécurité",
-        "Survie"
+        "animal_ken",
+        "crafts",
+        "etiquette",
+        "firearms",
+        "larceny",
+        "melee",
+        "performance",
+        "ride",
+        "stealth",
+        "survival"
     ];
     const KNOWLEDGES = [
-        "Erudition",
-        "Finance",
-        "Informatique",
-        "Investigation",
-        "Loi",
-        "Médecine",
-        "Linguistique",
-        "Occultisme",
-        "Politique",
-        "Science"
+        "academics",
+        "finance",
+        "investigation",
+        "law",
+        "linguistics",
+        "medicine",
+        "occult",
+        "politics",
+        "science",
+        "technology"
     ];
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Characteristics__WEBPACK_IMPORTED_MODULE_2__.Characteristics, { title: t("characteristics.abilities.title"), globalMinValue: 0, cols: [
             {
@@ -32332,30 +32332,29 @@ function CharacterSheet({ name, player, secte, clan, characteristics = [], blood
     "characterMax": 6
 }, dammages = 0 }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Suspense, null,
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheet, "aria-label": t("characterSheet") },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("name")),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name)),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player)),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan")),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan)),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte))),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Attributes__WEBPACK_IMPORTED_MODULE_7__.Attributes, { characteristics: characteristics }),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Abilities__WEBPACK_IMPORTED_MODULE_8__.Abilities, { characteristics: characteristics }),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Advantages__WEBPACK_IMPORTED_MODULE_9__.Advantages, { characteristics: characteristics }),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].twoCol },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheetCol },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Humanity__WEBPACK_IMPORTED_MODULE_4__.Humanity, { value: humanity }),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Willpower__WEBPACK_IMPORTED_MODULE_5__.Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages }))));
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheet, "aria-label": t("characterSheet") },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("name")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name)),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player)),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan)),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Attributes__WEBPACK_IMPORTED_MODULE_7__.Attributes, { characteristics: characteristics }),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Abilities__WEBPACK_IMPORTED_MODULE_8__.Abilities, { characteristics: characteristics }),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Advantages__WEBPACK_IMPORTED_MODULE_9__.Advantages, { characteristics: characteristics }),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].twoCol },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheetCol },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Humanity__WEBPACK_IMPORTED_MODULE_4__.Humanity, { value: humanity }),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Willpower__WEBPACK_IMPORTED_MODULE_5__.Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages })));
 }
 
 
@@ -32504,9 +32503,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Humanity.module.css */ "./public/src/components/Humanity.module.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Humanity.module.css */ "./public/src/components/Humanity.module.css");
 // deps
 // externals
+
 
 // locals
 
@@ -32517,15 +32518,16 @@ const HUMANITY_MAX = 10;
  * Humanity track: ten positions, filled from the left up to the current rating (VTM-style).
  */
 function Humanity({ value }) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Humanity: ${value} of ${HUMANITY_MAX}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Humanit\u00E9"),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, value),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, HUMANITY_MAX))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": HUMANITY_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
+    const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.humanity") + `: ${value} of ${HUMANITY_MAX}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.humanity")),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, value),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, HUMANITY_MAX))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": HUMANITY_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -32609,9 +32611,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Willpower.module.css */ "./public/src/components/Willpower.module.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Willpower.module.css */ "./public/src/components/Willpower.module.css");
 // deps
 // externals
+
 
 // locals
 
@@ -32622,17 +32626,18 @@ const WILLPOWER_MAX = 10;
  * Willpower pool: filled vs empty circles for current temporary Willpower vs permanent maximum.
  */
 function Willpower({ current, max }) {
+    const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     const safeMax = Math.max(0, Math.floor(max));
     const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Willpower: ${clamped} of ${safeMax}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Volont\u00E9"),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, clamped),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, safeMax))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _Willpower_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.willpower") + `: ${clamped} of ${safeMax}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.willpower")),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, clamped),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, safeMax))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -37429,7 +37434,7 @@ const withTranslation = (ns, options = {}) => function Extend(WrappedComponent) 
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","awareness":"awareness","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills"},"knowledges":{"title":"knowledges"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"backgrounds"},"virtues":{"title":"virtues"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","awareness":"awareness","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animal ken","crafts":"crafts","etiquette":"etiquette","firearms":"firearms","larceny":"larceny","melee":"melee","performance":"performance","ride":"ride","stealth":"stealth","survival":"survival"},"knowledges":{"title":"knowledges","academics":"academics","finance":"finance","investigation":"investigation","law":"law","linguistics":"linguistics","medicine":"medicine","occult":"occult","politics":"politics","science":"science","technology":"technology"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"backgrounds"},"virtues":{"title":"virtues"}},"humanity":"humanity","willpower":"willpower"}}');
 
 /***/ },
 
@@ -37440,7 +37445,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","n
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","awareness":"vigilance","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills"},"knowledges":{"title":"connaissances"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"historiques"},"virtues":{"title":"vertus"}}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","awareness":"vigilance","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animaux","crafts":"artisanat","etiquette":"étiquette","firearms":"armes à feu","larceny":"furtivité","melee":"mêlée","performance":"représentation","ride":"conduite","stealth":"sécurité","survival":"survie"},"knowledges":{"title":"connaissances","academics":"érudition","finance":"finance","investigation":"investigation","law":"loi","linguistics":"linguistique","medicine":"médecine","occult":"occultisme","politics":"politique","science":"science","technology":"informatique"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"historiques"},"virtues":{"title":"vertus"}},"humanity":"humanité","willpower":"volonté"}}');
 
 /***/ }
 
@@ -37574,8 +37579,8 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "perception", "value": 3 },
                 { "code": "intelligence", "value": 3 },
                 { "code": "wits", "value": 2 },
-                // Capacités
-                // Talents
+                // abilities
+                // talents
                 { "code": "alertness", "value": 3 },
                 { "code": "awareness", "value": 2 },
                 { "code": "leadership", "value": 1 },
@@ -37583,23 +37588,22 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "expression", "value": 1 },
                 { "code": "intimidation", "value": 3 },
                 { "code": "subterfuge", "value": 1 },
-                // Compétences
-                { "code": "Armes à feu", "value": 2 },
-                { "code": "Conduite", "value": 2 },
-                { "code": "Etiquette", "value": 3 },
-                { "code": "Mêlée", "value": 5 },
-                { "code": "Représentation", "value": 3 },
-                // Connaissances
-                { "code": "Erudition", "value": 2 },
-                { "code": "Finance", "value": 2 },
-                { "code": "Informatique", "value": 2 },
-                { "code": "Investigation", "value": 2 },
-                { "code": "Loi", "value": 3 },
-                { "code": "Linguistique", "value": 3 },
-                { "code": "Occultisme", "value": 1 },
-                { "code": "Politique", "value": 4 },
-                // Avantages
-                // Disciplines
+                // skills
+                { "code": "firearms", "value": 2 },
+                { "code": "ride", "value": 2 },
+                { "code": "etiquette", "value": 3 },
+                { "code": "melee", "value": 5 },
+                { "code": "performance", "value": 3 },
+                // knowledges
+                { "code": "academics", "value": 2 },
+                { "code": "finance", "value": 2 },
+                { "code": "investigation", "value": 2 },
+                { "code": "law", "value": 3 },
+                { "code": "linguistics", "value": 3 },
+                { "code": "occult", "value": 1 },
+                { "code": "politics", "value": 4 },
+                // advantages
+                // disciplines
                 { "code": "Domination", "value": 3 },
                 { "code": "Force d'âme", "value": 3 },
                 { "code": "Présence", "value": 4 },
@@ -37607,7 +37611,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "Célérité", "value": 3 },
                 { "code": "Occultation", "value": 1 },
                 { "code": "Occultisme", "value": 1 },
-                // Historiques
+                // backgrounds
                 { "code": "Troupeau", "value": 5 },
                 { "code": "Génération", "value": 5 },
                 { "code": "Ressources", "value": 5 },
@@ -37616,7 +37620,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "Statut", "value": 5 },
                 { "code": "Alliés", "value": 2 },
                 { "code": "Mentor", "value": 2 },
-                // Vertues
+                // virtues
                 { "code": "Conscience/Conviction", "value": 2 },
                 { "code": "Maîtrise de soi / Instinct", "value": 4 },
                 { "code": "Courage", "value": 2 }

@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import styles from "./Willpower.module.css";
@@ -32,17 +33,19 @@ export function Willpower ({
   max
 }: WillpowerProps): React.JSX.Element {
 
+  const { t } = useTranslation();
+
   const safeMax = Math.max(0, Math.floor(max));
   const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
 
   return <section
       className={ styles.wrap }
-      aria-label={`Willpower: ${clamped} of ${safeMax}`}
+      aria-label={ t("characteristics.willpower") + `: ${clamped} of ${safeMax}` }
     >
 
       <header className={styles.header}>
 
-        <h3 className={styles.title}>Volonté</h3>
+        <h3 className={styles.title}>{ t("characteristics.willpower") }</h3>
 
         <p className={styles.values}>
           <span className={styles.current}>{clamped}</span>
@@ -53,11 +56,11 @@ export function Willpower ({
       </header>
 
       <div
-        className={styles.grid}
+        className={ styles.grid }
         role="presentation"
       >
 
-        {Array.from({ "length": WILLPOWER_MAX }, (_: unknown, i: number) => {
+        {Array.from({ "length": WILLPOWER_MAX }, (_: number, i: number) => {
 
           return <span
               key={i}

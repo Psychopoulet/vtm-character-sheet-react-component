@@ -21,28 +21,28 @@ export function Abilities({ characteristics }) {
         "subterfuge"
     ];
     const SKILLS = [
-        "Animaux",
-        "Armes à feu",
-        "Artisanat",
-        "Conduite",
-        "Etiquette",
-        "Furtivité",
-        "Mêlée",
-        "Représentation",
-        "Sécurité",
-        "Survie"
+        "animal_ken",
+        "crafts",
+        "etiquette",
+        "firearms",
+        "larceny",
+        "melee",
+        "performance",
+        "ride",
+        "stealth",
+        "survival"
     ];
     const KNOWLEDGES = [
-        "Erudition",
-        "Finance",
-        "Informatique",
-        "Investigation",
-        "Loi",
-        "Médecine",
-        "Linguistique",
-        "Occultisme",
-        "Politique",
-        "Science"
+        "academics",
+        "finance",
+        "investigation",
+        "law",
+        "linguistics",
+        "medicine",
+        "occult",
+        "politics",
+        "science",
+        "technology"
     ];
     return React.createElement(Characteristics, { title: t("characteristics.abilities.title"), globalMinValue: 0, cols: [
             {

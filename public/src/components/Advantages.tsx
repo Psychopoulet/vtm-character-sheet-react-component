@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import { Characteristics } from "./Characteristics";
@@ -9,7 +10,7 @@
 // types & interfaces
 
     // locals
-    import type { AdvantageDiscipline, AdvantageBackground, AdvantageVirtues, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
+    import type { Advantage, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
 
     export interface AdvantagesProps {
         readonly "characteristics": UsedCharacteristic[];
@@ -21,7 +22,9 @@ export function Advantages ({
     characteristics
 }: AdvantagesProps): React.JSX.Element {
 
-    const DISCIPLINES: AdvantageDiscipline[] = [
+    const { t } = useTranslation();
+
+    const DISCIPLINES: Advantage["discipline"][] = [
       "Domination",
       "Force d'âme",
       "Présence",
@@ -31,7 +34,7 @@ export function Advantages ({
       "Occultisme"
     ];
 
-    const BACKGROUNDS: AdvantageBackground[] = [
+    const BACKGROUNDS: Advantage["background"][] = [
       "Troupeau",
       "Génération",
       "Ressources",
@@ -42,24 +45,24 @@ export function Advantages ({
       "Mentor"
     ];
 
-    const VIRTUES: AdvantageVirtues[] = [
+    const VIRTUES: Advantage["virtue"][] = [
       "Conscience/Conviction",
       "Maîtrise de soi / Instinct",
       "Courage"
     ];
 
     return <Characteristics
-        title="Capacités"
+        title={ t("characteristics.advantages.title") }
         globalMinValue={ 0 }
         cols={
             [
                 {
-                    "title": "Disciplines",
-                    "characteristics": DISCIPLINES.map((attribute: AdvantageDiscipline): NamedUsedCharacteristic => {
+                    "title": t("characteristics.advantages.disciplines.title"),
+                    "characteristics": DISCIPLINES.map((attribute: Advantage["discipline"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,
-                            "name": attribute,
+                            "name": t(`characteristics.advantages.disciplines.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value
@@ -68,12 +71,12 @@ export function Advantages ({
                     })
                 },
                 {
-                    "title": "Historiques",
-                    "characteristics": BACKGROUNDS.map((attribute: AdvantageBackground): NamedUsedCharacteristic => {
+                    "title": t("characteristics.advantages.backgrounds.title"),
+                    "characteristics": BACKGROUNDS.map((attribute: Advantage["background"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,
-                            "name": attribute,
+                            "name": t(`characteristics.advantages.backgrounds.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value
@@ -82,13 +85,13 @@ export function Advantages ({
                     })
                 },
                 {
-                    "title": "Vertus",
+                    "title": t("characteristics.advantages.virtues.title"),
                     "minValue": 1,
-                    "characteristics": VIRTUES.map((attribute: AdvantageVirtues): NamedUsedCharacteristic => {
+                    "characteristics": VIRTUES.map((attribute: Advantage["virtue"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,
-                            "name": attribute,
+                            "name": t(`characteristics.advantages.virtues.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value

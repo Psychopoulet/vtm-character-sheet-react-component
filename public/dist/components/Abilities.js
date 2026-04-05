@@ -1,21 +1,24 @@
 // deps
 // externals
 import React from "react";
+import { useTranslation } from "react-i18next";
 // locals
 import { Characteristics } from "./Characteristics";
 // module
 export function Abilities({ characteristics }) {
+    const { t } = useTranslation();
     const TALENTS = [
-        "Athlétisme",
-        "Bagarre",
-        "Commandement",
-        "Empathie",
-        "Esquive",
-        "Expression de la rue",
-        "Expression",
-        "Intimidation",
-        "Subterfuge",
-        "Vigilance"
+        "alertness",
+        "athletics",
+        "awareness",
+        "brawl",
+        "dodge",
+        "empathy",
+        "expression",
+        "intimidation",
+        "leadership",
+        "streetwise",
+        "subterfuge"
     ];
     const SKILLS = [
         "Animaux",
@@ -41,13 +44,13 @@ export function Abilities({ characteristics }) {
         "Politique",
         "Science"
     ];
-    return React.createElement(Characteristics, { title: "Capacit\u00E9s", globalMinValue: 0, cols: [
+    return React.createElement(Characteristics, { title: t("characteristics.abilities.title"), globalMinValue: 0, cols: [
             {
-                "title": "Talents",
+                "title": t("characteristics.abilities.talents.title"),
                 "characteristics": TALENTS.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.abilities.talents.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value
@@ -55,11 +58,11 @@ export function Abilities({ characteristics }) {
                 })
             },
             {
-                "title": "Compétences",
+                "title": t("characteristics.abilities.skills.title"),
                 "characteristics": SKILLS.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.abilities.skills.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value
@@ -67,11 +70,11 @@ export function Abilities({ characteristics }) {
                 })
             },
             {
-                "title": "Connaissances",
+                "title": t("characteristics.abilities.knowledges.title"),
                 "characteristics": KNOWLEDGES.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.abilities.knowledges.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value

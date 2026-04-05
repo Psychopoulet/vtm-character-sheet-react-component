@@ -28,19 +28,19 @@ class App extends React.Component<{}> {
 			secte="Camarilla" clan="Ventrue"
 			characteristics={ [
 
-				// Attributs
+				// attributes
 
-					// Physique
+					// physical
 					{ "code": "strength", "value": 2 },
 					{ "code": "dexterity", "value": 3 },
 					{ "code": "stamina", "value": 3 },
 
-					// Social
+					// social
 					{ "code": "charisma", "value": 3 },
 					{ "code": "manipulation", "value": 4 },
 					{ "code": "appearance", "value": 4 },
 
-					// Mental
+					// mental
 					{ "code": "perception", "value": 3 },
 					{ "code": "intelligence", "value": 3 },
 					{ "code": "wits", "value": 2 },
@@ -48,13 +48,13 @@ class App extends React.Component<{}> {
 				// Capacités
 
 					// Talents
-					{ "code": "Commandement", "value": 1 },
-					{ "code": "Empathie", "value": 2 },
-					{ "code": "Esquive", "value": 3 },
-					{ "code": "Expression", "value": 1 },
-					{ "code": "Intimidation", "value": 3 },
-					{ "code": "Subterfuge", "value": 1 },
-					{ "code": "Vigilance", "value": 3 },
+					{ "code": "alertness", "value": 3 },
+					{ "code": "awareness", "value": 2 },
+					{ "code": "leadership", "value": 1 },
+					{ "code": "dodge", "value": 3 },
+					{ "code": "expression", "value": 1 },
+					{ "code": "intimidation", "value": 3 },
+					{ "code": "subterfuge", "value": 1 },
 
 					// Compétences
 					{ "code": "Armes à feu", "value": 2 },

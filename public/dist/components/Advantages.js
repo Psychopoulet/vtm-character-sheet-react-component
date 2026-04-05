@@ -1,10 +1,12 @@
 // deps
 // externals
 import React from "react";
+import { useTranslation } from "react-i18next";
 // locals
 import { Characteristics } from "./Characteristics";
 // module
 export function Advantages({ characteristics }) {
+    const { t } = useTranslation();
     const DISCIPLINES = [
         "Domination",
         "Force d'âme",
@@ -29,13 +31,13 @@ export function Advantages({ characteristics }) {
         "Maîtrise de soi / Instinct",
         "Courage"
     ];
-    return React.createElement(Characteristics, { title: "Capacit\u00E9s", globalMinValue: 0, cols: [
+    return React.createElement(Characteristics, { title: t("characteristics.advantages.title"), globalMinValue: 0, cols: [
             {
-                "title": "Disciplines",
+                "title": t("characteristics.advantages.disciplines.title"),
                 "characteristics": DISCIPLINES.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.advantages.disciplines.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value
@@ -43,11 +45,11 @@ export function Advantages({ characteristics }) {
                 })
             },
             {
-                "title": "Historiques",
+                "title": t("characteristics.advantages.backgrounds.title"),
                 "characteristics": BACKGROUNDS.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.advantages.backgrounds.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value
@@ -55,12 +57,12 @@ export function Advantages({ characteristics }) {
                 })
             },
             {
-                "title": "Vertus",
+                "title": t("characteristics.advantages.virtues.title"),
                 "minValue": 1,
                 "characteristics": VIRTUES.map((attribute) => {
                     return {
                         "code": attribute,
-                        "name": attribute,
+                        "name": t(`characteristics.advantages.virtues.${attribute}`),
                         "value": characteristics.find((characteristic) => {
                             return characteristic.code === attribute;
                         })?.value

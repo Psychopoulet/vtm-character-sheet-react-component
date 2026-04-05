@@ -25,6 +25,41 @@
                 "intelligence": "intelligence",
                 "wits": "astuce"
             }
+        },
+        "abilities": {
+            "title": "capacités",
+            "talents": {
+                "title": "talents",
+                "alertness": "vigilance",
+                "athletics": "athlétisme",
+                "awareness": "vigilance",
+                "brawl": "bagarre",
+                "dodge": "esquive",
+                "empathy": "empathie",
+                "expression": "expression",
+                "intimidation": "intimidation",
+                "leadership": "commandement",
+                "streetwise": "expression de la rue",
+                "subterfuge": "subterfuge"
+            },
+            "skills": {
+                "title": "skills"
+            },
+            "knowledges": {
+                "title": "connaissances"
+            }
+        },
+        "advantages": {
+            "title": "avantages",
+            "disciplines": {
+                "title": "disciplines"
+            },
+            "backgrounds": {
+                "title": "historiques"
+            },
+            "virtues": {
+                "title": "vertus"
+            }
         }
     }
 }

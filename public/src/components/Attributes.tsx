@@ -10,7 +10,7 @@
 // types & interfaces
 
     // locals
-    import type { AttributePhysical, AttributeSocial, AttributeMental, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
+    import type { Attribute, UsedCharacteristic, NamedUsedCharacteristic } from "../types";
 
     export interface AttributesProps {
         readonly "characteristics": UsedCharacteristic[];
@@ -24,19 +24,19 @@ export function Attributes ({
 
     const { t } = useTranslation();
 
-    const PHYSICAL: AttributePhysical[] = [
+    const PHYSICAL: Attribute["physical"][] = [
         "strength",
         "dexterity",
         "stamina"
     ];
 
-    const SOCIAL: AttributeSocial[] = [
+    const SOCIAL: Attribute["social"][] = [
         "charisma",
         "manipulation",
         "appearance"
     ];
 
-    const MENTAL: AttributeMental[] = [
+    const MENTAL: Attribute["mental"][] = [
         "intelligence",
         "perception",
         "wits"
@@ -49,7 +49,7 @@ export function Attributes ({
             [
                 {
                     "title": t("characteristics.attributes.physical.title"),
-                    "characteristics": PHYSICAL.map((attribute: AttributePhysical): NamedUsedCharacteristic => {
+                    "characteristics": PHYSICAL.map((attribute: Attribute["physical"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,
@@ -63,7 +63,7 @@ export function Attributes ({
                 },
                 {
                     "title": t("characteristics.attributes.social.title"),
-                    "characteristics": SOCIAL.map((attribute: AttributeSocial): NamedUsedCharacteristic => {
+                    "characteristics": SOCIAL.map((attribute: Attribute["social"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,
@@ -77,7 +77,7 @@ export function Attributes ({
                 },
                 {
                     "title": t("characteristics.attributes.mental.title"),
-                    "characteristics": MENTAL.map((attribute: AttributeMental): NamedUsedCharacteristic => {
+                    "characteristics": MENTAL.map((attribute: Attribute["mental"]): NamedUsedCharacteristic => {
 
                         return {
                             "code": attribute,

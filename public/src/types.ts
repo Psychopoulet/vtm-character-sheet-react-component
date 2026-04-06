@@ -16,7 +16,8 @@ export interface Ability {
 }
 
 export interface Advantage {
-    "discipline": "alienation" | "animalism" | "auspex" | "bardo" | "celerity" | "chimery" | "daimoinon" | "domination" | "fortitude" | "kineticism" | "melpominee" | "necromancy" | "obtenebration" | "occultation" | "potence" | "presence" | "protean" | "quietus" | "sanguinus" | "serpentis" | "spiritus" | "thanatose" | "thaumaturgy" | "vicissitude";
+    "discipline": "alienation" | "animalism" | "auspex" | "bardo" | "celerity" | "chimery" | "daimoinon" | "domination" | "fortitude" | "kineticism" | "melpominee" | "mytherceria" | "necromancy" | "obeah" | "obtenebration" | "occultation" | "ogham"
+        | "potence" | "presence" | "protean" | "quietus" | "sanguinus" | "serpentis" | "spiritus" | "temporis" | "thanatose" | "thaumaturgy" | "valeren" | "vicissitude" | "visceratika";
     "background": "Troupeau" | "Génération" | "Ressources" | "Concacts" | "Influence" | "Statut" | "Alliés" | "Mentor";
     "virtue": "Conscience/Conviction" | "Maîtrise de soi / Instinct" | "Courage";
 }

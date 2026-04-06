@@ -87,9 +87,12 @@
                 "fortitude": "fortitude",
                 "kineticism": "kineticism",
                 "melpominee": "melpominee",
+                "mytherceria": "mytherceria",
                 "necromancy": "necromancy",
+                "obeah": "obeah",
                 "obtenebration": "obtenebration",
                 "occultation": "occultation",
+                "ogham": "ogham",
                 "potence": "potence",
                 "presence": "presence",
                 "protean": "protean",
@@ -97,9 +100,12 @@
                 "sanguinus": "sanguinus",
                 "serpentis": "serpentis",
                 "spiritus": "spiritus",
+                "temporis": "temporis",
                 "thanatose": "thanatose",
                 "thaumaturgy": "thaumaturgy",
-                "vicissitude": "vicissitude"
+                "valeren": "valeren",
+                "vicissitude": "vicissitude",
+                "visceratika": "visceratika"
             },
             "backgrounds": {
                 "title": "backgrounds"

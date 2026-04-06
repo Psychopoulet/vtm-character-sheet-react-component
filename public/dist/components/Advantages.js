@@ -19,9 +19,12 @@ export function Advantages({ characteristics }) {
         "fortitude",
         "kineticism",
         "melpominee",
+        "mytherceria",
         "necromancy",
+        "obeah",
         "obtenebration",
         "occultation",
+        "ogham",
         "potence",
         "presence",
         "protean",
@@ -29,9 +32,12 @@ export function Advantages({ characteristics }) {
         "sanguinus",
         "serpentis",
         "spiritus",
+        "temporis",
         "thanatose",
         "thaumaturgy",
-        "vicissitude"
+        "valeren",
+        "vicissitude",
+        "visceratika"
     ];
     const BACKGROUNDS = [
         "Troupeau",

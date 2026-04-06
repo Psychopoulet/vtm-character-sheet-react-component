@@ -36,9 +36,12 @@ export function Advantages ({
         "fortitude",
         "kineticism",
         "melpominee",
+        "mytherceria",
         "necromancy",
+        "obeah",
         "obtenebration",
         "occultation",
+        "ogham",
         "potence",
         "presence",
         "protean",
@@ -46,9 +49,12 @@ export function Advantages ({
         "sanguinus",
         "serpentis",
         "spiritus",
+        "temporis",
         "thanatose",
         "thaumaturgy",
-        "vicissitude"
+        "valeren",
+        "vicissitude",
+        "visceratika"
     ];
 
     const BACKGROUNDS: Advantage["background"][] = [

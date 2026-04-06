@@ -6,6 +6,7 @@
 
     // locals
     import styles from "./Willpower.module.css";
+    import type { WillpowerValue } from "../types";
 
     export interface WillpowerProps {
 

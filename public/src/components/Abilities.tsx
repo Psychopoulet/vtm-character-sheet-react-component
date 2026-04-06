@@ -74,13 +74,13 @@ export function Abilities ({
             [
                 {
                     "title": t("characteristics.abilities.talents.title"),
-                    "characteristics": TALENTS.map((attribute: Ability["talent"]): NamedUsedCharacteristic => {
+                    "characteristics": TALENTS.map((ability: Ability["talent"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.abilities.talents.${ attribute }`),
+                            "code": ability,
+                            "name": t(`characteristics.abilities.talents.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === ability;
                             })?.value
                         };
 
@@ -88,13 +88,13 @@ export function Abilities ({
                 },
                 {
                     "title": t("characteristics.abilities.skills.title"),
-                    "characteristics": SKILLS.map((attribute: Ability["skill"]): NamedUsedCharacteristic => {
+                    "characteristics": SKILLS.map((ability: Ability["skill"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.abilities.skills.${ attribute }`),
+                            "code": ability,
+                            "name": t(`characteristics.abilities.skills.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === ability;
                             })?.value
                         };
 
@@ -102,13 +102,13 @@ export function Abilities ({
                 },
                 {
                     "title": t("characteristics.abilities.knowledges.title"),
-                    "characteristics": KNOWLEDGES.map((attribute: Ability["knowledge"]): NamedUsedCharacteristic => {
+                    "characteristics": KNOWLEDGES.map((ability: Ability["knowledge"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.abilities.knowledges.${ attribute }`),
+                            "code": ability,
+                            "name": t(`characteristics.abilities.knowledges.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === ability;
                             })?.value
                         };
 

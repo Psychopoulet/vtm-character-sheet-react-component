@@ -4,6 +4,7 @@
     "player": "player",
     "clan": "clan",
     "secte": "secte",
+    "generation": "generation",
     "characteristics": {
         "attributes": {
             "title": "attributes",

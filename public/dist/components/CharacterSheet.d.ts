@@ -1,21 +1,22 @@
 import React from "react";
-import type { Secte, Clan, UsedCharacteristic } from "../types";
+import type { Secte, Clan, GenerationValue, BloodValue, HumanityValue, WillpowerValue, UsedCharacteristic } from "../types";
 export interface CharacterSheetProps {
     "name": string;
     "player": string;
     "secte": Secte;
     "clan": Clan;
+    "generation": GenerationValue;
     "characteristics"?: UsedCharacteristic[];
     "bloodPool"?: {
-        "current"?: number;
-        "characterMax"?: number;
+        "current"?: BloodValue;
+        "characterMax"?: BloodValue;
     };
-    "humanity"?: number;
+    "humanity"?: HumanityValue;
     "willpower"?: {
-        "current"?: number;
-        "characterMax"?: number;
+        "current"?: WillpowerValue;
+        "characterMax"?: WillpowerValue;
     };
     "dammages"?: number;
 }
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
-export declare function CharacterSheet({ name, player, secte, clan, characteristics, bloodPool, humanity, willpower, dammages }: CharacterSheetProps): React.JSX.Element;
+export declare function CharacterSheet({ name, player, secte, clan, generation, characteristics, bloodPool, humanity, willpower, dammages }: CharacterSheetProps): React.JSX.Element;

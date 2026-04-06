@@ -6,6 +6,7 @@
 
     // locals
     import styles from "./Humanity.module.css";
+    import type { HumanityValue } from "../types";
 
     /** Classic Humanity / Path track is 1–10. */
     export const HUMANITY_MAX = 10;
@@ -13,7 +14,7 @@
     export interface HumanityProps {
 
       /** Current Humanity rating (0 … HUMANITY_MAX). */
-      "value": number;
+      "value": HumanityValue;
 
     }
 

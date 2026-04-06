@@ -13,7 +13,7 @@ import { Abilities } from "./Abilities";
 import { Advantages } from "./Advantages";
 // module
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
-export function CharacterSheet({ name, player, secte, clan, characteristics = [], bloodPool = {
+export function CharacterSheet({ name, player, secte, clan, generation, characteristics = [], bloodPool = {
     "current": 15,
     "characterMax": 15
 }, humanity = 7, willpower = {
@@ -34,7 +34,10 @@ export function CharacterSheet({ name, player, secte, clan, characteristics = []
                 React.createElement("span", { className: styles.fieldLine }, clan)),
             React.createElement("div", { className: styles.fieldPair },
                 React.createElement("span", { className: styles.fieldLabel }, t("secte")),
-                React.createElement("span", { className: styles.fieldLine }, secte))),
+                React.createElement("span", { className: styles.fieldLine }, secte)),
+            React.createElement("div", { className: styles.fieldPair },
+                React.createElement("span", { className: styles.fieldLabel }, t("generation")),
+                React.createElement("span", { className: styles.fieldLine }, generation))),
         React.createElement(Attributes, { characteristics: characteristics }),
         React.createElement(Abilities, { characteristics: characteristics }),
         React.createElement(Advantages, { characteristics: characteristics }),

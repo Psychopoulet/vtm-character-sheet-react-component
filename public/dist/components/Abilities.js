@@ -50,36 +50,36 @@ export function Abilities({ characteristics }) {
     return React.createElement(Characteristics, { title: t("characteristics.abilities.title"), globalMinValue: 0, cols: [
             {
                 "title": t("characteristics.abilities.talents.title"),
-                "characteristics": TALENTS.map((attribute) => {
+                "characteristics": TALENTS.map((ability) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.abilities.talents.${attribute}`),
+                        "code": ability,
+                        "name": t(`characteristics.abilities.talents.${ability}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === ability;
                         })?.value
                     };
                 })
             },
             {
                 "title": t("characteristics.abilities.skills.title"),
-                "characteristics": SKILLS.map((attribute) => {
+                "characteristics": SKILLS.map((ability) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.abilities.skills.${attribute}`),
+                        "code": ability,
+                        "name": t(`characteristics.abilities.skills.${ability}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === ability;
                         })?.value
                     };
                 })
             },
             {
                 "title": t("characteristics.abilities.knowledges.title"),
-                "characteristics": KNOWLEDGES.map((attribute) => {
+                "characteristics": KNOWLEDGES.map((ability) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.abilities.knowledges.${attribute}`),
+                        "code": ability,
+                        "name": t(`characteristics.abilities.knowledges.${ability}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === ability;
                         })?.value
                     };
                 })

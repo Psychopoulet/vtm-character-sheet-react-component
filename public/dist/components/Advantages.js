@@ -57,24 +57,32 @@ export function Advantages({ characteristics }) {
     return React.createElement(Characteristics, { title: t("characteristics.advantages.title"), globalMinValue: 0, cols: [
             {
                 "title": t("characteristics.advantages.disciplines.title"),
-                "characteristics": DISCIPLINES.map((attribute) => {
+                "characteristics": DISCIPLINES.filter((advantage) => {
+                    return characteristics.some((characteristic) => {
+                        return characteristic.code === advantage;
+                    });
+                }).map((advantage) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.advantages.disciplines.${attribute}`),
+                        "code": advantage,
+                        "name": t(`characteristics.advantages.disciplines.${advantage}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === advantage;
                         })?.value
                     };
                 })
             },
             {
                 "title": t("characteristics.advantages.backgrounds.title"),
-                "characteristics": BACKGROUNDS.map((attribute) => {
+                "characteristics": BACKGROUNDS.filter((advantage) => {
+                    return characteristics.some((characteristic) => {
+                        return characteristic.code === advantage;
+                    });
+                }).map((advantage) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.advantages.backgrounds.${attribute}`),
+                        "code": advantage,
+                        "name": t(`characteristics.advantages.backgrounds.${advantage}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === advantage;
                         })?.value
                     };
                 })
@@ -82,12 +90,16 @@ export function Advantages({ characteristics }) {
             {
                 "title": t("characteristics.advantages.virtues.title"),
                 "minValue": 1,
-                "characteristics": VIRTUES.map((attribute) => {
+                "characteristics": VIRTUES.filter((advantage) => {
+                    return characteristics.some((characteristic) => {
+                        return characteristic.code === advantage;
+                    });
+                }).map((advantage) => {
                     return {
-                        "code": attribute,
-                        "name": t(`characteristics.advantages.virtues.${attribute}`),
+                        "code": advantage,
+                        "name": t(`characteristics.advantages.virtues.${advantage}`),
                         "value": characteristics.find((characteristic) => {
-                            return characteristic.code === attribute;
+                            return characteristic.code === advantage;
                         })?.value
                     };
                 })

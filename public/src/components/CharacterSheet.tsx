@@ -17,22 +17,23 @@
 // types & interfaces
 
     // locals
-    import type { Secte, Clan, UsedCharacteristic } from "../types";
+    import type { Secte, Clan, GenerationValue, BloodValue, HumanityValue, WillpowerValue, UsedCharacteristic } from "../types";
 
     export interface CharacterSheetProps {
         "name": string;
         "player": string;
         "secte": Secte;
         "clan": Clan;
+        "generation": GenerationValue;
         "characteristics"?: UsedCharacteristic[];
         "bloodPool"?: {
-            "current"?: number;
-            "characterMax"?: number;
+            "current"?: BloodValue;
+            "characterMax"?: BloodValue;
         }
-        "humanity"?: number;
+        "humanity"?: HumanityValue;
         "willpower"?: {
-            "current"?: number;
-            "characterMax"?: number;
+            "current"?: WillpowerValue;
+            "characterMax"?: WillpowerValue;
         }
         "dammages"?: number;
     }
@@ -45,6 +46,7 @@ export function CharacterSheet ({
     player,
     secte,
     clan,
+    generation,
     characteristics = [],
     bloodPool = {
         "current": 15,
@@ -85,6 +87,11 @@ export function CharacterSheet ({
             <div className={ styles.fieldPair }>
                 <span className={ styles.fieldLabel }>{ t("secte") }</span>
                 <span className={ styles.fieldLine }>{ secte }</span>
+            </div>
+
+            <div className={ styles.fieldPair }>
+                <span className={ styles.fieldLabel }>{ t("generation") }</span>
+                <span className={ styles.fieldLine }>{ generation }</span>
             </div>
 
         </header>

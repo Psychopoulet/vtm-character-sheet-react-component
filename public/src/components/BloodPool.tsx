@@ -6,18 +6,19 @@
 
     // locals
     import styles from "./BloodPool.module.css";
+    import type { BloodValue } from "../types";
 
     export interface BloodPoolProps {
 
         /** Current blood in the pool (filled cells from the start of the grid, e.g. remaining points). */
-        "current": number;
+        "current": BloodValue;
 
         /** Maximum blood pool capacity for the character. */
-        "max": number;
+        "max": BloodValue;
 
     }
 
-    /** Classic Blood Pool  track is 1–40. */
+    /** Classic Blood Pool track is 1–40. */
     export const BLOOD_POOL_MAX = 40;
 
 // module

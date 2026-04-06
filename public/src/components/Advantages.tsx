@@ -81,13 +81,19 @@ export function Advantages ({
             [
                 {
                     "title": t("characteristics.advantages.disciplines.title"),
-                    "characteristics": DISCIPLINES.map((attribute: Advantage["discipline"]): NamedUsedCharacteristic => {
+                    "characteristics": DISCIPLINES.filter((advantage: Advantage["discipline"]): boolean => {
+
+                        return characteristics.some((characteristic: UsedCharacteristic): boolean => {
+                            return characteristic.code === advantage;
+                        });
+
+                    }).map((advantage: Advantage["discipline"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.advantages.disciplines.${ attribute }`),
+                            "code": advantage,
+                            "name": t(`characteristics.advantages.disciplines.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === advantage;
                             })?.value
                         };
 
@@ -95,13 +101,19 @@ export function Advantages ({
                 },
                 {
                     "title": t("characteristics.advantages.backgrounds.title"),
-                    "characteristics": BACKGROUNDS.map((attribute: Advantage["background"]): NamedUsedCharacteristic => {
+                    "characteristics": BACKGROUNDS.filter((advantage: Advantage["background"]): boolean => {
+
+                        return characteristics.some((characteristic: UsedCharacteristic): boolean => {
+                            return characteristic.code === advantage;
+                        });
+
+                    }).map((advantage: Advantage["background"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.advantages.backgrounds.${ attribute }`),
+                            "code": advantage,
+                            "name": t(`characteristics.advantages.backgrounds.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === advantage;
                             })?.value
                         };
 
@@ -110,13 +122,19 @@ export function Advantages ({
                 {
                     "title": t("characteristics.advantages.virtues.title"),
                     "minValue": 1,
-                    "characteristics": VIRTUES.map((attribute: Advantage["virtue"]): NamedUsedCharacteristic => {
+                    "characteristics": VIRTUES.filter((advantage: Advantage["virtue"]): boolean => {
+
+                        return characteristics.some((characteristic: UsedCharacteristic): boolean => {
+                            return characteristic.code === advantage;
+                        });
+
+                    }).map((advantage: Advantage["virtue"]): NamedUsedCharacteristic => {
 
                         return {
-                            "code": attribute,
-                            "name": t(`characteristics.advantages.virtues.${ attribute }`),
+                            "code": advantage,
+                            "name": t(`characteristics.advantages.virtues.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
-                                return characteristic.code === attribute;
+                                return characteristic.code === advantage;
                             })?.value
                         };
 

@@ -1,6 +1,7 @@
 // deps
 // externals
 import React from "react";
+import { useTranslation } from "react-i18next";
 // locals
 import styles from "./HealthTrack.module.css";
 // consts
@@ -48,6 +49,7 @@ function BoxCell({ traits }) {
 // module
 /** Classic health strip with wound penalties matching the official PDF order. */
 export function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
+    const { t } = useTranslation();
     const normalizedStages = stages.map((stage) => {
         return {
             ...stage,
@@ -58,7 +60,10 @@ export function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
     return React.createElement("section", { className: [styles.wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
-        React.createElement("h3", { className: styles.title }, "Health"),
+        React.createElement("h3", { className: styles.title },
+            " ",
+            t("health"),
+            " "),
         React.createElement("div", { className: styles.table }, rendered.map((stage) => {
             return React.createElement("div", { key: stage.label, className: styles.row },
                 React.createElement("div", { className: styles.stageLabel }, stage.label),

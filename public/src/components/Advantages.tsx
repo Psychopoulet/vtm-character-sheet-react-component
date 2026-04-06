@@ -25,13 +25,30 @@ export function Advantages ({
     const { t } = useTranslation();
 
     const DISCIPLINES: Advantage["discipline"][] = [
-      "Domination",
-      "Force d'âme",
-      "Présence",
-      "Aliénation",
-      "Célérité",
-      "Occultation",
-      "Occultisme"
+        "alienation",
+        "animalism",
+        "auspex",
+        "bardo",
+        "celerity",
+        "chimery",
+        "daimoinon",
+        "domination",
+        "fortitude",
+        "kineticism",
+        "melpominee",
+        "necromancy",
+        "obtenebration",
+        "occultation",
+        "potence",
+        "presence",
+        "protean",
+        "quietus",
+        "sanguinus",
+        "serpentis",
+        "spiritus",
+        "thanatose",
+        "thaumaturgy",
+        "vicissitude"
     ];
 
     const BACKGROUNDS: Advantage["background"][] = [

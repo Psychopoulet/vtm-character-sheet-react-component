@@ -27,13 +27,13 @@ export function Abilities ({
     const TALENTS: Ability["talent"][] = [
       "alertness",
       "athletics",
-      "awareness",
       "brawl",
       "dodge",
       "empathy",
       "expression",
       "intimidation",
       "leadership",
+      "legerdemain",
       "streetwise",
       "subterfuge"
     ];
@@ -42,6 +42,7 @@ export function Abilities ({
       "animal_ken",
       "crafts",
       "etiquette",
+      "drive",
       "firearms",
       "larceny",
       "melee",
@@ -53,6 +54,8 @@ export function Abilities ({
 
     const KNOWLEDGES: Ability["knowledge"][] = [
       "academics",
+      "awareness",
+      "enigmas",
       "finance",
       "investigation",
       "law",

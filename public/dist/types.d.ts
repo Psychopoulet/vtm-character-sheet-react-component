@@ -6,12 +6,12 @@ export interface Attribute {
     "mental": "intelligence" | "perception" | "wits";
 }
 export interface Ability {
-    "talent": "alertness" | "athletics" | "awareness" | "brawl" | "dodge" | "empathy" | "expression" | "intimidation" | "leadership" | "streetwise" | "subterfuge";
-    "skill": "animal_ken" | "crafts" | "etiquette" | "firearms" | "larceny" | "melee" | "performance" | "ride" | "stealth" | "survival";
-    "knowledge": "academics" | "finance" | "investigation" | "law" | "linguistics" | "medicine" | "occult" | "politics" | "science" | "technology";
+    "talent": "alertness" | "athletics" | "brawl" | "dodge" | "empathy" | "expression" | "intimidation" | "leadership" | "legerdemain" | "streetwise" | "subterfuge";
+    "skill": "animal_ken" | "crafts" | "etiquette" | "drive" | "firearms" | "larceny" | "melee" | "performance" | "ride" | "stealth" | "survival";
+    "knowledge": "academics" | "awareness" | "enigmas" | "finance" | "investigation" | "law" | "linguistics" | "medicine" | "occult" | "politics" | "science" | "technology";
 }
 export interface Advantage {
-    "discipline": "Domination" | "Force d'âme" | "Présence" | "Aliénation" | "Célérité" | "Occultation" | "Occultisme";
+    "discipline": "alienation" | "animalism" | "auspex" | "bardo" | "celerity" | "chimery" | "daimoinon" | "domination" | "fortitude" | "kineticism" | "melpominee" | "necromancy" | "obtenebration" | "occultation" | "potence" | "presence" | "protean" | "quietus" | "sanguinus" | "serpentis" | "spiritus" | "thanatose" | "thaumaturgy" | "vicissitude";
     "background": "Troupeau" | "Génération" | "Ressources" | "Concacts" | "Influence" | "Statut" | "Alliés" | "Mentor";
     "virtue": "Conscience/Conviction" | "Maîtrise de soi / Instinct" | "Courage";
 }

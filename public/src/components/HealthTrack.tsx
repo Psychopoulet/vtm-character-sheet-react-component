@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import styles from "./HealthTrack.module.css";
@@ -94,7 +95,7 @@ function BoxCell ({ traits }: { "traits": number }): React.JSX.Element {
     return <div
         className={ styles.marker}
         role="group"
-        aria-label={`Health box with ${level} of ${TRAITS_PER_BOX} damages` }
+        aria-label={ `Health box with ${level} of ${TRAITS_PER_BOX} damages` }
     >
 
         <div className={ styles.traits } aria-hidden>
@@ -123,6 +124,8 @@ export function HealthTrack ({
     className
 }: HealthTrackProps): React.JSX.Element {
 
+    const { t } = useTranslation();
+
     const normalizedStages = stages.map((stage) => {
 
         return {
@@ -141,7 +144,7 @@ export function HealthTrack ({
         aria-label={ `Health track, ${filled} of ${maxDamage} levels marked` }
     >
 
-        <h3 className={ styles.title }>Health</h3>
+        <h3 className={ styles.title }> { t("health") } </h3>
 
         <div className={ styles.table }>
 

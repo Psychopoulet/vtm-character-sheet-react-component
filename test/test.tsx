@@ -58,7 +58,7 @@ class App extends React.Component<{}> {
 
 					// skills
 					{ "code": "firearms", "value": 2 },
-					{ "code": "ride", "value": 2 },
+					{ "code": "drive", "value": 2 },
 					{ "code": "etiquette", "value": 3 },
 					{ "code": "melee", "value": 5 },
 					{ "code": "performance", "value": 3 },
@@ -76,14 +76,12 @@ class App extends React.Component<{}> {
 
 					// disciplines
 
-					{ "code": "Domination", "value": 3 },
-					{ "code": "Force d'âme", "value": 3 },
-					{ "code": "Présence", "value": 4 },
-
-					{ "code": "Aliénation", "value": 1 },
-					{ "code": "Célérité", "value": 3 },
-					{ "code": "Occultation", "value": 1 },
-					{ "code": "Occultisme", "value": 1 },
+					{ "code": "domination", "value": 3 },
+					{ "code": "fortitude", "value": 3 },
+					{ "code": "presence", "value": 4 },
+					{ "code": "alienation", "value": 1 },
+					{ "code": "celerity", "value": 3 },
+					{ "code": "occultation", "value": 1 },
 
 					// backgrounds
 

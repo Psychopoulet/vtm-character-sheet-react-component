@@ -2,6 +2,7 @@
 
     // externals
     import React from "react";
+    import { useTranslation } from "react-i18next";
 
     // locals
     import styles from "./BloodPool.module.css";
@@ -27,14 +28,16 @@ export function BloodPool ({
     max
 }: BloodPoolProps): React.JSX.Element {
 
+    const { t } = useTranslation();
+
     return <section
         className={ styles.wrap }
-        aria-label={`Points de sang: ${current} of ${max}`}
+        aria-label={ t("bloodpool") + `: ${current} of ${max}` }
     >
 
         <header className={styles.header}>
 
-            <h3 className={styles.title}>Points de sang</h3>
+            <h3 className={styles.title}> { t("bloodpool")} </h3>
 
             <p className={styles.values}>
                 <span className={styles.current}>{current}</span>

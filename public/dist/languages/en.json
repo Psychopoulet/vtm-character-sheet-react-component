@@ -32,13 +32,13 @@
                 "title": "talents",
                 "alertness": "alertness",
                 "athletics": "athletics",
-                "awareness": "awareness",
                 "brawl": "brawl",
                 "dodge": "dodge",
                 "empathy": "empathy",
                 "expression": "expression",
                 "intimidation": "intimidation",
                 "leadership": "leadership",
+                "legerdemain": "legerdemain",
                 "streetwise": "streetwise",
                 "subterfuge": "subterfuge"
             },
@@ -46,6 +46,7 @@
                 "title": "skills",
                 "animal_ken": "animal ken",
                 "crafts": "crafts",
+                "drive": "drive",
                 "etiquette": "etiquette",
                 "firearms": "firearms",
                 "larceny": "larceny",
@@ -58,6 +59,8 @@
             "knowledges": {
                 "title": "knowledges",
                 "academics": "academics",
+                "awareness": "awareness",
+                "enigmas": "enigmas",
                 "finance": "finance",
                 "investigation": "investigation",
                 "law": "law",
@@ -72,7 +75,31 @@
         "advantages": {
             "title": "advantages",
             "disciplines": {
-                "title": "disciplines"
+                "title": "disciplines",
+                "alienation": "alienation",
+                "animalism": "animalism",
+                "auspex": "auspex",
+                "bardo": "bardo",
+                "celerity": "celerity",
+                "chimery": "chimery",
+                "daimoinon": "daimoinon",
+                "domination": "domination",
+                "fortitude": "fortitude",
+                "kineticism": "kineticism",
+                "melpominee": "melpominee",
+                "necromancy": "necromancy",
+                "obtenebration": "obtenebration",
+                "occultation": "occultation",
+                "potence": "potence",
+                "presence": "presence",
+                "protean": "protean",
+                "quietus": "quietus",
+                "sanguinus": "sanguinus",
+                "serpentis": "serpentis",
+                "spiritus": "spiritus",
+                "thanatose": "thanatose",
+                "thaumaturgy": "thaumaturgy",
+                "vicissitude": "vicissitude"
             },
             "backgrounds": {
                 "title": "backgrounds"
@@ -83,5 +110,7 @@
         },
         "humanity": "humanity",
         "willpower": "willpower"
-    }
+    },
+    "bloodpool": "blood pool",
+    "healt": "health"
 }

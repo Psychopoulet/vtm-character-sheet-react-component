@@ -10,13 +10,13 @@ export function Abilities({ characteristics }) {
     const TALENTS = [
         "alertness",
         "athletics",
-        "awareness",
         "brawl",
         "dodge",
         "empathy",
         "expression",
         "intimidation",
         "leadership",
+        "legerdemain",
         "streetwise",
         "subterfuge"
     ];
@@ -24,6 +24,7 @@ export function Abilities({ characteristics }) {
         "animal_ken",
         "crafts",
         "etiquette",
+        "drive",
         "firearms",
         "larceny",
         "melee",
@@ -34,6 +35,8 @@ export function Abilities({ characteristics }) {
     ];
     const KNOWLEDGES = [
         "academics",
+        "awareness",
+        "enigmas",
         "finance",
         "investigation",
         "law",

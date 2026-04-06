@@ -32,11 +32,11 @@
                 "title": "talents",
                 "alertness": "vigilance",
                 "athletics": "athlétisme",
-                "awareness": "vigilance",
                 "brawl": "bagarre",
                 "dodge": "esquive",
                 "empathy": "empathie",
                 "expression": "expression",
+                "legerdemain": "prestidigitation",
                 "intimidation": "intimidation",
                 "leadership": "commandement",
                 "streetwise": "expression de la rue",
@@ -47,17 +47,20 @@
                 "animal_ken": "animaux",
                 "crafts": "artisanat",
                 "etiquette": "étiquette",
+                "drive": "conduite",
                 "firearms": "armes à feu",
                 "larceny": "furtivité",
                 "melee": "mêlée",
                 "performance": "représentation",
-                "ride": "conduite",
+                "ride": "monter",
                 "stealth": "sécurité",
                 "survival": "survie"
             },
             "knowledges": {
                 "title": "connaissances",
                 "academics": "érudition",
+                "awareness": "conscience",
+                "enigmas": "énigmes",
                 "finance": "finance",
                 "investigation": "investigation",
                 "law": "loi",
@@ -66,13 +69,37 @@
                 "occult": "occultisme",
                 "politics": "politique",
                 "science": "science",
-                "technology": "informatique"
+                "technology": "technologie"
             }
         },
         "advantages": {
             "title": "avantages",
             "disciplines": {
-                "title": "disciplines"
+                "title": "disciplines",
+                "alienation": "aliénation",
+                "animalism": "animalisme",
+                "auspex": "augure",
+                "bardo": "bardo",
+                "celerity": "célérité",
+                "chimery": "chimérie",
+                "daimoinon": "daïmoïnon",
+                "domination": "domination",
+                "fortitude": "force d'âme",
+                "kineticism": "cinétique",
+                "melpominee": "melpominée",
+                "necromancy": "nécromancie",
+                "obtenebration": "obténébration",
+                "occultation": "occultation",
+                "potence": "puissance",
+                "presence": "présence",
+                "protean": "protéisme",
+                "quietus": "silence",
+                "sanguinus": "sanguinus",
+                "serpentis": "serpentis",
+                "spiritus": "spiritus",
+                "thanatose": "thanatosis",
+                "thaumaturgy": "thaumaturgie",
+                "vicissitude": "vicissitude"
             },
             "backgrounds": {
                 "title": "historiques"
@@ -83,5 +110,7 @@
         },
         "humanity": "humanité",
         "willpower": "volonté"
-    }
+    },
+    "bloodpool": "points de sang",
+    "health": "santé"
 }

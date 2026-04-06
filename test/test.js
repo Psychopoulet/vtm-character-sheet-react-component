@@ -31996,13 +31996,13 @@ function Abilities({ characteristics }) {
     const TALENTS = [
         "alertness",
         "athletics",
-        "awareness",
         "brawl",
         "dodge",
         "empathy",
         "expression",
         "intimidation",
         "leadership",
+        "legerdemain",
         "streetwise",
         "subterfuge"
     ];
@@ -32010,6 +32010,7 @@ function Abilities({ characteristics }) {
         "animal_ken",
         "crafts",
         "etiquette",
+        "drive",
         "firearms",
         "larceny",
         "melee",
@@ -32020,6 +32021,8 @@ function Abilities({ characteristics }) {
     ];
     const KNOWLEDGES = [
         "academics",
+        "awareness",
+        "enigmas",
         "finance",
         "investigation",
         "law",
@@ -32098,13 +32101,30 @@ __webpack_require__.r(__webpack_exports__);
 function Advantages({ characteristics }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     const DISCIPLINES = [
-        "Domination",
-        "Force d'âme",
-        "Présence",
-        "Aliénation",
-        "Célérité",
-        "Occultation",
-        "Occultisme"
+        "alienation",
+        "animalism",
+        "auspex",
+        "bardo",
+        "celerity",
+        "chimery",
+        "daimoinon",
+        "domination",
+        "fortitude",
+        "kineticism",
+        "melpominee",
+        "necromancy",
+        "obtenebration",
+        "occultation",
+        "potence",
+        "presence",
+        "protean",
+        "quietus",
+        "sanguinus",
+        "serpentis",
+        "spiritus",
+        "thanatose",
+        "thaumaturgy",
+        "vicissitude"
     ];
     const BACKGROUNDS = [
         "Troupeau",
@@ -32261,9 +32281,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./BloodPool.module.css */ "./public/src/components/BloodPool.module.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BloodPool.module.css */ "./public/src/components/BloodPool.module.css");
 // deps
 // externals
+
 
 // locals
 
@@ -32272,15 +32294,19 @@ const BLOOD_POOL_MAX = 40;
 // module
 /** Blood pool grid: shows current vs max as filled / empty cells. */
 function BloodPool({ current, max }) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, "aria-label": `Points de sang: ${current} of ${max}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Points de sang"),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].current }, current),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].max }, max))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellFilled : _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].cellEmpty, "aria-hidden": true });
+    const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("bloodpool") + `: ${current} of ${max}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title },
+                " ",
+                t("bloodpool"),
+                " "),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, current),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, max))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -32413,9 +32439,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HealthTrack.module.css */ "./public/src/components/HealthTrack.module.css");
+/* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
+/* harmony import */ var _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HealthTrack.module.css */ "./public/src/components/HealthTrack.module.css");
 // deps
 // externals
+
 
 // locals
 
@@ -32456,14 +32484,15 @@ function applyDamage(template, totalDamage) {
 }
 function BoxCell({ traits }) {
     const level = clampTraits(traits);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traits, "aria-hidden": true }, Array.from({ "length": TRAITS_PER_BOX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOn : _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].traitOff });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traits, "aria-hidden": true }, Array.from({ "length": TRAITS_PER_BOX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traitOn : _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traitOff });
         })));
 }
 // module
 /** Classic health strip with wound penalties matching the official PDF order. */
 function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
+    const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     const normalizedStages = stages.map((stage) => {
         return {
             ...stage,
@@ -32473,13 +32502,16 @@ function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
     const rendered = applyDamage(normalizedStages, dammages);
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, "Health"),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].table }, rendered.map((stage) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].stageLabel }, stage.label),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].penalty }, stage.penalty ?? ""),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].markerRow }, stage.boxes.map((box, i) => {
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title },
+            " ",
+            t("health"),
+            " "),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].table }, rendered.map((stage) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].row },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].stageLabel }, stage.label),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].penalty }, stage.penalty ?? ""),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].markerRow }, stage.boxes.map((box, i) => {
                     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits });
                 })));
         })));
@@ -37434,7 +37466,7 @@ const withTranslation = (ns, options = {}) => function Extend(WrappedComponent) 
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","awareness":"awareness","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animal ken","crafts":"crafts","etiquette":"etiquette","firearms":"firearms","larceny":"larceny","melee":"melee","performance":"performance","ride":"ride","stealth":"stealth","survival":"survival"},"knowledges":{"title":"knowledges","academics":"academics","finance":"finance","investigation":"investigation","law":"law","linguistics":"linguistics","medicine":"medicine","occult":"occult","politics":"politics","science":"science","technology":"technology"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"backgrounds"},"virtues":{"title":"virtues"}},"humanity":"humanity","willpower":"willpower"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","legerdemain":"legerdemain","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animal ken","crafts":"crafts","drive":"drive","etiquette":"etiquette","firearms":"firearms","larceny":"larceny","melee":"melee","performance":"performance","ride":"ride","stealth":"stealth","survival":"survival"},"knowledges":{"title":"knowledges","academics":"academics","awareness":"awareness","enigmas":"enigmas","finance":"finance","investigation":"investigation","law":"law","linguistics":"linguistics","medicine":"medicine","occult":"occult","politics":"politics","science":"science","technology":"technology"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines","alienation":"alienation","animalism":"animalism","auspex":"auspex","bardo":"bardo","celerity":"celerity","chimery":"chimery","daimoinon":"daimoinon","domination":"domination","fortitude":"fortitude","kineticism":"kineticism","melpominee":"melpominee","necromancy":"necromancy","obtenebration":"obtenebration","occultation":"occultation","potence":"potence","presence":"presence","protean":"protean","quietus":"quietus","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","thanatose":"thanatose","thaumaturgy":"thaumaturgy","vicissitude":"vicissitude"},"backgrounds":{"title":"backgrounds"},"virtues":{"title":"virtues"}},"humanity":"humanity","willpower":"willpower"},"bloodpool":"blood pool","healt":"health"}');
 
 /***/ },
 
@@ -37445,7 +37477,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","n
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","awareness":"vigilance","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animaux","crafts":"artisanat","etiquette":"étiquette","firearms":"armes à feu","larceny":"furtivité","melee":"mêlée","performance":"représentation","ride":"conduite","stealth":"sécurité","survival":"survie"},"knowledges":{"title":"connaissances","academics":"érudition","finance":"finance","investigation":"investigation","law":"loi","linguistics":"linguistique","medicine":"médecine","occult":"occultisme","politics":"politique","science":"science","technology":"informatique"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines"},"backgrounds":{"title":"historiques"},"virtues":{"title":"vertus"}},"humanity":"humanité","willpower":"volonté"}}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":"clan","secte":"secte","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","legerdemain":"prestidigitation","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animaux","crafts":"artisanat","etiquette":"étiquette","drive":"conduite","firearms":"armes à feu","larceny":"furtivité","melee":"mêlée","performance":"représentation","ride":"monter","stealth":"sécurité","survival":"survie"},"knowledges":{"title":"connaissances","academics":"érudition","awareness":"conscience","enigmas":"énigmes","finance":"finance","investigation":"investigation","law":"loi","linguistics":"linguistique","medicine":"médecine","occult":"occultisme","politics":"politique","science":"science","technology":"technologie"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines","alienation":"aliénation","animalism":"animalisme","auspex":"augure","bardo":"bardo","celerity":"célérité","chimery":"chimérie","daimoinon":"daïmoïnon","domination":"domination","fortitude":"force d\'âme","kineticism":"cinétique","melpominee":"melpominée","necromancy":"nécromancie","obtenebration":"obténébration","occultation":"occultation","potence":"puissance","presence":"présence","protean":"protéisme","quietus":"silence","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","thanatose":"thanatosis","thaumaturgy":"thaumaturgie","vicissitude":"vicissitude"},"backgrounds":{"title":"historiques"},"virtues":{"title":"vertus"}},"humanity":"humanité","willpower":"volonté"},"bloodpool":"points de sang","health":"santé"}');
 
 /***/ }
 
@@ -37590,7 +37622,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "subterfuge", "value": 1 },
                 // skills
                 { "code": "firearms", "value": 2 },
-                { "code": "ride", "value": 2 },
+                { "code": "drive", "value": 2 },
                 { "code": "etiquette", "value": 3 },
                 { "code": "melee", "value": 5 },
                 { "code": "performance", "value": 3 },
@@ -37604,13 +37636,12 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "politics", "value": 4 },
                 // advantages
                 // disciplines
-                { "code": "Domination", "value": 3 },
-                { "code": "Force d'âme", "value": 3 },
-                { "code": "Présence", "value": 4 },
-                { "code": "Aliénation", "value": 1 },
-                { "code": "Célérité", "value": 3 },
-                { "code": "Occultation", "value": 1 },
-                { "code": "Occultisme", "value": 1 },
+                { "code": "domination", "value": 3 },
+                { "code": "fortitude", "value": 3 },
+                { "code": "presence", "value": 4 },
+                { "code": "alienation", "value": 1 },
+                { "code": "celerity", "value": 3 },
+                { "code": "occultation", "value": 1 },
                 // backgrounds
                 { "code": "Troupeau", "value": 5 },
                 { "code": "Génération", "value": 5 },

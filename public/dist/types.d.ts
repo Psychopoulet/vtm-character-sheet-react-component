@@ -1,11 +1,12 @@
-type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N ? Acc[number] : Enumerate<N, [...Acc, Acc['length']]>;
+type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] extends N ? Acc[number] : Enumerate<N, [...Acc, Acc["length"]]>;
 type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 export type Secte = "Sabbat" | "Camarilla" | "Independent";
 export type Clan = "Brujah" | "Gangrel" | "Malkavien" | "Nosferatu" | "Toreador" | "Tremere" | "Ventrue" | "Lasombra" | "Tzimisce" | "Assamite" | "Banu Haqim" | "Disciples de Set" | "Ravnos";
 export type GenerationValue = IntRange<1, 13>;
 export type BloodValue = IntRange<0, 40>;
-export type HumanityValue = IntRange<0, 10>;
+export type HumanityValue = IntRange<1, 10>;
 export type WillpowerValue = IntRange<0, 10>;
+export type ExperienceValue = IntRange<0, 50>;
 export interface Attribute {
     "physical": "strength" | "dexterity" | "stamina";
     "social": "charisma" | "manipulation" | "appearance";

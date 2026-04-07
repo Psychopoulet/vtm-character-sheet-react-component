@@ -5,6 +5,7 @@
     "clan": "clan",
     "secte": "secte",
     "generation": "generation",
+    "experience": "experience",
     "characteristics": {
         "attributes": {
             "title": "attributes",

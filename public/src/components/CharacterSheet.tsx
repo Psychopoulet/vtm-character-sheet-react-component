@@ -17,14 +17,15 @@
 // types & interfaces
 
     // locals
-    import type { Secte, Clan, GenerationValue, BloodValue, HumanityValue, WillpowerValue, UsedCharacteristic } from "../types";
+    import type { Secte, Clan, GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue, UsedCharacteristic } from "../types";
 
     export interface CharacterSheetProps {
         "name": string;
         "player": string;
         "secte": Secte;
         "clan": Clan;
-        "generation": GenerationValue;
+        "generation"?: GenerationValue;
+        "experience"?: ExperienceValue;
         "characteristics"?: UsedCharacteristic[];
         "bloodPool"?: {
             "current"?: BloodValue;
@@ -46,7 +47,8 @@ export function CharacterSheet ({
     player,
     secte,
     clan,
-    generation,
+    generation = 7,
+    experience = 0,
     characteristics = [],
     bloodPool = {
         "current": 15,
@@ -116,7 +118,18 @@ export function CharacterSheet ({
 
             </div>
 
-            <HealthTrack dammages={ dammages } />
+            <div className={ styles.rightCol }>
+
+                <HealthTrack dammages={ dammages } />
+
+                <div className={ styles.headerCol }>
+
+                    <span className={ styles.fieldLabel }>{ t("experience") }</span>
+                    <span className={ styles.fieldLine }>{ experience }</span>
+
+                </div>
+
+            </div>
 
         </div>
 

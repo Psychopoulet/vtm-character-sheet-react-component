@@ -27,6 +27,7 @@ class App extends React.Component<{}> {
 			name="Jacques-Henri Delafeuille" player="Sébastien VIDAL"
 			secte="Camarilla" clan="Ventrue"
 			generation={ 7 }
+			experience={ 5 }
 			characteristics={ [
 
 				// attributes

@@ -1,6 +1,6 @@
-type Enumerate<N extends number, Acc extends number[] = []> = Acc['length'] extends N
+type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] extends N
   ? Acc[number]
-  : Enumerate<N, [...Acc, Acc['length']]>
+  : Enumerate<N, [...Acc, Acc["length"]]>
 
 type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>
 
@@ -11,8 +11,9 @@ export type Clan = "Brujah" | "Gangrel" | "Malkavien" | "Nosferatu" | "Toreador"
 
 export type GenerationValue = IntRange<1, 13>;
 export type BloodValue = IntRange<0, 40>;
-export type HumanityValue = IntRange<0, 10>;
+export type HumanityValue = IntRange<1, 10>;
 export type WillpowerValue = IntRange<0, 10>;
+export type ExperienceValue = IntRange<0, 50>;
 
 export interface Attribute {
     "physical": "strength" | "dexterity" | "stamina";

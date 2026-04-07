@@ -15,8 +15,8 @@
   font-size: 0.6875rem;
   letter-spacing: 0.03em;
   text-transform: capitalize;
-  color: $color-ink;
-  border-bottom: 1px solid $color-border-strong;
+  color: $color-text;
+  border-bottom: 1px solid $color-border;
   padding-bottom: 0.125rem;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -41,11 +41,11 @@
 }
 
 .dotFilled {
-  background: $color-ink-strong;
-  border: 1px solid $color-ink-strong;
+  background: $color-text;
+  border: none;
 }
 
 .dotEmpty {
   background: transparent;
-  border: 1px solid $color-border-dot-empty;
+  border: 1px solid $color-border;
 }

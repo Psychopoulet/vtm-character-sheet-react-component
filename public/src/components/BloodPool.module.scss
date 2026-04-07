@@ -1,7 +1,10 @@
 @use "../styles/variables" as *;
 
+$color-blood-highlight: #5a1518;
+$color-blood-deep: #2a080a;
+
 .wrap {
-  border: 1px solid $color-border-strong;
+  border: 1px solid $color-border;
   padding: 0.75rem 1rem;
   background: $color-surface-panel;
 }
@@ -20,14 +23,14 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $color-ink-strong;
+  color: $color-text;
 }
 
 .values {
   margin: 0;
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
-  color: $color-ink-medium;
+  color: $color-text;
 }
 
 .current {
@@ -63,11 +66,10 @@
 
 .cellFilled {
   background: radial-gradient(circle at 35% 30%, $color-blood-highlight, $color-blood-deep);
-  border: 1px solid $color-blood-outline;
-  box-shadow: inset 0 0 0 1px $highlight-inset-soft;
+  border: none;
 }
 
 .cellEmpty {
   background: transparent;
-  border: 1px solid $color-border-muted;
+  border: 1px solid $color-border;
 }

@@ -1,46 +1,5 @@
-// Shared palette for the character sheet UI
+// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)
 
-// — Text —
-$color-ink: #1a1a1a;
-$color-ink-strong: #111;
-$color-ink-medium: #222;
-$color-ink-soft: #1f1f1f;
-$color-text-muted: #333;
-$color-text-penalty: #262626;
-
-// — Surfaces —
-$color-surface-sheet: #f0ebe3;
+$color-text: #1a1a1a;
+$color-border: #2a2a2a;
 $color-surface-panel: #faf8f5;
-$color-surface-stage: #f3efe8;
-$color-surface-penalty-cell: #f7f3ec;
-$color-surface-marker-row: #fcfaf7;
-$color-surface-white: #fff;
-
-// — Borders & rules —
-$color-border-ink: #1a1a1a;
-$color-border-strong: #2a2a2a;
-$color-border-rule: #222;
-$color-border-muted: #555;
-$color-border-dot-empty: #333;
-$color-border-trait-off: #9a9590;
-$color-border-marker: #2f2f2f;
-
-// — Blood pool (filled cells) —
-$color-blood-highlight: #5a1518;
-$color-blood-deep: #2a080a;
-$color-blood-outline: #1a0506;
-
-// — Willpower / humanity dots (blue) —
-$color-essence-highlight: #2a3a5c;
-$color-essence-deep: #151d2e;
-$color-essence-outline: #0a0f18;
-
-// — Trait / damage ticks —
-$color-trait-on-top: #2a2a2a;
-$color-trait-on-bottom: #111;
-
-// — Shadows & overlays —
-$shadow-sheet-offset: rgba(0, 0, 0, 0.08);
-$shadow-field-fade: rgba(0, 0, 0, 0.04);
-$highlight-inset-soft: rgba(255, 255, 255, 0.12);
-$highlight-inset-strong: rgba(255, 255, 255, 0.3);

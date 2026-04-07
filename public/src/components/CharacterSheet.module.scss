@@ -1,14 +1,16 @@
 @use "../styles/variables" as *;
 
+$color-surface-sheet: #f0ebe3;
+$shadow-field-fade: rgba(0, 0, 0, 0.04);
+
 .sheet {
   max-width: 42rem;
   margin: 0 auto;
   padding: 1.25rem;
   font-family: "Segoe UI", system-ui, sans-serif;
-  color: $color-ink;
+  color: $color-text;
   background: $color-surface-sheet;
-  border: 2px solid $color-border-ink;
-  box-shadow: 4px 4px 0 $shadow-sheet-offset;
+  border: 2px solid $color-border;
 }
 
 .header {
@@ -32,14 +34,14 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: $color-text-muted;
+  color: $color-text;
 }
 
 .fieldLine {
   min-width: 0;
   min-height: 1.25rem;
   line-height: 1.25rem;
-  border-bottom: 1px solid $color-border-rule;
+  border-bottom: 1px solid $color-border;
   background: linear-gradient(to bottom, transparent 70%, $shadow-field-fade);
 }
 
@@ -52,7 +54,7 @@
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: $color-text-muted;
+  color: $color-text;
 }
 
 .twoCol {

@@ -41,14 +41,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.OmtlvY4xHcSylDVosr6I {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #111;
+  color: #1a1a1a;
 }
 
 .WK32lXGQt88oOaB5Q_mp {
   margin: 0;
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
-  color: #222;
+  color: #1a1a1a;
 }
 
 .Pnme_B3H5SnMFwobRvjr {
@@ -84,14 +84,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.OmtlvY4xHcSylDVosr6I {
 
 .sbN5v2ID40xwcFj_Vmxr {
   background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);
-  border: 1px solid #1a0506;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  border: none;
 }
 
 .jQmXsaUHKyU8y7ZHQinv {
   background: transparent;
-  border: 1px solid #555;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,qBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,YAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,iBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.75rem 1rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-blood-highlight, $color-blood-deep);\r\n  border: 1px solid $color-blood-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+  border: 1px solid #2a2a2a;
+}`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAKA;EACE,yBAAA;EACA,qBAAA;EACA,mBCJoB;ADAtB;;AAOA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AAJF;;AAOA;EACE,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cCvBW;ADmBb;;AAOA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,cC9BW;AD0Bb;;AAOA;EACE,gBAAA;AAJF;;AAOA;EACE,iBAAA;EACA,aAAA;AAJF;;AAOA;EACE,gBAAA;AAJF;;AAOA;EACE,aAAA;EACA,YAAA;EACA,iDAAA;AAJF;;AAOA;;EAEE,eAAA;EACA,iBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AAJF;;AAOA;EACE,gEAAA;EACA,YAAA;AAJF;;AAOA;EACE,uBAAA;EACA,yBAAA;AAJF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border;\r\n  padding: 0.75rem 1rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-text;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-blood-highlight, $color-blood-deep);\r\n  border: none;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `OmtlvY4xHcSylDVosr6I`,
@@ -137,8 +136,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ywhNOULnsOEl6Yae3Ipq {
   font-family: "Segoe UI", system-ui, sans-serif;
   color: #1a1a1a;
   background: #f0ebe3;
-  border: 2px solid #1a1a1a;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);
+  border: 2px solid #2a2a2a;
 }
 
 .vq98Nfpm4y_WpcKm75qi {
@@ -162,14 +160,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ywhNOULnsOEl6Yae3Ipq {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .RV70SLuQa7ztPl0Wuu1W {
   min-width: 0;
   min-height: 1.25rem;
   line-height: 1.25rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #2a2a2a;
   background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));
 }
 
@@ -182,7 +180,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ywhNOULnsOEl6Yae3Ipq {
   font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .J5p5t8AGDADmOQVVgKuS {
@@ -210,7 +208,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ywhNOULnsOEl6Yae3Ipq {
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
-}`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,cAAA;EACA,gBAAA;EACA,8CAAA;EACA,cCJU;EDKV,mBCGoB;EDFpB,yBAAA;EACA,yCAAA;AADF;;AAIA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,aAAA;EACA,sCAAA;EACA,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,YAAA;AADF;;AAIA;EACE,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,yBAAA;EACA,WC3BiB;AD0BnB;;AAIA;EACE,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,6BAAA;EACA,4EAAA;AADF;;AAIA;EACE,mBAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WC/CiB;AD8CnB;;AAIA;EACE,aAAA;EACA,SAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,YAAA;EACA,YAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,oBAAA;EACA,YAAA;AADF;;AAIA;EACE;IACE,8BAAA;IACA,kBAAA;EADF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.sheet {\r\n  max-width: 42rem;\r\n  margin: 0 auto;\r\n  padding: 1.25rem;\r\n  font-family: \"Segoe UI\", system-ui, sans-serif;\r\n  color: $color-ink;\r\n  background: $color-surface-sheet;\r\n  border: 2px solid $color-border-ink;\r\n  box-shadow: 4px 4px 0 $shadow-sheet-offset;\r\n}\r\n\r\n.header {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 1rem;\r\n  margin-bottom: 1.25rem;\r\n}\r\n\r\n.headerCol {\r\n  display: grid;\r\n  grid-template-columns: max-content 1fr;\r\n  column-gap: 0.5rem;\r\n  row-gap: 0.65rem;\r\n  align-items: baseline;\r\n  min-width: 0;\r\n}\r\n\r\n.fieldLabel {\r\n  font-size: 0.65rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n}\r\n\r\n.fieldLine {\r\n  min-width: 0;\r\n  min-height: 1.25rem;\r\n  line-height: 1.25rem;\r\n  border-bottom: 1px solid $color-border-rule;\r\n  background: linear-gradient(to bottom, transparent 70%, $shadow-field-fade);\r\n}\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.sectionTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.14em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n}\r\n\r\n.twoCol {\r\n  display: grid;\r\n  gap: 1rem;\r\n}\r\n\r\n.sheetCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.75rem;\r\n  min-width: 0;\r\n}\r\n\r\n.rightCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  align-items: stretch;\r\n  min-width: 0;\r\n}\r\n\r\n@media (min-width: 36rem) {\r\n  .twoCol {\r\n    grid-template-columns: 1fr 1fr;\r\n    align-items: start;\r\n  }\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAKA;EACE,gBAAA;EACA,cAAA;EACA,gBAAA;EACA,8CAAA;EACA,cCRW;EDSX,mBAToB;EAUpB,yBAAA;AAJF;;AAOA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AAJF;;AAOA;EACE,aAAA;EACA,sCAAA;EACA,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,YAAA;AAJF;;AAOA;EACE,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,yBAAA;EACA,cClCW;AD8Bb;;AAOA;EACE,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,gCAAA;EACA,4EAAA;AAJF;;AAOA;EACE,mBAAA;AAJF;;AAOA;EACE,kBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cCtDW;ADkDb;;AAOA;EACE,aAAA;EACA,SAAA;AAJF;;AAOA;EACE,aAAA;EACA,sBAAA;EACA,YAAA;EACA,YAAA;AAJF;;AAOA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,oBAAA;EACA,YAAA;AAJF;;AAOA;EACE;IACE,8BAAA;IACA,kBAAA;EAJF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n$color-surface-sheet: #f0ebe3;\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n\r\n.sheet {\r\n  max-width: 42rem;\r\n  margin: 0 auto;\r\n  padding: 1.25rem;\r\n  font-family: \"Segoe UI\", system-ui, sans-serif;\r\n  color: $color-text;\r\n  background: $color-surface-sheet;\r\n  border: 2px solid $color-border;\r\n}\r\n\r\n.header {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 1rem;\r\n  margin-bottom: 1.25rem;\r\n}\r\n\r\n.headerCol {\r\n  display: grid;\r\n  grid-template-columns: max-content 1fr;\r\n  column-gap: 0.5rem;\r\n  row-gap: 0.65rem;\r\n  align-items: baseline;\r\n  min-width: 0;\r\n}\r\n\r\n.fieldLabel {\r\n  font-size: 0.65rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.fieldLine {\r\n  min-width: 0;\r\n  min-height: 1.25rem;\r\n  line-height: 1.25rem;\r\n  border-bottom: 1px solid $color-border;\r\n  background: linear-gradient(to bottom, transparent 70%, $shadow-field-fade);\r\n}\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.sectionTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.14em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.twoCol {\r\n  display: grid;\r\n  gap: 1rem;\r\n}\r\n\r\n.sheetCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.75rem;\r\n  min-width: 0;\r\n}\r\n\r\n.rightCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  align-items: stretch;\r\n  min-width: 0;\r\n}\r\n\r\n@media (min-width: 36rem) {\r\n  .twoCol {\r\n    grid-template-columns: 1fr 1fr;\r\n    align-items: start;\r\n  }\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"sheet": `ywhNOULnsOEl6Yae3Ipq`,
@@ -272,13 +270,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.SXdQHKhTJ32vYFe0GevQ {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
 }
 
 .apvC_ITG2pvAE8D51CpK {
   margin-top: 0.85rem;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,gDAAA;EACA,SAAA;EACA,kBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,YAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;EACA,yBAAA;EACA,WClBiB;EDmBjB,kBAAA;AADF;;AAIA;EACE,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.columns {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, minmax(0, 1fr));\r\n  gap: 1rem;\r\n  align-items: start;\r\n}\r\n\r\n.list {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.5rem;\r\n  min-width: 0;\r\n}\r\n\r\n.subTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n  text-align: center;\r\n}\r\n\r\n.titleSpacing {\r\n  margin-top: 0.85rem;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,gDAAA;EACA,SAAA;EACA,kBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,YAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;EACA,yBAAA;EACA,cCvBW;EDwBX,kBAAA;AADF;;AAIA;EACE,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.columns {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, minmax(0, 1fr));\r\n  gap: 1rem;\r\n  align-items: start;\r\n}\r\n\r\n.list {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.5rem;\r\n  min-width: 0;\r\n}\r\n\r\n.subTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n  text-align: center;\r\n}\r\n\r\n.titleSpacing {\r\n  margin-top: 0.85rem;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"section": `SXdQHKhTJ32vYFe0GevQ`,
@@ -326,7 +324,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #111;
+  color: #1a1a1a;
 }
 
 .Q_ZAzYaZDm6TmaH_4qso {
@@ -356,7 +354,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1;
-  color: #222;
+  color: #1a1a1a;
   background: #f3efe8;
 }
 
@@ -367,7 +365,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
   min-height: 1.65rem;
   font-size: 0.64rem;
   font-weight: 700;
-  color: #262626;
+  color: #1a1a1a;
   background: #f7f3ec;
 }
 
@@ -384,7 +382,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
   display: flex;
   width: 1.3rem;
   height: 1.3rem;
-  border: 1px solid #2f2f2f;
+  border: 1px solid #2a2a2a;
   border-radius: 1px;
   background: #fff;
   align-items: center;
@@ -410,19 +408,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
 }
 
 .dsnGY0PFfcJrGidFnImW {
-  background: linear-gradient(to bottom, #2a2a2a, #111);
+  background: #1a1a1a;
 }
 
 .byGclhtmC8UlOCEPv4a7 {
   background: transparent;
-  border: 1px dashed #9a9590;
+  border: 1px dashed #2a2a2a;
 }
 
 @media (max-width: 28rem) {
   .U8CzQ31qRAbJp5a2oqCZ {
     grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);
   }
-}`, "",{"version":3,"sources":["webpack://./public/src/components/HealthTrack.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,sBAAA;EACA,mBCOoB;EDNpB,YAAA;AADF;;AAIA;EACE,SAAA;EACA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WCZiB;ADWnB;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF;;AAIA;EACE,aAAA;EACA,uEAAA;EACA,oBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;AADF;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,wBAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cAAA;EACA,WCzCiB;ED0CjB,mBClCoB;ADiCtB;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;EACA,cCjDmB;EDkDnB,mBC5C2B;AD2C7B;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBCpDyB;ADmD3B;;AAIA;EACE,aAAA;EACA,aAAA;EACA,cAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBC5DoB;ED6DpB,mBAAA;EACA,uBAAA;EACA,kDAAA;AADF;;AAIA;EACE,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,cAAA;AADF;;AAIA;EACE,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,0BAAA;AADF;;AAIA;EACE;IACE,kEAAA;EADF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.6rem 0.7rem;\r\n  background: $color-surface-panel;\r\n  min-width: 0;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  margin-bottom: 0.45rem;\r\n  font-size: 0.72rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.table {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background: transparent;\r\n}\r\n\r\n.row {\r\n  display: grid;\r\n  grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);\r\n  align-items: stretch;\r\n  margin-top: 0.16rem;\r\n}\r\n\r\n.row:first-child {\r\n  margin-top: 0;\r\n}\r\n\r\n.stageLabel {\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  padding: 0.25rem 0.45rem;\r\n  font-size: 0.6rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.06em;\r\n  text-transform: uppercase;\r\n  line-height: 1;\r\n  color: $color-ink-medium;\r\n  background: $color-surface-stage;\r\n}\r\n\r\n.penalty {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  font-size: 0.64rem;\r\n  font-weight: 700;\r\n  color: $color-text-penalty;\r\n  background: $color-surface-penalty-cell;\r\n}\r\n\r\n.markerRow {\r\n  display: flex;\r\n  min-height: 1.65rem;\r\n  padding: 0.15rem 0.3rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background: $color-surface-marker-row;\r\n}\r\n\r\n.marker {\r\n  display: flex;\r\n  width: 1.3rem;\r\n  height: 1.3rem;\r\n  border: 1px solid $color-border-marker;\r\n  border-radius: 1px;\r\n  background: $color-surface-white;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-shadow: inset 0 1px 0 $highlight-inset-strong;\r\n}\r\n\r\n.traits {\r\n  display: flex;\r\n  gap: 0.14rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 100%;\r\n  min-height: 0.95rem;\r\n}\r\n\r\n.traitOn,\r\n.traitOff {\r\n  width: 0.18rem;\r\n  height: 0.88rem;\r\n  border-radius: 1px;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.traitOn {\r\n  background: linear-gradient(to bottom, $color-trait-on-top, $color-trait-on-bottom);\r\n}\r\n\r\n.traitOff {\r\n  background: transparent;\r\n  border: 1px dashed $color-border-trait-off;\r\n}\r\n\r\n@media (max-width: 28rem) {\r\n  .row {\r\n    grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);\r\n  }\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/HealthTrack.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAQA;EACE,yBAAA;EACA,sBAAA;EACA,mBCPoB;EDQpB,YAAA;AAPF;;AAUA;EACE,SAAA;EACA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cCpBW;ADab;;AAUA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AAPF;;AAUA;EACE,aAAA;EACA,uEAAA;EACA,oBAAA;EACA,mBAAA;AAPF;;AAUA;EACE,aAAA;AAPF;;AAUA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,wBAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cAAA;EACA,cClDW;EDmDX,mBAnDoB;AA4CtB;;AAUA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;EACA,cC7DW;ED8DX,mBA7D2B;AAsD7B;;AAUA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBArEyB;AA8D3B;;AAUA;EACE,aAAA;EACA,aAAA;EACA,cAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBA7EoB;EA8EpB,mBAAA;EACA,uBAAA;EACA,kDAAA;AAPF;;AAUA;EACE,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAPF;;AAUA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,cAAA;AAPF;;AAUA;EACE,mBCxGW;ADiGb;;AAUA;EACE,uBAAA;EACA,0BAAA;AAPF;;AAUA;EACE;IACE,kEAAA;EAPF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n\r\n.wrap {\r\n  border: 1px solid $color-border;\r\n  padding: 0.6rem 0.7rem;\r\n  background: $color-surface-panel;\r\n  min-width: 0;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  margin-bottom: 0.45rem;\r\n  font-size: 0.72rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.table {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background: transparent;\r\n}\r\n\r\n.row {\r\n  display: grid;\r\n  grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);\r\n  align-items: stretch;\r\n  margin-top: 0.16rem;\r\n}\r\n\r\n.row:first-child {\r\n  margin-top: 0;\r\n}\r\n\r\n.stageLabel {\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  padding: 0.25rem 0.45rem;\r\n  font-size: 0.6rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.06em;\r\n  text-transform: uppercase;\r\n  line-height: 1;\r\n  color: $color-text;\r\n  background: $color-surface-stage;\r\n}\r\n\r\n.penalty {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  font-size: 0.64rem;\r\n  font-weight: 700;\r\n  color: $color-text;\r\n  background: $color-surface-penalty-cell;\r\n}\r\n\r\n.markerRow {\r\n  display: flex;\r\n  min-height: 1.65rem;\r\n  padding: 0.15rem 0.3rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background: $color-surface-marker-row;\r\n}\r\n\r\n.marker {\r\n  display: flex;\r\n  width: 1.3rem;\r\n  height: 1.3rem;\r\n  border: 1px solid $color-border;\r\n  border-radius: 1px;\r\n  background: $color-surface-white;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-shadow: inset 0 1px 0 $highlight-inset-strong;\r\n}\r\n\r\n.traits {\r\n  display: flex;\r\n  gap: 0.14rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 100%;\r\n  min-height: 0.95rem;\r\n}\r\n\r\n.traitOn,\r\n.traitOff {\r\n  width: 0.18rem;\r\n  height: 0.88rem;\r\n  border-radius: 1px;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.traitOn {\r\n  background: $color-text;\r\n}\r\n\r\n.traitOff {\r\n  background: transparent;\r\n  border: 1px dashed $color-border;\r\n}\r\n\r\n@media (max-width: 28rem) {\r\n  .row {\r\n    grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);\r\n  }\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `QZf3v32u7FmeCoyUDuJ8`,
@@ -482,14 +480,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sokS64DW0C0SN7Zo_Xqi {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #111;
+  color: #1a1a1a;
 }
 
 .lVrTg2iR3A1jouEXl2XJ {
   margin: 0;
   font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
-  color: #222;
+  color: #1a1a1a;
 }
 
 .nf14EXxDUIOrnbfcI7Gg {
@@ -524,15 +522,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sokS64DW0C0SN7Zo_Xqi {
 }
 
 .Bz3yZrCZLIpR5pbPws8m {
-  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);
-  border: 1px solid #0a0f18;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: #1a1a1a;
+  border: none;
 }
 
 .eoYBthrHocLMrd2jZGjJ {
   background: transparent;
-  border: 1px solid #555;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-essence-highlight, $color-essence-deep);\r\n  border: 1px solid $color-essence-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+  border: 1px solid #2a2a2a;
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCDoB;ADAtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cCpBW;ADmBb;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,cC3BW;AD0Bb;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,mBC9DW;ED+DX,YAAA;AADF;;AAIA;EACE,uBAAA;EACA,yBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-text;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: $color-text;\r\n  border: none;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `sokS64DW0C0SN7Zo_Xqi`,
@@ -612,14 +609,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.zcJPWdM4J_r8D3gu0pCM {
 }
 
 .k7ylwgNMBb7HGTPb6ROw {
-  background: #111;
-  border: 1px solid #111;
+  background: #1a1a1a;
+  border: none;
 }
 
 .pKu7Ol9V2CpWIw4JjCnA {
   background: transparent;
-  border: 1px solid #333;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;AADF;;AAIA;EACE,cAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;EACA,sBAAA;EACA,0BAAA;EACA,cCdU;EDeV,gCAAA;EACA,wBAAA;EACA,gBAAA;EACA,uBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gBCvCiB;EDwCjB,sBAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  text-transform: capitalize;\r\n  color: $color-ink;\r\n  border-bottom: 1px solid $color-border-strong;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: $color-ink-strong;\r\n  border: 1px solid $color-ink-strong;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-dot-empty;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+  border: 1px solid #2a2a2a;
+}`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;AADF;;AAIA;EACE,cAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;EACA,sBAAA;EACA,0BAAA;EACA,cCfW;EDgBX,gCAAA;EACA,wBAAA;EACA,gBAAA;EACA,uBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,mBCzCW;ED0CX,YAAA;AADF;;AAIA;EACE,uBAAA;EACA,yBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  text-transform: capitalize;\r\n  color: $color-text;\r\n  border-bottom: 1px solid $color-border;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: $color-text;\r\n  border: none;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"row": `zcJPWdM4J_r8D3gu0pCM`,
@@ -663,7 +660,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.hnYzJpfZIVVbjB_7aRL7 {
 .LSGTUwOLknvXhC2sWeQy {
   flex: 1 1 auto;
   height: 2px;
-  background: #222;
+  background: #2a2a2a;
   opacity: 0.7;
 }
 
@@ -673,9 +670,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.hnYzJpfZIVVbjB_7aRL7 {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 800;
-  color: #1f1f1f;
+  color: #1a1a1a;
   white-space: nowrap;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;AADF;;AAIA;EACE,cAAA;EACA,WAAA;EACA,gBCSkB;EDRlB,YAAA;AADF;;AAIA;EACE,SAAA;EACA,kBAAA;EACA,sBAAA;EACA,yBAAA;EACA,gBAAA;EACA,cChBe;EDiBf,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.75rem;\r\n}\r\n\r\n.line {\r\n  flex: 1 1 auto;\r\n  height: 2px;\r\n  background: $color-border-rule;\r\n  opacity: 0.7;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.82rem;\r\n  letter-spacing: 0.16em;\r\n  text-transform: uppercase;\r\n  font-weight: 800;\r\n  color: $color-ink-soft;\r\n  white-space: nowrap;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;AADF;;AAIA;EACE,cAAA;EACA,WAAA;EACA,mBCTa;EDUb,YAAA;AADF;;AAIA;EACE,SAAA;EACA,kBAAA;EACA,sBAAA;EACA,yBAAA;EACA,gBAAA;EACA,cCpBW;EDqBX,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.75rem;\r\n}\r\n\r\n.line {\r\n  flex: 1 1 auto;\r\n  height: 2px;\r\n  background: $color-border;\r\n  opacity: 0.7;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.82rem;\r\n  letter-spacing: 0.16em;\r\n  text-transform: uppercase;\r\n  font-weight: 800;\r\n  color: $color-text;\r\n  white-space: nowrap;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `hnYzJpfZIVVbjB_7aRL7`,
@@ -727,14 +724,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.GVtMixsVmeMlY6yDHegA {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #111;
+  color: #1a1a1a;
 }
 
 .G4MRWdG0f5SNw87yTr2P {
   margin: 0;
   font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
-  color: #222;
+  color: #1a1a1a;
 }
 
 .aFNSF0P7ie_DuOcM1aMq {
@@ -769,15 +766,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.GVtMixsVmeMlY6yDHegA {
 }
 
 .ZfY23b9YlPkddfsdHZQ0 {
-  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);
-  border: 1px solid #0a0f18;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: #1a1a1a;
+  border: none;
 }
 
 .PEqOuBu8R26ZefhKXiM5 {
   background: transparent;
-  border: 1px solid #555;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Willpower.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-essence-highlight, $color-essence-deep);\r\n  border: 1px solid $color-essence-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
+  border: 1px solid #2a2a2a;
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Willpower.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCDoB;ADAtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cCpBW;ADmBb;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,cC3BW;AD0Bb;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,mBC9DW;ED+DX,YAAA;AADF;;AAIA;EACE,uBAAA;EACA,yBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-text;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-text;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: $color-text;\r\n  border: none;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border;\r\n}\r\n","// Shared palette: one text, one border, one panel surface (dots use $color-text when filled)\r\n\r\n$color-text: #1a1a1a;\r\n$color-border: #2a2a2a;\r\n$color-surface-panel: #faf8f5;\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `GVtMixsVmeMlY6yDHegA`,

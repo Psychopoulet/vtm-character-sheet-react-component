@@ -1,7 +1,13 @@
 @use "../styles/variables" as *;
 
+$color-surface-stage: #f3efe8;
+$color-surface-penalty-cell: #f7f3ec;
+$color-surface-marker-row: #fcfaf7;
+$color-surface-white: #fff;
+$highlight-inset-strong: rgba(255, 255, 255, 0.3);
+
 .wrap {
-  border: 1px solid $color-border-strong;
+  border: 1px solid $color-border;
   padding: 0.6rem 0.7rem;
   background: $color-surface-panel;
   min-width: 0;
@@ -14,7 +20,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $color-ink-strong;
+  color: $color-text;
 }
 
 .table {
@@ -44,7 +50,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   line-height: 1;
-  color: $color-ink-medium;
+  color: $color-text;
   background: $color-surface-stage;
 }
 
@@ -55,7 +61,7 @@
   min-height: 1.65rem;
   font-size: 0.64rem;
   font-weight: 700;
-  color: $color-text-penalty;
+  color: $color-text;
   background: $color-surface-penalty-cell;
 }
 
@@ -72,7 +78,7 @@
   display: flex;
   width: 1.3rem;
   height: 1.3rem;
-  border: 1px solid $color-border-marker;
+  border: 1px solid $color-border;
   border-radius: 1px;
   background: $color-surface-white;
   align-items: center;
@@ -98,12 +104,12 @@
 }
 
 .traitOn {
-  background: linear-gradient(to bottom, $color-trait-on-top, $color-trait-on-bottom);
+  background: $color-text;
 }
 
 .traitOff {
   background: transparent;
-  border: 1px dashed $color-border-trait-off;
+  border: 1px dashed $color-border;
 }
 
 @media (max-width: 28rem) {

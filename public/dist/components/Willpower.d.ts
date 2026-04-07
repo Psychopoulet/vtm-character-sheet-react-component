@@ -1,11 +1,10 @@
 import React from "react";
+import type { WillpowerValue } from "../types";
 export interface WillpowerProps {
     /** Temporary Willpower remaining (filled cells from the start). */
-    "current": number;
+    "current": WillpowerValue;
     /** Permanent Willpower rating (pool size). */
-    "max": number;
-    /** Columns in the grid (default 10, matches classic sheet rows). */
-    "columns"?: number;
+    "max": WillpowerValue;
 }
 /** Classic Willpower / Path track is 1–10. */
 export declare const WILLPOWER_MAX = 10;

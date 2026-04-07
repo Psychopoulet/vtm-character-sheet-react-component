@@ -11,13 +11,10 @@
     export interface WillpowerProps {
 
       /** Temporary Willpower remaining (filled cells from the start). */
-      "current": number;
+      "current": WillpowerValue;
 
       /** Permanent Willpower rating (pool size). */
-      "max": number;
-
-      /** Columns in the grid (default 10, matches classic sheet rows). */
-      "columns"?: number;
+      "max": WillpowerValue;
 
     }
 

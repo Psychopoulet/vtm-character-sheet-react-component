@@ -1,13 +1,13 @@
 import React from "react";
-import type { Secte, Clan, Nature, // Concept,
+import type { Secte, Clan, Archetype, // Concept,
 GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue, UsedCharacteristic } from "../types";
 export interface CharacterSheetProps {
     "name": string;
     "player": string;
     "secte": Secte;
     "clan": Clan;
-    "nature": Nature;
-    "demeanor": Nature;
+    "nature": Archetype;
+    "demeanor": Archetype;
     "generation": GenerationValue;
     "characteristics"?: UsedCharacteristic[];
     "bloodPool"?: {

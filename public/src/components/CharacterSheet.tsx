@@ -18,7 +18,7 @@
 
     // locals
     import type {
-        Secte, Clan, Nature, // Concept,
+        Secte, Clan, Archetype, // Concept,
         GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue,
         UsedCharacteristic
     } from "../types";
@@ -28,8 +28,8 @@
         "player": string;
         "secte": Secte;
         "clan": Clan;
-        "nature": Nature;
-        "demeanor": Nature;
+        "nature": Archetype;
+        "demeanor": Archetype;
         // "concept": Concept;
         "generation": GenerationValue;
         "characteristics"?: UsedCharacteristic[];
@@ -93,11 +93,11 @@ export function CharacterSheet ({
 
             <div className={ styles.headerCol }>
 
-                <span className={ styles.fieldLabel }>{ t("nature") }</span>
-                <span className={ styles.fieldLine }>{ nature }</span>
+                <span className={ styles.fieldLabel }>{ t("archetype.nature") }</span>
+                <span className={ styles.fieldLine }>{ t(`archetype.${ nature }`) }</span>
 
-                <span className={ styles.fieldLabel }>{ t("demeanor") }</span>
-                <span className={ styles.fieldLine }>{ demeanor }</span>
+                <span className={ styles.fieldLabel }>{ t("archetype.demeanor") }</span>
+                <span className={ styles.fieldLine }>{ t(`archetype.${ demeanor }`) }</span>
 
             </div>
 

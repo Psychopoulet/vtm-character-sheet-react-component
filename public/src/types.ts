@@ -9,7 +9,7 @@ export type Clan = "brujah" | "gangrel" | "malkavian" | "nosferatu" | "toreador"
     | "lasombra" | "tzimisce"
     | "assamite" | "banu-haqim" | "giovanni" | "ravnos" | "salubri" | "the-ministry";
 
-export type Nature = "anarchist" | "architect" | "autocrat"
+export type Archetype = "anarchist" | "architect" | "autocrat"
     | "bon-vivant" | "bravo"
     | "capitalist" | "caregiver" | "celebrant" | "chameleon" | "child" | "competitor" | "conformist" | "conniver" | "creep-show" | "critic" | "curmudgeon"
     | "dabbler" | "deviant" | "director"

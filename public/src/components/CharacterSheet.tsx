@@ -17,25 +17,32 @@
 // types & interfaces
 
     // locals
-    import type { Secte, Clan, GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue, UsedCharacteristic } from "../types";
+    import type {
+        Secte, Clan, Nature, // Concept,
+        GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue,
+        UsedCharacteristic
+    } from "../types";
 
     export interface CharacterSheetProps {
         "name": string;
         "player": string;
         "secte": Secte;
         "clan": Clan;
-        "generation"?: GenerationValue;
-        "experience"?: ExperienceValue;
+        "nature": Nature;
+        "demeanor": Nature;
+        // "concept": Concept;
+        "generation": GenerationValue;
         "characteristics"?: UsedCharacteristic[];
         "bloodPool"?: {
             "current"?: BloodValue;
             "characterMax"?: BloodValue;
-        }
+        };
         "humanity"?: HumanityValue;
         "willpower"?: {
             "current"?: WillpowerValue;
             "characterMax"?: WillpowerValue;
-        }
+        };
+        "experience"?: ExperienceValue;
         "dammages"?: number;
     }
 
@@ -47,7 +54,10 @@ export function CharacterSheet ({
     player,
     secte,
     clan,
-    generation = 7,
+    nature,
+    demeanor,
+    // concept,
+    generation,
     experience = 0,
     characteristics = [],
     bloodPool = {
@@ -73,24 +83,34 @@ export function CharacterSheet ({
 
             <div className={ styles.headerCol }>
 
+                <span className={ styles.fieldLabel }>{ t("player") }</span>
+                <span className={ styles.fieldLine }>{ player }</span>
+
                 <span className={ styles.fieldLabel }>{ t("name") }</span>
                 <span className={ styles.fieldLine }>{ name }</span>
-
-                <span className={ styles.fieldLabel }>{ t("clan") }</span>
-                <span className={ styles.fieldLine }>{ clan }</span>
-
-                <span className={ styles.fieldLabel }>{ t("generation") }</span>
-                <span className={ styles.fieldLine }>{ generation }</span>
 
             </div>
 
             <div className={ styles.headerCol }>
 
-                <span className={ styles.fieldLabel }>{ t("player") }</span>
-                <span className={ styles.fieldLine }>{ player }</span>
+                <span className={ styles.fieldLabel }>{ t("nature") }</span>
+                <span className={ styles.fieldLine }>{ nature }</span>
+
+                <span className={ styles.fieldLabel }>{ t("demeanor") }</span>
+                <span className={ styles.fieldLine }>{ demeanor }</span>
+
+            </div>
+
+            <div className={ styles.headerCol }>
 
                 <span className={ styles.fieldLabel }>{ t("secte") }</span>
                 <span className={ styles.fieldLine }>{ secte }</span>
+
+                <span className={ styles.fieldLabel }>{ t("clan.title") }</span>
+                <span className={ styles.fieldLine }>{ t(`clan.${ clan }`) }</span>
+
+                <span className={ styles.fieldLabel }>{ t("generation") }</span>
+                <span className={ styles.fieldLine }>{ generation }</span>
 
             </div>
 

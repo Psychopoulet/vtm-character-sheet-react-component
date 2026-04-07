@@ -25,7 +25,8 @@ class App extends React.Component<{}> {
 
 		return <CharacterSheet
 			name="Jacques-Henri Delafeuille" player="Sébastien VIDAL"
-			secte="Camarilla" clan="Ventrue"
+			secte="camarilla" clan="ventrue"
+			nature="anarchist" demeanor="director"
 			generation={ 7 }
 			experience={ 5 }
 			characteristics={ [

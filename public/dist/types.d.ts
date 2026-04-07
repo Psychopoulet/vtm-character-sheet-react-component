@@ -1,7 +1,8 @@
 type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] extends N ? Acc[number] : Enumerate<N, [...Acc, Acc["length"]]>;
 type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
-export type Secte = "Sabbat" | "Camarilla" | "Independent";
-export type Clan = "Brujah" | "Gangrel" | "Malkavien" | "Nosferatu" | "Toreador" | "Tremere" | "Ventrue" | "Lasombra" | "Tzimisce" | "Assamite" | "Banu Haqim" | "Disciples de Set" | "Ravnos";
+export type Secte = "sabbat" | "camarilla" | "anarch" | "independent";
+export type Clan = "brujah" | "gangrel" | "malkavian" | "nosferatu" | "toreador" | "tremere" | "ventrue" | "lasombra" | "tzimisce" | "assamite" | "banu-haqim" | "giovanni" | "ravnos" | "salubri" | "the-ministry";
+export type Nature = "anarchist" | "architect" | "autocrat" | "bon-vivant" | "bravo" | "capitalist" | "caregiver" | "celebrant" | "chameleon" | "child" | "competitor" | "conformist" | "conniver" | "creep-show" | "critic" | "curmudgeon" | "dabbler" | "deviant" | "director" | "enigma" | "eye-of-the-storm" | "fanatic" | "gallant" | "guru" | "idealist" | "judge" | "loner" | "martyr" | "masochist" | "monster" | "nihilist" | "pedagogue" | "penitent" | "perfectionist" | "rebel" | "rogue" | "sadist" | "scientist" | "sociopath" | "soldier" | "survivor" | "thrill-seeker" | "traditionalist" | "trickster" | "visionary";
 export type GenerationValue = IntRange<1, 13>;
 export type BloodValue = IntRange<0, 40>;
 export type HumanityValue = IntRange<1, 10>;

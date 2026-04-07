@@ -94,10 +94,10 @@ export function CharacterSheet ({
             <div className={ styles.headerCol }>
 
                 <span className={ styles.fieldLabel }>{ t("archetype.nature") }</span>
-                <span className={ styles.fieldLine }>{ t(`archetype.${ nature }`) }</span>
+                <span className={ styles.fieldLine }>{ t(`archetype.${nature}`) }</span>
 
                 <span className={ styles.fieldLabel }>{ t("archetype.demeanor") }</span>
-                <span className={ styles.fieldLine }>{ t(`archetype.${ demeanor }`) }</span>
+                <span className={ styles.fieldLine }>{ t(`archetype.${demeanor}`) }</span>
 
             </div>
 
@@ -107,7 +107,7 @@ export function CharacterSheet ({
                 <span className={ styles.fieldLine }>{ secte }</span>
 
                 <span className={ styles.fieldLabel }>{ t("clan.title") }</span>
-                <span className={ styles.fieldLine }>{ t(`clan.${ clan }`) }</span>
+                <span className={ styles.fieldLine }>{ t(`clan.${clan}`) }</span>
 
                 <span className={ styles.fieldLabel }>{ t("generation") }</span>
                 <span className={ styles.fieldLine }>{ generation }</span>

@@ -16,16 +16,16 @@
 
 .title {
   margin: 0;
-  font-size: 0.7rem;
+  font-size: $font-size-subtitle;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $color-text;
 }
 
 .values {
   margin: 0;
-  font-size: 0.8125rem;
+  font-size: $font-size-body;
   font-variant-numeric: tabular-nums;
   color: $color-text;
 }

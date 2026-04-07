@@ -69,29 +69,27 @@ export function CharacterSheet ({
 
         <header className={ styles.header }>
 
-            <div className={ styles.fieldPair }>
+            <div className={ styles.headerCol }>
+
                 <span className={ styles.fieldLabel }>{ t("name") }</span>
                 <span className={ styles.fieldLine }>{ name }</span>
-            </div>
 
-            <div className={ styles.fieldPair }>
-                <span className={ styles.fieldLabel }>{ t("player") }</span>
-                <span className={ styles.fieldLine }>{ player }</span>
-            </div>
-
-            <div className={ styles.fieldPair }>
                 <span className={ styles.fieldLabel }>{ t("clan") }</span>
                 <span className={ styles.fieldLine }>{ clan }</span>
-            </div>
 
-            <div className={ styles.fieldPair }>
-                <span className={ styles.fieldLabel }>{ t("secte") }</span>
-                <span className={ styles.fieldLine }>{ secte }</span>
-            </div>
-
-            <div className={ styles.fieldPair }>
                 <span className={ styles.fieldLabel }>{ t("generation") }</span>
                 <span className={ styles.fieldLine }>{ generation }</span>
+
+            </div>
+
+            <div className={ styles.headerCol }>
+
+                <span className={ styles.fieldLabel }>{ t("player") }</span>
+                <span className={ styles.fieldLine }>{ player }</span>
+
+                <span className={ styles.fieldLabel }>{ t("secte") }</span>
+                <span className={ styles.fieldLine }>{ secte }</span>
+
             </div>
 
         </header>

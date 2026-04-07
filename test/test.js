@@ -149,10 +149,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   margin-bottom: 1.25rem;
 }
 
-.v7Ft9pFHsQKPCKzNK6oU {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+/* Label column = widest label in this block so all values start on one vertical line. */
+.oMUvmIpIwvGDC_Idh9VW {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.65rem;
+  align-items: baseline;
+  min-width: 0;
 }
 
 .hUEk3Ak_7W29Gaphh07g {
@@ -164,7 +168,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
 }
 
 .c6te5fc5gC4HiDrrq819 {
-  height: 1.25rem;
+  min-width: 0;
+  min-height: 1.25rem;
+  line-height: 1.25rem;
   border-bottom: 1px solid #222;
   background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));
 }
@@ -199,12 +205,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
     align-items: start;
   }
 }
-`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,gBAAgB;EAChB,8CAA8C;EAC9C,cAAc;EACd,mBAAmB;EACnB,yBAAyB;EACzB,yCAAyC;AAC3C;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,WAAW;AACb;;AAEA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,eAAe;EACf,6BAA6B;EAC7B,4EAA4E;AAC9E;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,YAAY;AACd;;AAEA;EACE;IACE,8BAA8B;IAC9B,kBAAkB;EACpB;AACF","sourcesContent":[".sheet {\n  max-width: 42rem;\n  margin: 0 auto;\n  padding: 1.25rem;\n  font-family: \"Segoe UI\", system-ui, sans-serif;\n  color: #1a1a1a;\n  background: #f0ebe3;\n  border: 2px solid #1a1a1a;\n  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);\n}\n\n.header {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 1rem;\n  margin-bottom: 1.25rem;\n}\n\n.fieldPair {\n  display: flex;\n  flex-direction: column;\n  gap: 0.2rem;\n}\n\n.fieldLabel {\n  font-size: 0.65rem;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.fieldLine {\n  height: 1.25rem;\n  border-bottom: 1px solid #222;\n  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));\n}\n\n.section {\n  margin-bottom: 1rem;\n}\n\n.sectionTitle {\n  margin: 0 0 0.5rem;\n  font-size: 0.7rem;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.twoCol {\n  display: grid;\n  gap: 1rem;\n}\n\n.sheetCol {\n  display: flex;\n  flex-direction: column;\n  gap: 0.75rem;\n  min-width: 0;\n}\n\n@media (min-width: 36rem) {\n  .twoCol {\n    grid-template-columns: 1fr 1fr;\n    align-items: start;\n  }\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,gBAAgB;EAChB,8CAA8C;EAC9C,cAAc;EACd,mBAAmB;EACnB,yBAAyB;EACzB,yCAAyC;AAC3C;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA,wFAAwF;AACxF;EACE,aAAa;EACb,sCAAsC;EACtC,kBAAkB;EAClB,gBAAgB;EAChB,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,oBAAoB;EACpB,6BAA6B;EAC7B,4EAA4E;AAC9E;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,YAAY;AACd;;AAEA;EACE;IACE,8BAA8B;IAC9B,kBAAkB;EACpB;AACF","sourcesContent":[".sheet {\n  max-width: 42rem;\n  margin: 0 auto;\n  padding: 1.25rem;\n  font-family: \"Segoe UI\", system-ui, sans-serif;\n  color: #1a1a1a;\n  background: #f0ebe3;\n  border: 2px solid #1a1a1a;\n  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);\n}\n\n.header {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 1rem;\n  margin-bottom: 1.25rem;\n}\n\n/* Label column = widest label in this block so all values start on one vertical line. */\n.headerCol {\n  display: grid;\n  grid-template-columns: max-content 1fr;\n  column-gap: 0.5rem;\n  row-gap: 0.65rem;\n  align-items: baseline;\n  min-width: 0;\n}\n\n.fieldLabel {\n  font-size: 0.65rem;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.fieldLine {\n  min-width: 0;\n  min-height: 1.25rem;\n  line-height: 1.25rem;\n  border-bottom: 1px solid #222;\n  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));\n}\n\n.section {\n  margin-bottom: 1rem;\n}\n\n.sectionTitle {\n  margin: 0 0 0.5rem;\n  font-size: 0.7rem;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.twoCol {\n  display: grid;\n  gap: 1rem;\n}\n\n.sheetCol {\n  display: flex;\n  flex-direction: column;\n  gap: 0.75rem;\n  min-width: 0;\n}\n\n@media (min-width: 36rem) {\n  .twoCol {\n    grid-template-columns: 1fr 1fr;\n    align-items: start;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"sheet": `IEfXQn2o9IV9qPwJZOJf`,
 	"header": `LvK6uMCaemNIWlRA_E52`,
-	"fieldPair": `v7Ft9pFHsQKPCKzNK6oU`,
+	"headerCol": `oMUvmIpIwvGDC_Idh9VW`,
 	"fieldLabel": `hUEk3Ak_7W29Gaphh07g`,
 	"fieldLine": `c6te5fc5gC4HiDrrq819`,
 	"section": `RCk1Cbendpa_axtwV5QP`,
@@ -258,10 +264,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Nxv92huLC9uIM4lKgAx7 {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #333;
+    text-align: center;
 }
 .uD3LW_4kCM6AjMagSoXw {
     margin-top: 0.85rem;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.css"],"names":[],"mappings":"AAAA;IACI,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,gDAAgD;IAChD,SAAS;IACT,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,YAAY;AAChB;AACA;IACI,kBAAkB;IAClB,iBAAiB;IACjB,qBAAqB;IACrB,yBAAyB;IACzB,WAAW;AACf;AACA;IACI,mBAAmB;AACvB","sourcesContent":[".section {\n    margin-bottom: 1rem;\n}\n.columns {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    gap: 1rem;\n    align-items: start;\n}\n.list {\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n    min-width: 0;\n}\n.subTitle {\n    margin: 0 0 0.5rem;\n    font-size: 0.7rem;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    color: #333;\n}\n.titleSpacing {\n    margin-top: 0.85rem;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.css"],"names":[],"mappings":"AAAA;IACI,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,gDAAgD;IAChD,SAAS;IACT,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,YAAY;AAChB;AACA;IACI,kBAAkB;IAClB,iBAAiB;IACjB,qBAAqB;IACrB,yBAAyB;IACzB,WAAW;IACX,kBAAkB;AACtB;AACA;IACI,mBAAmB;AACvB","sourcesContent":[".section {\n    margin-bottom: 1rem;\n}\n.columns {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    gap: 1rem;\n    align-items: start;\n}\n.list {\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n    min-width: 0;\n}\n.subTitle {\n    margin: 0 0 0.5rem;\n    font-size: 0.7rem;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    color: #333;\n    text-align: center;\n}\n.titleSpacing {\n    margin-top: 0.85rem;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"section": `Nxv92huLC9uIM4lKgAx7`,
@@ -643,6 +650,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.y77jBQAaS0QG23nkZ6M4 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .lNhD4nlCrdkoo_0m_xSb {
@@ -661,7 +669,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.y77jBQAaS0QG23nkZ6M4 {
   color: #1f1f1f;
   white-space: nowrap;
 }
-`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,cAAc;EACd,WAAW;EACX,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,sBAAsB;EACtB,yBAAyB;EACzB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB","sourcesContent":[".wrap {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.75rem;\r\n}\r\n\r\n.line {\r\n  flex: 1 1 auto;\r\n  height: 2px;\r\n  background: #222;\r\n  opacity: 0.7;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.82rem;\r\n  letter-spacing: 0.16em;\r\n  text-transform: uppercase;\r\n  font-weight: 800;\r\n  color: #1f1f1f;\r\n  white-space: nowrap;\r\n}\r\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,YAAY;EACZ,sBAAsB;AACxB;;AAEA;EACE,cAAc;EACd,WAAW;EACX,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,sBAAsB;EACtB,yBAAyB;EACzB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB","sourcesContent":[".wrap {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.75rem;\r\n}\r\n\r\n.line {\r\n  flex: 1 1 auto;\r\n  height: 2px;\r\n  background: #222;\r\n  opacity: 0.7;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.82rem;\r\n  letter-spacing: 0.16em;\r\n  text-transform: uppercase;\r\n  font-weight: 800;\r\n  color: #1f1f1f;\r\n  white-space: nowrap;\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrap": `y77jBQAaS0QG23nkZ6M4`,
@@ -32378,21 +32386,18 @@ function CharacterSheet({ name, player, secte, clan, generation, characteristics
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheet, "aria-label": t("characterSheet") },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("name")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name)),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player)),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan)),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte)),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldPair },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("generation")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, generation))),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, generation)),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Attributes__WEBPACK_IMPORTED_MODULE_7__.Attributes, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Abilities__WEBPACK_IMPORTED_MODULE_8__.Abilities, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Advantages__WEBPACK_IMPORTED_MODULE_9__.Advantages, { characteristics: characteristics }),

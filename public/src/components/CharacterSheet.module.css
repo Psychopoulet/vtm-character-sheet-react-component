@@ -16,10 +16,14 @@
   margin-bottom: 1.25rem;
 }
 
-.fieldPair {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+/* Label column = widest label in this block so all values start on one vertical line. */
+.headerCol {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.65rem;
+  align-items: baseline;
+  min-width: 0;
 }
 
 .fieldLabel {
@@ -31,7 +35,9 @@
 }
 
 .fieldLine {
-  height: 1.25rem;
+  min-width: 0;
+  min-height: 1.25rem;
+  line-height: 1.25rem;
   border-bottom: 1px solid #222;
   background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));
 }

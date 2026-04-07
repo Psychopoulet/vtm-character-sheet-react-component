@@ -19,6 +19,7 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #333;
+    text-align: center;
 }
 .titleSpacing {
     margin-top: 0.85rem;

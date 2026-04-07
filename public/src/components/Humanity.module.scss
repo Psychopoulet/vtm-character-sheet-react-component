@@ -1,31 +1,33 @@
+@use "../styles/variables" as *;
+
 .wrap {
-  border: 1px solid #2a2a2a;
-  padding: 0.75rem 1rem;
-  background: #faf8f5;
+  border: 1px solid $color-border-strong;
+  padding: 0.65rem 0.85rem;
+  background: $color-surface-panel;
 }
 
 .header {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.65rem;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .title {
   margin: 0;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #111;
+  color: $color-ink-strong;
 }
 
 .values {
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
-  color: #222;
+  color: $color-ink-medium;
 }
 
 .current {
@@ -33,7 +35,7 @@
 }
 
 .sep {
-  margin: 0 0.15rem;
+  margin: 0 0.12rem;
   opacity: 0.55;
 }
 
@@ -43,15 +45,15 @@
 
 .grid {
   display: grid;
-  gap: 0.35rem;
+  gap: 0.3rem;
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
 .cellFilled,
 .cellEmpty {
   aspect-ratio: 1;
-  max-width: 1.1rem;
-  max-height: 1.1rem;
+  max-width: 0.95rem;
+  max-height: 0.95rem;
   width: 100%;
   height: auto;
   border-radius: 50%;
@@ -60,12 +62,12 @@
 }
 
 .cellFilled {
-  background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);
-  border: 1px solid #1a0506;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at 35% 30%, $color-essence-highlight, $color-essence-deep);
+  border: 1px solid $color-essence-outline;
+  box-shadow: inset 0 0 0 1px $highlight-inset-soft;
 }
 
 .cellEmpty {
   background: transparent;
-  border: 1px solid #555;
+  border: 1px solid $color-border-muted;
 }

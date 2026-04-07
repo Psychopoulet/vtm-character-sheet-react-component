@@ -1,10 +1,10 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/BloodPool.module.css"
-/*!**********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/BloodPool.module.css ***!
-  \**********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/BloodPool.module.scss"
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/BloodPool.module.scss ***!
+  \**************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21,13 +21,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
+___CSS_LOADER_EXPORT___.push([module.id, `.OmtlvY4xHcSylDVosr6I {
   border: 1px solid #2a2a2a;
   padding: 0.75rem 1rem;
   background: #faf8f5;
 }
 
-.D8kK10Gyp8AUhSvF92hL {
+.dOgBy7ZUqZyPjM8nn0th {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -35,7 +35,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
   margin-bottom: 0.65rem;
 }
 
-.a4nmzgUKgGVC9GyXsgi7 {
+.Pv_XCUbgtnnOmWohGwhm {
   margin: 0;
   font-size: 0.75rem;
   font-weight: 700;
@@ -44,34 +44,34 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
   color: #111;
 }
 
-.YglGGCA0vO4VxcUFriyA {
+.WK32lXGQt88oOaB5Q_mp {
   margin: 0;
   font-size: 0.9375rem;
   font-variant-numeric: tabular-nums;
   color: #222;
 }
 
-.uUPH1g3Ox5_sAJjB7BBE {
+.Pnme_B3H5SnMFwobRvjr {
   font-weight: 700;
 }
 
-.P8S3DlzUOWzXOFSlMTMN {
+.wi51bYyUO_qO02U8g1Ht {
   margin: 0 0.15rem;
   opacity: 0.55;
 }
 
-.ZVoALEhyqq9Z0v6KIQld {
+.q4dsBfF2loGtD5ryjuMQ {
   font-weight: 500;
 }
 
-.vC3oA0jJqxjanErWeldK {
+.saEIlb0naffesA8QCK0T {
   display: grid;
   gap: 0.35rem;
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
-.z8neMkPyiRfBFPXlXkoY,
-.oiHBDFCTQJgaP7PsKHB2 {
+.sbN5v2ID40xwcFj_Vmxr,
+.jQmXsaUHKyU8y7ZHQinv {
   aspect-ratio: 1;
   max-width: 1.1rem;
   max-height: 1.1rem;
@@ -82,39 +82,38 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.I8Nu5e2rAtqKn8tdH69d {
   margin: 0 auto;
 }
 
-.z8neMkPyiRfBFPXlXkoY {
+.sbN5v2ID40xwcFj_Vmxr {
   background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);
   border: 1px solid #1a0506;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
-.oiHBDFCTQJgaP7PsKHB2 {
+.jQmXsaUHKyU8y7ZHQinv {
   background: transparent;
   border: 1px solid #555;
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,qBAAqB;EACrB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,iDAAiD;AACnD;;AAEA;;EAEE,eAAe;EACf,iBAAiB;EACjB,kBAAkB;EAClB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\r\n  border: 1px solid #2a2a2a;\r\n  padding: 0.75rem 1rem;\r\n  background: #faf8f5;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: #111;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: #222;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, #5a1518, #2a080a);\r\n  border: 1px solid #1a0506;\r\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid #555;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/BloodPool.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,qBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,SAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,YAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,iBAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.75rem 1rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 1rem;\r\n  margin-bottom: 0.65rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.75rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.9375rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.15rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.35rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 1.1rem;\r\n  max-height: 1.1rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-blood-highlight, $color-blood-deep);\r\n  border: 1px solid $color-blood-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"wrap": `I8Nu5e2rAtqKn8tdH69d`,
-	"header": `D8kK10Gyp8AUhSvF92hL`,
-	"title": `a4nmzgUKgGVC9GyXsgi7`,
-	"values": `YglGGCA0vO4VxcUFriyA`,
-	"current": `uUPH1g3Ox5_sAJjB7BBE`,
-	"sep": `P8S3DlzUOWzXOFSlMTMN`,
-	"max": `ZVoALEhyqq9Z0v6KIQld`,
-	"grid": `vC3oA0jJqxjanErWeldK`,
-	"cellFilled": `z8neMkPyiRfBFPXlXkoY`,
-	"cellEmpty": `oiHBDFCTQJgaP7PsKHB2`
+	"wrap": `OmtlvY4xHcSylDVosr6I`,
+	"header": `dOgBy7ZUqZyPjM8nn0th`,
+	"title": `Pv_XCUbgtnnOmWohGwhm`,
+	"values": `WK32lXGQt88oOaB5Q_mp`,
+	"current": `Pnme_B3H5SnMFwobRvjr`,
+	"sep": `wi51bYyUO_qO02U8g1Ht`,
+	"max": `q4dsBfF2loGtD5ryjuMQ`,
+	"grid": `saEIlb0naffesA8QCK0T`,
+	"cellFilled": `sbN5v2ID40xwcFj_Vmxr`,
+	"cellEmpty": `jQmXsaUHKyU8y7ZHQinv`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/CharacterSheet.module.css"
-/*!***************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/CharacterSheet.module.css ***!
-  \***************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/CharacterSheet.module.scss"
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/CharacterSheet.module.scss ***!
+  \*******************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -131,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
+___CSS_LOADER_EXPORT___.push([module.id, `.ywhNOULnsOEl6Yae3Ipq {
   max-width: 42rem;
   margin: 0 auto;
   padding: 1.25rem;
@@ -142,15 +141,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);
 }
 
-.LvK6uMCaemNIWlRA_E52 {
+.vq98Nfpm4y_WpcKm75qi {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-bottom: 1.25rem;
 }
 
-/* Label column = widest label in this block so all values start on one vertical line. */
-.oMUvmIpIwvGDC_Idh9VW {
+.EIqCIuD0aYJFZKxAPDB8 {
   display: grid;
   grid-template-columns: max-content 1fr;
   column-gap: 0.5rem;
@@ -159,7 +157,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   min-width: 0;
 }
 
-.hUEk3Ak_7W29Gaphh07g {
+.FzrcbU6xPp4SPHnKblxf {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -167,7 +165,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   color: #333;
 }
 
-.c6te5fc5gC4HiDrrq819 {
+.RV70SLuQa7ztPl0Wuu1W {
   min-width: 0;
   min-height: 1.25rem;
   line-height: 1.25rem;
@@ -175,11 +173,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));
 }
 
-.RCk1Cbendpa_axtwV5QP {
+.JDuzqQHkY_D_f72hmWQi {
   margin-bottom: 1rem;
 }
 
-.RVVjTTqf8hMvueUK15AU {
+.YAYTci3EohwukyyyRFXK {
   margin: 0 0 0.5rem;
   font-size: 0.7rem;
   letter-spacing: 0.14em;
@@ -187,19 +185,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
   color: #333;
 }
 
-.Nzq_A3P1cpBGuGlBHpSW {
+.J5p5t8AGDADmOQVVgKuS {
   display: grid;
   gap: 1rem;
 }
 
-.F5RTDYA3zLWy9vGNbusn {
+.zX82Ft90DRyLFpOcRehA {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   min-width: 0;
 }
 
-.VCeyrMa2MmmnB5mGGPYz {
+.wcy8EurEPlBdDgMmhJZU {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -208,34 +206,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.IEfXQn2o9IV9qPwJZOJf {
 }
 
 @media (min-width: 36rem) {
-  .Nzq_A3P1cpBGuGlBHpSW {
+  .J5p5t8AGDADmOQVVgKuS {
     grid-template-columns: 1fr 1fr;
     align-items: start;
   }
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,cAAc;EACd,gBAAgB;EAChB,8CAA8C;EAC9C,cAAc;EACd,mBAAmB;EACnB,yBAAyB;EACzB,yCAAyC;AAC3C;;AAEA;EACE,aAAa;EACb,8BAA8B;EAC9B,SAAS;EACT,sBAAsB;AACxB;;AAEA,wFAAwF;AACxF;EACE,aAAa;EACb,sCAAsC;EACtC,kBAAkB;EAClB,gBAAgB;EAChB,qBAAqB;EACrB,YAAY;AACd;;AAEA;EACE,kBAAkB;EAClB,gBAAgB;EAChB,qBAAqB;EACrB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,oBAAoB;EACpB,6BAA6B;EAC7B,4EAA4E;AAC9E;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,aAAa;EACb,SAAS;AACX;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,YAAY;EACZ,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,SAAS;EACT,oBAAoB;EACpB,YAAY;AACd;;AAEA;EACE;IACE,8BAA8B;IAC9B,kBAAkB;EACpB;AACF","sourcesContent":[".sheet {\n  max-width: 42rem;\n  margin: 0 auto;\n  padding: 1.25rem;\n  font-family: \"Segoe UI\", system-ui, sans-serif;\n  color: #1a1a1a;\n  background: #f0ebe3;\n  border: 2px solid #1a1a1a;\n  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.08);\n}\n\n.header {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 1rem;\n  margin-bottom: 1.25rem;\n}\n\n/* Label column = widest label in this block so all values start on one vertical line. */\n.headerCol {\n  display: grid;\n  grid-template-columns: max-content 1fr;\n  column-gap: 0.5rem;\n  row-gap: 0.65rem;\n  align-items: baseline;\n  min-width: 0;\n}\n\n.fieldLabel {\n  font-size: 0.65rem;\n  font-weight: 700;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.fieldLine {\n  min-width: 0;\n  min-height: 1.25rem;\n  line-height: 1.25rem;\n  border-bottom: 1px solid #222;\n  background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.04));\n}\n\n.section {\n  margin-bottom: 1rem;\n}\n\n.sectionTitle {\n  margin: 0 0 0.5rem;\n  font-size: 0.7rem;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  color: #333;\n}\n\n.twoCol {\n  display: grid;\n  gap: 1rem;\n}\n\n.sheetCol {\n  display: flex;\n  flex-direction: column;\n  gap: 0.75rem;\n  min-width: 0;\n}\n\n.rightCol {\n  display: flex;\n  flex-direction: column;\n  gap: 1rem;\n  align-items: stretch;\n  min-width: 0;\n}\n\n@media (min-width: 36rem) {\n  .twoCol {\n    grid-template-columns: 1fr 1fr;\n    align-items: start;\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/CharacterSheet.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,cAAA;EACA,gBAAA;EACA,8CAAA;EACA,cCJU;EDKV,mBCGoB;EDFpB,yBAAA;EACA,yCAAA;AADF;;AAIA;EACE,aAAA;EACA,8BAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,aAAA;EACA,sCAAA;EACA,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,YAAA;AADF;;AAIA;EACE,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,yBAAA;EACA,WC3BiB;AD0BnB;;AAIA;EACE,YAAA;EACA,mBAAA;EACA,oBAAA;EACA,6BAAA;EACA,4EAAA;AADF;;AAIA;EACE,mBAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WC/CiB;AD8CnB;;AAIA;EACE,aAAA;EACA,SAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,YAAA;EACA,YAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;EACA,oBAAA;EACA,YAAA;AADF;;AAIA;EACE;IACE,8BAAA;IACA,kBAAA;EADF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.sheet {\r\n  max-width: 42rem;\r\n  margin: 0 auto;\r\n  padding: 1.25rem;\r\n  font-family: \"Segoe UI\", system-ui, sans-serif;\r\n  color: $color-ink;\r\n  background: $color-surface-sheet;\r\n  border: 2px solid $color-border-ink;\r\n  box-shadow: 4px 4px 0 $shadow-sheet-offset;\r\n}\r\n\r\n.header {\r\n  display: grid;\r\n  grid-template-columns: 1fr 1fr;\r\n  gap: 1rem;\r\n  margin-bottom: 1.25rem;\r\n}\r\n\r\n.headerCol {\r\n  display: grid;\r\n  grid-template-columns: max-content 1fr;\r\n  column-gap: 0.5rem;\r\n  row-gap: 0.65rem;\r\n  align-items: baseline;\r\n  min-width: 0;\r\n}\r\n\r\n.fieldLabel {\r\n  font-size: 0.65rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n}\r\n\r\n.fieldLine {\r\n  min-width: 0;\r\n  min-height: 1.25rem;\r\n  line-height: 1.25rem;\r\n  border-bottom: 1px solid $color-border-rule;\r\n  background: linear-gradient(to bottom, transparent 70%, $shadow-field-fade);\r\n}\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.sectionTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.14em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n}\r\n\r\n.twoCol {\r\n  display: grid;\r\n  gap: 1rem;\r\n}\r\n\r\n.sheetCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.75rem;\r\n  min-width: 0;\r\n}\r\n\r\n.rightCol {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 1rem;\r\n  align-items: stretch;\r\n  min-width: 0;\r\n}\r\n\r\n@media (min-width: 36rem) {\r\n  .twoCol {\r\n    grid-template-columns: 1fr 1fr;\r\n    align-items: start;\r\n  }\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"sheet": `IEfXQn2o9IV9qPwJZOJf`,
-	"header": `LvK6uMCaemNIWlRA_E52`,
-	"headerCol": `oMUvmIpIwvGDC_Idh9VW`,
-	"fieldLabel": `hUEk3Ak_7W29Gaphh07g`,
-	"fieldLine": `c6te5fc5gC4HiDrrq819`,
-	"section": `RCk1Cbendpa_axtwV5QP`,
-	"sectionTitle": `RVVjTTqf8hMvueUK15AU`,
-	"twoCol": `Nzq_A3P1cpBGuGlBHpSW`,
-	"sheetCol": `F5RTDYA3zLWy9vGNbusn`,
-	"rightCol": `VCeyrMa2MmmnB5mGGPYz`
+	"sheet": `ywhNOULnsOEl6Yae3Ipq`,
+	"header": `vq98Nfpm4y_WpcKm75qi`,
+	"headerCol": `EIqCIuD0aYJFZKxAPDB8`,
+	"fieldLabel": `FzrcbU6xPp4SPHnKblxf`,
+	"fieldLine": `RV70SLuQa7ztPl0Wuu1W`,
+	"section": `JDuzqQHkY_D_f72hmWQi`,
+	"sectionTitle": `YAYTci3EohwukyyyRFXK`,
+	"twoCol": `J5p5t8AGDADmOQVVgKuS`,
+	"sheetCol": `zX82Ft90DRyLFpOcRehA`,
+	"rightCol": `wcy8EurEPlBdDgMmhJZU`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Characteristics.module.css"
-/*!****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Characteristics.module.css ***!
-  \****************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Characteristics.module.scss"
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Characteristics.module.scss ***!
+  \********************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -252,49 +249,53 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.Nxv92huLC9uIM4lKgAx7 {
-    margin-bottom: 1rem;
+___CSS_LOADER_EXPORT___.push([module.id, `.SXdQHKhTJ32vYFe0GevQ {
+  margin-bottom: 1rem;
 }
-.LLC0XZ6fjPtuDRQyO510 {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-    align-items: start;
+
+.u9oT1Km78KxRAKJ_rUQ7 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
 }
-.FfPvNVSfhXKm5o64wcmX {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    min-width: 0;
+
+.QxNnDb3LDmwJnn5HhmzU {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
 }
-.KDOYKAwj_lY_2xzusY57 {
-    margin: 0 0 0.5rem;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #333;
-    text-align: center;
+
+.u1jdJQK0pYap0pmP0BII {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333;
+  text-align: center;
 }
-.uD3LW_4kCM6AjMagSoXw {
-    margin-top: 0.85rem;
-}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.css"],"names":[],"mappings":"AAAA;IACI,mBAAmB;AACvB;AACA;IACI,aAAa;IACb,gDAAgD;IAChD,SAAS;IACT,kBAAkB;AACtB;AACA;IACI,aAAa;IACb,sBAAsB;IACtB,WAAW;IACX,YAAY;AAChB;AACA;IACI,kBAAkB;IAClB,iBAAiB;IACjB,qBAAqB;IACrB,yBAAyB;IACzB,WAAW;IACX,kBAAkB;AACtB;AACA;IACI,mBAAmB;AACvB","sourcesContent":[".section {\n    margin-bottom: 1rem;\n}\n.columns {\n    display: grid;\n    grid-template-columns: repeat(3, minmax(0, 1fr));\n    gap: 1rem;\n    align-items: start;\n}\n.list {\n    display: flex;\n    flex-direction: column;\n    gap: 0.5rem;\n    min-width: 0;\n}\n.subTitle {\n    margin: 0 0 0.5rem;\n    font-size: 0.7rem;\n    letter-spacing: 0.1em;\n    text-transform: uppercase;\n    color: #333;\n    text-align: center;\n}\n.titleSpacing {\n    margin-top: 0.85rem;\n}"],"sourceRoot":""}]);
+
+.apvC_ITG2pvAE8D51CpK {
+  margin-top: 0.85rem;
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Characteristics.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,gDAAA;EACA,SAAA;EACA,kBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,WAAA;EACA,YAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;EACA,yBAAA;EACA,WClBiB;EDmBjB,kBAAA;AADF;;AAIA;EACE,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.section {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.columns {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, minmax(0, 1fr));\r\n  gap: 1rem;\r\n  align-items: start;\r\n}\r\n\r\n.list {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.5rem;\r\n  min-width: 0;\r\n}\r\n\r\n.subTitle {\r\n  margin: 0 0 0.5rem;\r\n  font-size: 0.7rem;\r\n  letter-spacing: 0.1em;\r\n  text-transform: uppercase;\r\n  color: $color-text-muted;\r\n  text-align: center;\r\n}\r\n\r\n.titleSpacing {\r\n  margin-top: 0.85rem;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"section": `Nxv92huLC9uIM4lKgAx7`,
-	"columns": `LLC0XZ6fjPtuDRQyO510`,
-	"list": `FfPvNVSfhXKm5o64wcmX`,
-	"subTitle": `KDOYKAwj_lY_2xzusY57`,
-	"titleSpacing": `uD3LW_4kCM6AjMagSoXw`
+	"section": `SXdQHKhTJ32vYFe0GevQ`,
+	"columns": `u9oT1Km78KxRAKJ_rUQ7`,
+	"list": `QxNnDb3LDmwJnn5HhmzU`,
+	"subTitle": `u1jdJQK0pYap0pmP0BII`,
+	"titleSpacing": `apvC_ITG2pvAE8D51CpK`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/HealthTrack.module.css"
-/*!************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/HealthTrack.module.css ***!
-  \************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/HealthTrack.module.scss"
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/HealthTrack.module.scss ***!
+  \****************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -311,14 +312,14 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
+___CSS_LOADER_EXPORT___.push([module.id, `.QZf3v32u7FmeCoyUDuJ8 {
   border: 1px solid #2a2a2a;
   padding: 0.6rem 0.7rem;
   background: #faf8f5;
   min-width: 0;
 }
 
-.o2sYNCkUWwgVMplKsg81 {
+.n3vGPkXumHUmKLlCjdAX {
   margin: 0;
   margin-bottom: 0.45rem;
   font-size: 0.72rem;
@@ -328,24 +329,24 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   color: #111;
 }
 
-.kM5ZN7lwCCZcF8iJQVPi {
+.Q_ZAzYaZDm6TmaH_4qso {
   display: flex;
   flex-direction: column;
   background: transparent;
 }
 
-.TM5fBi2tY4LaA9wxrVuB {
+.U8CzQ31qRAbJp5a2oqCZ {
   display: grid;
   grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);
   align-items: stretch;
   margin-top: 0.16rem;
 }
 
-.TM5fBi2tY4LaA9wxrVuB:first-child {
+.U8CzQ31qRAbJp5a2oqCZ:first-child {
   margin-top: 0;
 }
 
-.eHfAoaDd0HYUDLAXiiwS {
+.fh5cG9TdWcwLR0fcmG7C {
   display: flex;
   align-items: center;
   min-height: 1.65rem;
@@ -359,7 +360,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   background: #f3efe8;
 }
 
-.pCBQXiFb6morkby6tnRS {
+.w9jHaHXv4ahcGKWD2a9Z {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,7 +371,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   background: #f7f3ec;
 }
 
-.pBTcNA3Yq5ZUyLrstGgS {
+.qHa9NG0KiNloUYJf3L4q {
   display: flex;
   min-height: 1.65rem;
   padding: 0.15rem 0.3rem;
@@ -379,7 +380,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   background: #fcfaf7;
 }
 
-.y9NO9x8ORH_GxAFq4hyA {
+.ez2xsLRGJU9wFpsYzeVo {
   display: flex;
   width: 1.3rem;
   height: 1.3rem;
@@ -391,7 +392,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-.XLj5xLshaJe0rOwezNhQ {
+.qOIk9_WGCdaENA2cOy2a {
   display: flex;
   gap: 0.14rem;
   justify-content: center;
@@ -400,52 +401,51 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nynF6kNJ0a7ZsmtIML0R {
   min-height: 0.95rem;
 }
 
-.eLuaNkwJWAjPHrlml8Pw,
-.NOQdLoBekUiQgRhKwhLt {
+.dsnGY0PFfcJrGidFnImW,
+.byGclhtmC8UlOCEPv4a7 {
   width: 0.18rem;
   height: 0.88rem;
   border-radius: 1px;
   flex-shrink: 0;
 }
 
-.eLuaNkwJWAjPHrlml8Pw {
+.dsnGY0PFfcJrGidFnImW {
   background: linear-gradient(to bottom, #2a2a2a, #111);
 }
 
-.NOQdLoBekUiQgRhKwhLt {
+.byGclhtmC8UlOCEPv4a7 {
   background: transparent;
   border: 1px dashed #9a9590;
 }
 
 @media (max-width: 28rem) {
-  .TM5fBi2tY4LaA9wxrVuB {
+  .U8CzQ31qRAbJp5a2oqCZ {
     grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);
   }
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/HealthTrack.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,SAAS;EACT,sBAAsB;EACtB,kBAAkB;EAClB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,uBAAuB;AACzB;;AAEA;EACE,aAAa;EACb,uEAAuE;EACvE,oBAAoB;EACpB,mBAAmB;AACrB;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,mBAAmB;EACnB,wBAAwB;EACxB,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,cAAc;EACd,WAAW;EACX,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,mBAAmB;EACnB,kBAAkB;EAClB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,uBAAuB;EACvB,mBAAmB;EACnB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,aAAa;EACb,cAAc;EACd,yBAAyB;EACzB,kBAAkB;EAClB,gBAAgB;EAChB,mBAAmB;EACnB,uBAAuB;EACvB,kDAAkD;AACpD;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,uBAAuB;EACvB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;AACrB;;AAEA;;EAEE,cAAc;EACd,eAAe;EACf,kBAAkB;EAClB,cAAc;AAChB;;AAEA;EACE,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,0BAA0B;AAC5B;;AAEA;EACE;IACE,kEAAkE;EACpE;AACF","sourcesContent":[".wrap {\n  border: 1px solid #2a2a2a;\n  padding: 0.6rem 0.7rem;\n  background: #faf8f5;\n  min-width: 0;\n}\n\n.title {\n  margin: 0;\n  margin-bottom: 0.45rem;\n  font-size: 0.72rem;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: #111;\n}\n\n.table {\n  display: flex;\n  flex-direction: column;\n  background: transparent;\n}\n\n.row {\n  display: grid;\n  grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);\n  align-items: stretch;\n  margin-top: 0.16rem;\n}\n\n.row:first-child {\n  margin-top: 0;\n}\n\n.stageLabel {\n  display: flex;\n  align-items: center;\n  min-height: 1.65rem;\n  padding: 0.25rem 0.45rem;\n  font-size: 0.6rem;\n  font-weight: 700;\n  letter-spacing: 0.06em;\n  text-transform: uppercase;\n  line-height: 1;\n  color: #222;\n  background: #f3efe8;\n}\n\n.penalty {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 1.65rem;\n  font-size: 0.64rem;\n  font-weight: 700;\n  color: #262626;\n  background: #f7f3ec;\n}\n\n.markerRow {\n  display: flex;\n  min-height: 1.65rem;\n  padding: 0.15rem 0.3rem;\n  justify-content: center;\n  align-items: center;\n  background: #fcfaf7;\n}\n\n.marker {\n  display: flex;\n  width: 1.3rem;\n  height: 1.3rem;\n  border: 1px solid #2f2f2f;\n  border-radius: 1px;\n  background: #fff;\n  align-items: center;\n  justify-content: center;\n  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);\n}\n\n.traits {\n  display: flex;\n  gap: 0.14rem;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  min-height: 0.95rem;\n}\n\n.traitOn,\n.traitOff {\n  width: 0.18rem;\n  height: 0.88rem;\n  border-radius: 1px;\n  flex-shrink: 0;\n}\n\n.traitOn {\n  background: linear-gradient(to bottom, #2a2a2a, #111);\n}\n\n.traitOff {\n  background: transparent;\n  border: 1px dashed #9a9590;\n}\n\n@media (max-width: 28rem) {\n  .row {\n    grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/HealthTrack.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,sBAAA;EACA,mBCOoB;EDNpB,YAAA;AADF;;AAIA;EACE,SAAA;EACA,sBAAA;EACA,kBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WCZiB;ADWnB;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,uBAAA;AADF;;AAIA;EACE,aAAA;EACA,uEAAA;EACA,oBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;AADF;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,wBAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,cAAA;EACA,WCzCiB;ED0CjB,mBClCoB;ADiCtB;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gBAAA;EACA,cCjDmB;EDkDnB,mBC5C2B;AD2C7B;;AAIA;EACE,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBCpDyB;ADmD3B;;AAIA;EACE,aAAA;EACA,aAAA;EACA,cAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBC5DoB;ED6DpB,mBAAA;EACA,uBAAA;EACA,kDAAA;AADF;;AAIA;EACE,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,cAAA;AADF;;AAIA;EACE,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,0BAAA;AADF;;AAIA;EACE;IACE,kEAAA;EADF;AACF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.6rem 0.7rem;\r\n  background: $color-surface-panel;\r\n  min-width: 0;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  margin-bottom: 0.45rem;\r\n  font-size: 0.72rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.table {\r\n  display: flex;\r\n  flex-direction: column;\r\n  background: transparent;\r\n}\r\n\r\n.row {\r\n  display: grid;\r\n  grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);\r\n  align-items: stretch;\r\n  margin-top: 0.16rem;\r\n}\r\n\r\n.row:first-child {\r\n  margin-top: 0;\r\n}\r\n\r\n.stageLabel {\r\n  display: flex;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  padding: 0.25rem 0.45rem;\r\n  font-size: 0.6rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.06em;\r\n  text-transform: uppercase;\r\n  line-height: 1;\r\n  color: $color-ink-medium;\r\n  background: $color-surface-stage;\r\n}\r\n\r\n.penalty {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  min-height: 1.65rem;\r\n  font-size: 0.64rem;\r\n  font-weight: 700;\r\n  color: $color-text-penalty;\r\n  background: $color-surface-penalty-cell;\r\n}\r\n\r\n.markerRow {\r\n  display: flex;\r\n  min-height: 1.65rem;\r\n  padding: 0.15rem 0.3rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  background: $color-surface-marker-row;\r\n}\r\n\r\n.marker {\r\n  display: flex;\r\n  width: 1.3rem;\r\n  height: 1.3rem;\r\n  border: 1px solid $color-border-marker;\r\n  border-radius: 1px;\r\n  background: $color-surface-white;\r\n  align-items: center;\r\n  justify-content: center;\r\n  box-shadow: inset 0 1px 0 $highlight-inset-strong;\r\n}\r\n\r\n.traits {\r\n  display: flex;\r\n  gap: 0.14rem;\r\n  justify-content: center;\r\n  align-items: center;\r\n  width: 100%;\r\n  min-height: 0.95rem;\r\n}\r\n\r\n.traitOn,\r\n.traitOff {\r\n  width: 0.18rem;\r\n  height: 0.88rem;\r\n  border-radius: 1px;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.traitOn {\r\n  background: linear-gradient(to bottom, $color-trait-on-top, $color-trait-on-bottom);\r\n}\r\n\r\n.traitOff {\r\n  background: transparent;\r\n  border: 1px dashed $color-border-trait-off;\r\n}\r\n\r\n@media (max-width: 28rem) {\r\n  .row {\r\n    grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);\r\n  }\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"wrap": `nynF6kNJ0a7ZsmtIML0R`,
-	"title": `o2sYNCkUWwgVMplKsg81`,
-	"table": `kM5ZN7lwCCZcF8iJQVPi`,
-	"row": `TM5fBi2tY4LaA9wxrVuB`,
-	"stageLabel": `eHfAoaDd0HYUDLAXiiwS`,
-	"penalty": `pCBQXiFb6morkby6tnRS`,
-	"markerRow": `pBTcNA3Yq5ZUyLrstGgS`,
-	"marker": `y9NO9x8ORH_GxAFq4hyA`,
-	"traits": `XLj5xLshaJe0rOwezNhQ`,
-	"traitOn": `eLuaNkwJWAjPHrlml8Pw`,
-	"traitOff": `NOQdLoBekUiQgRhKwhLt`
+	"wrap": `QZf3v32u7FmeCoyUDuJ8`,
+	"title": `n3vGPkXumHUmKLlCjdAX`,
+	"table": `Q_ZAzYaZDm6TmaH_4qso`,
+	"row": `U8CzQ31qRAbJp5a2oqCZ`,
+	"stageLabel": `fh5cG9TdWcwLR0fcmG7C`,
+	"penalty": `w9jHaHXv4ahcGKWD2a9Z`,
+	"markerRow": `qHa9NG0KiNloUYJf3L4q`,
+	"marker": `ez2xsLRGJU9wFpsYzeVo`,
+	"traits": `qOIk9_WGCdaENA2cOy2a`,
+	"traitOn": `dsnGY0PFfcJrGidFnImW`,
+	"traitOff": `byGclhtmC8UlOCEPv4a7`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Humanity.module.css"
-/*!*********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Humanity.module.css ***!
-  \*********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Humanity.module.scss"
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Humanity.module.scss ***!
+  \*************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -462,13 +462,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
+___CSS_LOADER_EXPORT___.push([module.id, `.sokS64DW0C0SN7Zo_Xqi {
   border: 1px solid #2a2a2a;
   padding: 0.65rem 0.85rem;
   background: #faf8f5;
 }
 
-.rqiJ3rj2yWQzeZb6Q2Y5 {
+.tBkyJHrNtTxwAhsFGjQO {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -476,7 +476,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
   margin-bottom: 0.5rem;
 }
 
-.zzn6i4iaVVFsnp3zb3Wx {
+.Q7ZtU03yXi3hlA08tBbd {
   margin: 0;
   font-size: 0.7rem;
   font-weight: 700;
@@ -485,34 +485,34 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
   color: #111;
 }
 
-.l78_z5RRJmvzH6Fi43YG {
+.lVrTg2iR3A1jouEXl2XJ {
   margin: 0;
   font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
   color: #222;
 }
 
-.AvJEFzXUzMqtHW4pImu2 {
+.nf14EXxDUIOrnbfcI7Gg {
   font-weight: 700;
 }
 
-.h1nrRxm2Qz1YyjIILKCG {
+.KGv9kINcZDn7UOBLrI4x {
   margin: 0 0.12rem;
   opacity: 0.55;
 }
 
-.HWTY6CWpLC_YrU2_i35Q {
+.Tv8ukBgEgROOib016zgh {
   font-weight: 500;
 }
 
-.DPqV5UqXwflre3DElczH {
+.yyZuC0Kj2MmjAOcXfgbp {
   display: grid;
   gap: 0.3rem;
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
-.Vz2KfKDYJivncng225wC,
-.RYxlKYFkrCjLEpEOpVFc {
+.Bz3yZrCZLIpR5pbPws8m,
+.eoYBthrHocLMrd2jZGjJ {
   aspect-ratio: 1;
   max-width: 0.95rem;
   max-height: 0.95rem;
@@ -523,39 +523,38 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.ByxR8vf3nATielaHog4J {
   margin: 0 auto;
 }
 
-.Vz2KfKDYJivncng225wC {
+.Bz3yZrCZLIpR5pbPws8m {
   background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);
   border: 1px solid #0a0f18;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
-.RYxlKYFkrCjLEpEOpVFc {
+.eoYBthrHocLMrd2jZGjJ {
   background: transparent;
   border: 1px solid #555;
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,YAAY;EACZ,qBAAqB;AACvB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,iDAAiD;AACnD;;AAEA;;EAEE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\n  border: 1px solid #2a2a2a;\n  padding: 0.65rem 0.85rem;\n  background: #faf8f5;\n}\n\n.header {\n  display: flex;\n  align-items: baseline;\n  justify-content: space-between;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n\n.title {\n  margin: 0;\n  font-size: 0.7rem;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: #111;\n}\n\n.values {\n  margin: 0;\n  font-size: 0.8125rem;\n  font-variant-numeric: tabular-nums;\n  color: #222;\n}\n\n.current {\n  font-weight: 700;\n}\n\n.sep {\n  margin: 0 0.12rem;\n  opacity: 0.55;\n}\n\n.max {\n  font-weight: 500;\n}\n\n.grid {\n  display: grid;\n  gap: 0.3rem;\n  grid-template-columns: repeat(10, minmax(0, 1fr));\n}\n\n.cellFilled,\n.cellEmpty {\n  aspect-ratio: 1;\n  max-width: 0.95rem;\n  max-height: 0.95rem;\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n  box-sizing: border-box;\n  margin: 0 auto;\n}\n\n.cellFilled {\n  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);\n  border: 1px solid #0a0f18;\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\n}\n\n.cellEmpty {\n  background: transparent;\n  border: 1px solid #555;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Humanity.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-essence-highlight, $color-essence-deep);\r\n  border: 1px solid $color-essence-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"wrap": `ByxR8vf3nATielaHog4J`,
-	"header": `rqiJ3rj2yWQzeZb6Q2Y5`,
-	"title": `zzn6i4iaVVFsnp3zb3Wx`,
-	"values": `l78_z5RRJmvzH6Fi43YG`,
-	"current": `AvJEFzXUzMqtHW4pImu2`,
-	"sep": `h1nrRxm2Qz1YyjIILKCG`,
-	"max": `HWTY6CWpLC_YrU2_i35Q`,
-	"grid": `DPqV5UqXwflre3DElczH`,
-	"cellFilled": `Vz2KfKDYJivncng225wC`,
-	"cellEmpty": `RYxlKYFkrCjLEpEOpVFc`
+	"wrap": `sokS64DW0C0SN7Zo_Xqi`,
+	"header": `tBkyJHrNtTxwAhsFGjQO`,
+	"title": `Q7ZtU03yXi3hlA08tBbd`,
+	"values": `lVrTg2iR3A1jouEXl2XJ`,
+	"current": `nf14EXxDUIOrnbfcI7Gg`,
+	"sep": `KGv9kINcZDn7UOBLrI4x`,
+	"max": `Tv8ukBgEgROOib016zgh`,
+	"grid": `yyZuC0Kj2MmjAOcXfgbp`,
+	"cellFilled": `Bz3yZrCZLIpR5pbPws8m`,
+	"cellEmpty": `eoYBthrHocLMrd2jZGjJ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/NamedDotProgress.module.css"
-/*!*****************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/NamedDotProgress.module.css ***!
-  \*****************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/NamedDotProgress.module.scss"
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/NamedDotProgress.module.scss ***!
+  \*********************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -572,7 +571,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
+___CSS_LOADER_EXPORT___.push([module.id, `.zcJPWdM4J_r8D3gu0pCM {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -580,7 +579,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   min-width: 0;
 }
 
-.REt4RUnofi4M5540lWld {
+.muKhw2sfNsMT7pjcOrxW {
   flex: 1 1 auto;
   min-width: 0;
   max-width: 7.25rem;
@@ -595,7 +594,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   white-space: nowrap;
 }
 
-.p_YFQYqEBf5F_ZdWzPX_ {
+.BbrnxOzYFokbNmJfvAQW {
   display: flex;
   flex-wrap: nowrap;
   flex-shrink: 0;
@@ -603,8 +602,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   align-items: center;
 }
 
-.UL0wqtaO2nrfiumJpcFg,
-.Fg87SK5WhGd26RZjbu4h {
+.k7ylwgNMBb7HGTPb6ROw,
+.pKu7Ol9V2CpWIw4JjCnA {
   width: 0.65rem;
   height: 0.65rem;
   border-radius: 50%;
@@ -612,33 +611,32 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.qmimk41mDbpCpf6yrPJc {
   flex-shrink: 0;
 }
 
-.UL0wqtaO2nrfiumJpcFg {
+.k7ylwgNMBb7HGTPb6ROw {
   background: #111;
   border: 1px solid #111;
 }
 
-.Fg87SK5WhGd26RZjbu4h {
+.pKu7Ol9V2CpWIw4JjCnA {
   background: transparent;
   border: 1px solid #333;
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,YAAY;AACd;;AAEA;EACE,cAAc;EACd,YAAY;EACZ,kBAAkB;EAClB,oBAAoB;EACpB,sBAAsB;EACtB,0BAA0B;EAC1B,cAAc;EACd,gCAAgC;EAChC,wBAAwB;EACxB,gBAAgB;EAChB,uBAAuB;EACvB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,iBAAiB;EACjB,cAAc;EACd,YAAY;EACZ,mBAAmB;AACrB;;AAEA;;EAEE,cAAc;EACd,eAAe;EACf,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  text-transform: capitalize;\r\n  color: #1a1a1a;\r\n  border-bottom: 1px solid #2a2a2a;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: #111;\r\n  border: 1px solid #111;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid #333;\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/NamedDotProgress.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;AADF;;AAIA;EACE,cAAA;EACA,YAAA;EACA,kBAAA;EACA,oBAAA;EACA,sBAAA;EACA,0BAAA;EACA,cCdU;EDeV,gCAAA;EACA,wBAAA;EACA,gBAAA;EACA,uBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,cAAA;EACA,YAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,cAAA;EACA,eAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gBCvCiB;EDwCjB,sBAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.row {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n  min-height: 1.25rem;\r\n  min-width: 0;\r\n}\r\n\r\n.label {\r\n  flex: 1 1 auto;\r\n  min-width: 0;\r\n  max-width: 7.25rem;\r\n  font-size: 0.6875rem;\r\n  letter-spacing: 0.03em;\r\n  text-transform: capitalize;\r\n  color: $color-ink;\r\n  border-bottom: 1px solid $color-border-strong;\r\n  padding-bottom: 0.125rem;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  white-space: nowrap;\r\n}\r\n\r\n.dots {\r\n  display: flex;\r\n  flex-wrap: nowrap;\r\n  flex-shrink: 0;\r\n  gap: 0.22rem;\r\n  align-items: center;\r\n}\r\n\r\n.dotFilled,\r\n.dotEmpty {\r\n  width: 0.65rem;\r\n  height: 0.65rem;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  flex-shrink: 0;\r\n}\r\n\r\n.dotFilled {\r\n  background: $color-ink-strong;\r\n  border: 1px solid $color-ink-strong;\r\n}\r\n\r\n.dotEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-dot-empty;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"row": `qmimk41mDbpCpf6yrPJc`,
-	"label": `REt4RUnofi4M5540lWld`,
-	"dots": `p_YFQYqEBf5F_ZdWzPX_`,
-	"dotFilled": `UL0wqtaO2nrfiumJpcFg`,
-	"dotEmpty": `Fg87SK5WhGd26RZjbu4h`
+	"row": `zcJPWdM4J_r8D3gu0pCM`,
+	"label": `muKhw2sfNsMT7pjcOrxW`,
+	"dots": `BbrnxOzYFokbNmJfvAQW`,
+	"dotFilled": `k7ylwgNMBb7HGTPb6ROw`,
+	"dotEmpty": `pKu7Ol9V2CpWIw4JjCnA`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Separator.module.css"
-/*!**********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Separator.module.css ***!
-  \**********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Separator.module.scss"
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Separator.module.scss ***!
+  \**************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -655,21 +653,21 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.y77jBQAaS0QG23nkZ6M4 {
+___CSS_LOADER_EXPORT___.push([module.id, `.hnYzJpfZIVVbjB_7aRL7 {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 0.75rem;
 }
 
-.lNhD4nlCrdkoo_0m_xSb {
+.LSGTUwOLknvXhC2sWeQy {
   flex: 1 1 auto;
   height: 2px;
   background: #222;
   opacity: 0.7;
 }
 
-.PogMVRWq4xNJjDy6jXyw {
+.bHkHZ_l2ZjPOOoHOuSDZ {
   margin: 0;
   font-size: 0.82rem;
   letter-spacing: 0.16em;
@@ -677,23 +675,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.y77jBQAaS0QG23nkZ6M4 {
   font-weight: 800;
   color: #1f1f1f;
   white-space: nowrap;
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.css"],"names":[],"mappings":"AAAA;EACE,aAAa;EACb,mBAAmB;EACnB,YAAY;EACZ,sBAAsB;AACxB;;AAEA;EACE,cAAc;EACd,WAAW;EACX,gBAAgB;EAChB,YAAY;AACd;;AAEA;EACE,SAAS;EACT,kBAAkB;EAClB,sBAAsB;EACtB,yBAAyB;EACzB,gBAAgB;EAChB,cAAc;EACd,mBAAmB;AACrB","sourcesContent":[".wrap {\n  display: flex;\n  align-items: center;\n  gap: 0.75rem;\n  margin-bottom: 0.75rem;\n}\n\n.line {\n  flex: 1 1 auto;\n  height: 2px;\n  background: #222;\n  opacity: 0.7;\n}\n\n.title {\n  margin: 0;\n  font-size: 0.82rem;\n  letter-spacing: 0.16em;\n  text-transform: uppercase;\n  font-weight: 800;\n  color: #1f1f1f;\n  white-space: nowrap;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Separator.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,aAAA;EACA,mBAAA;EACA,YAAA;EACA,sBAAA;AADF;;AAIA;EACE,cAAA;EACA,WAAA;EACA,gBCSkB;EDRlB,YAAA;AADF;;AAIA;EACE,SAAA;EACA,kBAAA;EACA,sBAAA;EACA,yBAAA;EACA,gBAAA;EACA,cChBe;EDiBf,mBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  display: flex;\r\n  align-items: center;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.75rem;\r\n}\r\n\r\n.line {\r\n  flex: 1 1 auto;\r\n  height: 2px;\r\n  background: $color-border-rule;\r\n  opacity: 0.7;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.82rem;\r\n  letter-spacing: 0.16em;\r\n  text-transform: uppercase;\r\n  font-weight: 800;\r\n  color: $color-ink-soft;\r\n  white-space: nowrap;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"wrap": `y77jBQAaS0QG23nkZ6M4`,
-	"line": `lNhD4nlCrdkoo_0m_xSb`,
-	"title": `PogMVRWq4xNJjDy6jXyw`
+	"wrap": `hnYzJpfZIVVbjB_7aRL7`,
+	"line": `LSGTUwOLknvXhC2sWeQy`,
+	"title": `bHkHZ_l2ZjPOOoHOuSDZ`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ },
 
-/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Willpower.module.css"
-/*!**********************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Willpower.module.css ***!
-  \**********************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Willpower.module.scss"
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Willpower.module.scss ***!
+  \**************************************************************************************************************************************************************/
 (module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -710,13 +707,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.BbsAVnjfzVA2m61blW3P {
+___CSS_LOADER_EXPORT___.push([module.id, `.GVtMixsVmeMlY6yDHegA {
   border: 1px solid #2a2a2a;
   padding: 0.65rem 0.85rem;
   background: #faf8f5;
 }
 
-.sd52vAGfiApPZqZfad6i {
+.x4aZ1Ow4owE1cbnT_CFQ {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -724,7 +721,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BbsAVnjfzVA2m61blW3P {
   margin-bottom: 0.5rem;
 }
 
-.BwL6W3_RhqpYWlJCRtpQ {
+.pHA2PVxeGRItHrDEJKrI {
   margin: 0;
   font-size: 0.7rem;
   font-weight: 700;
@@ -733,34 +730,34 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BbsAVnjfzVA2m61blW3P {
   color: #111;
 }
 
-.Fqf88hkl_T44j3kk11QH {
+.G4MRWdG0f5SNw87yTr2P {
   margin: 0;
   font-size: 0.8125rem;
   font-variant-numeric: tabular-nums;
   color: #222;
 }
 
-.PBncEaq6FtBp7Zb2iWL9 {
+.aFNSF0P7ie_DuOcM1aMq {
   font-weight: 700;
 }
 
-.zWHsFha6WXarDV8y4kp_ {
+.tDbKCx6hqJY7Hk1YK9jV {
   margin: 0 0.12rem;
   opacity: 0.55;
 }
 
-.LMSrLmTMxfYBMnmgZzyz {
+.u3_xYzsBSyjhrqkOICoE {
   font-weight: 500;
 }
 
-.z9SUZW55hynfYunrFkb9 {
+.l6oTzAFwxbCfyvsKmXt1 {
   display: grid;
   gap: 0.3rem;
   grid-template-columns: repeat(10, minmax(0, 1fr));
 }
 
-.C22SwKtvy2wqmc8yzVhU,
-.goNeqvSXnk9GTv4fYcjc {
+.ZfY23b9YlPkddfsdHZQ0,
+.PEqOuBu8R26ZefhKXiM5 {
   aspect-ratio: 1;
   max-width: 0.95rem;
   max-height: 0.95rem;
@@ -771,29 +768,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BbsAVnjfzVA2m61blW3P {
   margin: 0 auto;
 }
 
-.C22SwKtvy2wqmc8yzVhU {
+.ZfY23b9YlPkddfsdHZQ0 {
   background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);
   border: 1px solid #0a0f18;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
 }
 
-.goNeqvSXnk9GTv4fYcjc {
+.PEqOuBu8R26ZefhKXiM5 {
   background: transparent;
   border: 1px solid #555;
-}
-`, "",{"version":3,"sources":["webpack://./public/src/components/Willpower.module.css"],"names":[],"mappings":"AAAA;EACE,yBAAyB;EACzB,wBAAwB;EACxB,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,8BAA8B;EAC9B,YAAY;EACZ,qBAAqB;AACvB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;EAChB,sBAAsB;EACtB,yBAAyB;EACzB,WAAW;AACb;;AAEA;EACE,SAAS;EACT,oBAAoB;EACpB,kCAAkC;EAClC,WAAW;AACb;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,WAAW;EACX,iDAAiD;AACnD;;AAEA;;EAEE,eAAe;EACf,kBAAkB;EAClB,mBAAmB;EACnB,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,sBAAsB;EACtB,cAAc;AAChB;;AAEA;EACE,gEAAgE;EAChE,yBAAyB;EACzB,qDAAqD;AACvD;;AAEA;EACE,uBAAuB;EACvB,sBAAsB;AACxB","sourcesContent":[".wrap {\n  border: 1px solid #2a2a2a;\n  padding: 0.65rem 0.85rem;\n  background: #faf8f5;\n}\n\n.header {\n  display: flex;\n  align-items: baseline;\n  justify-content: space-between;\n  gap: 0.75rem;\n  margin-bottom: 0.5rem;\n}\n\n.title {\n  margin: 0;\n  font-size: 0.7rem;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  color: #111;\n}\n\n.values {\n  margin: 0;\n  font-size: 0.8125rem;\n  font-variant-numeric: tabular-nums;\n  color: #222;\n}\n\n.current {\n  font-weight: 700;\n}\n\n.sep {\n  margin: 0 0.12rem;\n  opacity: 0.55;\n}\n\n.max {\n  font-weight: 500;\n}\n\n.grid {\n  display: grid;\n  gap: 0.3rem;\n  grid-template-columns: repeat(10, minmax(0, 1fr));\n}\n\n.cellFilled,\n.cellEmpty {\n  aspect-ratio: 1;\n  max-width: 0.95rem;\n  max-height: 0.95rem;\n  width: 100%;\n  height: auto;\n  border-radius: 50%;\n  box-sizing: border-box;\n  margin: 0 auto;\n}\n\n.cellFilled {\n  background: radial-gradient(circle at 35% 30%, #2a3a5c, #151d2e);\n  border: 1px solid #0a0f18;\n  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);\n}\n\n.cellEmpty {\n  background: transparent;\n  border: 1px solid #555;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./public/src/components/Willpower.module.scss","webpack://./public/src/styles/_variables.scss"],"names":[],"mappings":"AAEA;EACE,yBAAA;EACA,wBAAA;EACA,mBCOoB;ADRtB;;AAIA;EACE,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,YAAA;EACA,qBAAA;AADF;;AAIA;EACE,SAAA;EACA,iBAAA;EACA,gBAAA;EACA,sBAAA;EACA,yBAAA;EACA,WClBiB;ADiBnB;;AAIA;EACE,SAAA;EACA,oBAAA;EACA,kCAAA;EACA,WCxBiB;ADuBnB;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,iBAAA;EACA,aAAA;AADF;;AAIA;EACE,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,WAAA;EACA,iDAAA;AADF;;AAIA;;EAEE,eAAA;EACA,kBAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,kBAAA;EACA,sBAAA;EACA,cAAA;AADF;;AAIA;EACE,gEAAA;EACA,yBAAA;EACA,qDAAA;AADF;;AAIA;EACE,uBAAA;EACA,sBAAA;AADF","sourcesContent":["@use \"../styles/variables\" as *;\r\n\r\n.wrap {\r\n  border: 1px solid $color-border-strong;\r\n  padding: 0.65rem 0.85rem;\r\n  background: $color-surface-panel;\r\n}\r\n\r\n.header {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-between;\r\n  gap: 0.75rem;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.title {\r\n  margin: 0;\r\n  font-size: 0.7rem;\r\n  font-weight: 700;\r\n  letter-spacing: 0.12em;\r\n  text-transform: uppercase;\r\n  color: $color-ink-strong;\r\n}\r\n\r\n.values {\r\n  margin: 0;\r\n  font-size: 0.8125rem;\r\n  font-variant-numeric: tabular-nums;\r\n  color: $color-ink-medium;\r\n}\r\n\r\n.current {\r\n  font-weight: 700;\r\n}\r\n\r\n.sep {\r\n  margin: 0 0.12rem;\r\n  opacity: 0.55;\r\n}\r\n\r\n.max {\r\n  font-weight: 500;\r\n}\r\n\r\n.grid {\r\n  display: grid;\r\n  gap: 0.3rem;\r\n  grid-template-columns: repeat(10, minmax(0, 1fr));\r\n}\r\n\r\n.cellFilled,\r\n.cellEmpty {\r\n  aspect-ratio: 1;\r\n  max-width: 0.95rem;\r\n  max-height: 0.95rem;\r\n  width: 100%;\r\n  height: auto;\r\n  border-radius: 50%;\r\n  box-sizing: border-box;\r\n  margin: 0 auto;\r\n}\r\n\r\n.cellFilled {\r\n  background: radial-gradient(circle at 35% 30%, $color-essence-highlight, $color-essence-deep);\r\n  border: 1px solid $color-essence-outline;\r\n  box-shadow: inset 0 0 0 1px $highlight-inset-soft;\r\n}\r\n\r\n.cellEmpty {\r\n  background: transparent;\r\n  border: 1px solid $color-border-muted;\r\n}\r\n","// Shared palette for the character sheet UI\r\n\r\n// — Text —\r\n$color-ink: #1a1a1a;\r\n$color-ink-strong: #111;\r\n$color-ink-medium: #222;\r\n$color-ink-soft: #1f1f1f;\r\n$color-text-muted: #333;\r\n$color-text-penalty: #262626;\r\n\r\n// — Surfaces —\r\n$color-surface-sheet: #f0ebe3;\r\n$color-surface-panel: #faf8f5;\r\n$color-surface-stage: #f3efe8;\r\n$color-surface-penalty-cell: #f7f3ec;\r\n$color-surface-marker-row: #fcfaf7;\r\n$color-surface-white: #fff;\r\n\r\n// — Borders & rules —\r\n$color-border-ink: #1a1a1a;\r\n$color-border-strong: #2a2a2a;\r\n$color-border-rule: #222;\r\n$color-border-muted: #555;\r\n$color-border-dot-empty: #333;\r\n$color-border-trait-off: #9a9590;\r\n$color-border-marker: #2f2f2f;\r\n\r\n// — Blood pool (filled cells) —\r\n$color-blood-highlight: #5a1518;\r\n$color-blood-deep: #2a080a;\r\n$color-blood-outline: #1a0506;\r\n\r\n// — Willpower / humanity dots (blue) —\r\n$color-essence-highlight: #2a3a5c;\r\n$color-essence-deep: #151d2e;\r\n$color-essence-outline: #0a0f18;\r\n\r\n// — Trait / damage ticks —\r\n$color-trait-on-top: #2a2a2a;\r\n$color-trait-on-bottom: #111;\r\n\r\n// — Shadows & overlays —\r\n$shadow-sheet-offset: rgba(0, 0, 0, 0.08);\r\n$shadow-field-fade: rgba(0, 0, 0, 0.04);\r\n$highlight-inset-soft: rgba(255, 255, 255, 0.12);\r\n$highlight-inset-strong: rgba(255, 255, 255, 0.3);\r\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
-	"wrap": `BbsAVnjfzVA2m61blW3P`,
-	"header": `sd52vAGfiApPZqZfad6i`,
-	"title": `BwL6W3_RhqpYWlJCRtpQ`,
-	"values": `Fqf88hkl_T44j3kk11QH`,
-	"current": `PBncEaq6FtBp7Zb2iWL9`,
-	"sep": `zWHsFha6WXarDV8y4kp_`,
-	"max": `LMSrLmTMxfYBMnmgZzyz`,
-	"grid": `z9SUZW55hynfYunrFkb9`,
-	"cellFilled": `C22SwKtvy2wqmc8yzVhU`,
-	"cellEmpty": `goNeqvSXnk9GTv4fYcjc`
+	"wrap": `GVtMixsVmeMlY6yDHegA`,
+	"header": `x4aZ1Ow4owE1cbnT_CFQ`,
+	"title": `pHA2PVxeGRItHrDEJKrI`,
+	"values": `G4MRWdG0f5SNw87yTr2P`,
+	"current": `aFNSF0P7ie_DuOcM1aMq`,
+	"sep": `tDbKCx6hqJY7Hk1YK9jV`,
+	"max": `u3_xYzsBSyjhrqkOICoE`,
+	"grid": `l6oTzAFwxbCfyvsKmXt1`,
+	"cellFilled": `ZfY23b9YlPkddfsdHZQ0`,
+	"cellEmpty": `PEqOuBu8R26ZefhKXiM5`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31289,10 +31285,10 @@ if (false) // removed by dead control flow
 
 /***/ },
 
-/***/ "./public/src/components/BloodPool.module.css"
-/*!****************************************************!*\
-  !*** ./public/src/components/BloodPool.module.css ***!
-  \****************************************************/
+/***/ "./public/src/components/BloodPool.module.scss"
+/*!*****************************************************!*\
+  !*** ./public/src/components/BloodPool.module.scss ***!
+  \*****************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31312,7 +31308,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./BloodPool.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/BloodPool.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./BloodPool.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/BloodPool.module.scss");
 
       
       
@@ -31332,72 +31328,19 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_BloodPool_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ },
-
-/***/ "./public/src/components/CharacterSheet.module.css"
-/*!*********************************************************!*\
-  !*** ./public/src/components/CharacterSheet.module.css ***!
-  \*********************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./CharacterSheet.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/CharacterSheet.module.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ },
 
-/***/ "./public/src/components/Characteristics.module.css"
+/***/ "./public/src/components/CharacterSheet.module.scss"
 /*!**********************************************************!*\
-  !*** ./public/src/components/Characteristics.module.css ***!
+  !*** ./public/src/components/CharacterSheet.module.scss ***!
   \**********************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -31418,7 +31361,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Characteristics_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Characteristics.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Characteristics.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./CharacterSheet.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/CharacterSheet.module.scss");
 
       
       
@@ -31438,125 +31381,19 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Characteristics_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Characteristics_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Characteristics_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Characteristics_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ },
-
-/***/ "./public/src/components/HealthTrack.module.css"
-/*!******************************************************!*\
-  !*** ./public/src/components/HealthTrack.module.css ***!
-  \******************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./HealthTrack.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/HealthTrack.module.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ },
 
-/***/ "./public/src/components/Humanity.module.css"
-/*!***************************************************!*\
-  !*** ./public/src/components/Humanity.module.css ***!
-  \***************************************************/
-(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Humanity_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Humanity.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Humanity.module.css");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Humanity_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Humanity_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Humanity_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Humanity_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ },
-
-/***/ "./public/src/components/NamedDotProgress.module.css"
+/***/ "./public/src/components/Characteristics.module.scss"
 /*!***********************************************************!*\
-  !*** ./public/src/components/NamedDotProgress.module.css ***!
+  !*** ./public/src/components/Characteristics.module.scss ***!
   \***********************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -31577,7 +31414,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./NamedDotProgress.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/NamedDotProgress.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./Characteristics.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Characteristics.module.scss");
 
       
       
@@ -31597,19 +31434,72 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ },
 
-/***/ "./public/src/components/Separator.module.css"
+/***/ "./public/src/components/HealthTrack.module.scss"
+/*!*******************************************************!*\
+  !*** ./public/src/components/HealthTrack.module.scss ***!
+  \*******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./HealthTrack.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/HealthTrack.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
+/***/ "./public/src/components/Humanity.module.scss"
 /*!****************************************************!*\
-  !*** ./public/src/components/Separator.module.css ***!
+  !*** ./public/src/components/Humanity.module.scss ***!
   \****************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
@@ -31630,7 +31520,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Separator_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Separator.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Separator.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Humanity_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./Humanity.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Humanity.module.scss");
 
       
       
@@ -31650,20 +31540,20 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Separator_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Humanity_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Separator_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Separator_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Separator_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Humanity_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Humanity_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Humanity_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ },
 
-/***/ "./public/src/components/Willpower.module.css"
-/*!****************************************************!*\
-  !*** ./public/src/components/Willpower.module.css ***!
-  \****************************************************/
+/***/ "./public/src/components/NamedDotProgress.module.scss"
+/*!************************************************************!*\
+  !*** ./public/src/components/NamedDotProgress.module.scss ***!
+  \************************************************************/
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31683,7 +31573,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Willpower_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./Willpower.module.css */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./public/src/components/Willpower.module.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./NamedDotProgress.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/NamedDotProgress.module.scss");
 
       
       
@@ -31703,12 +31593,118 @@ options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WE
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Willpower_module_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Willpower_module_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Willpower_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_Willpower_module_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
+/***/ "./public/src/components/Separator.module.scss"
+/*!*****************************************************!*\
+  !*** ./public/src/components/Separator.module.scss ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Separator_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./Separator.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Separator.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Separator_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Separator_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Separator_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Separator_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ },
+
+/***/ "./public/src/components/Willpower.module.scss"
+/*!*****************************************************!*\
+  !*** ./public/src/components/Willpower.module.scss ***!
+  \*****************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Willpower_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!../../../node_modules/sass-loader/dist/cjs.js!./Willpower.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./public/src/components/Willpower.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Willpower_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Willpower_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Willpower_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_1_use_1_node_modules_sass_loader_dist_cjs_js_Willpower_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ },
@@ -32317,7 +32313,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BloodPool.module.css */ "./public/src/components/BloodPool.module.css");
+/* harmony import */ var _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BloodPool.module.scss */ "./public/src/components/BloodPool.module.scss");
 // deps
 // externals
 
@@ -32330,18 +32326,18 @@ const BLOOD_POOL_MAX = 40;
 /** Blood pool grid: shows current vs max as filled / empty cells. */
 function BloodPool({ current, max }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("bloodpool") + `: ${current} of ${max}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("bloodpool") + `: ${current} of ${max}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title },
                 " ",
                 t("bloodpool"),
                 " "),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, current),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, max))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _BloodPool_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].current }, current),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].max }, max))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -32362,7 +32358,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CharacterSheet.module.css */ "./public/src/components/CharacterSheet.module.css");
+/* harmony import */ var _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CharacterSheet.module.scss */ "./public/src/components/CharacterSheet.module.scss");
 /* harmony import */ var _BloodPool__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BloodPool */ "./public/src/components/BloodPool.tsx");
 /* harmony import */ var _Humanity__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Humanity */ "./public/src/components/Humanity.tsx");
 /* harmony import */ var _Willpower__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Willpower */ "./public/src/components/Willpower.tsx");
@@ -32393,33 +32389,33 @@ function CharacterSheet({ name, player, secte, clan, generation = 7, experience 
     "characterMax": 6
 }, dammages = 0 }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheet, "aria-label": t("characterSheet") },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("name")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("generation")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, generation)),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte))),
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("article", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sheet, "aria-label": t("characterSheet") },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("name")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, name),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, clan),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("generation")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, generation)),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("player")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, player),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("secte")),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, secte))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Attributes__WEBPACK_IMPORTED_MODULE_7__.Attributes, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Abilities__WEBPACK_IMPORTED_MODULE_8__.Abilities, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Advantages__WEBPACK_IMPORTED_MODULE_9__.Advantages, { characteristics: characteristics }),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].twoCol },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sheetCol },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].twoCol },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sheetCol },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Humanity__WEBPACK_IMPORTED_MODULE_4__.Humanity, { value: humanity }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Willpower__WEBPACK_IMPORTED_MODULE_5__.Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].rightCol },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rightCol },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages }),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("experience")),
-                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, experience)))));
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
+                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("experience")),
+                    react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, experience)))));
 }
 
 
@@ -32438,7 +32434,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Characteristics.module.css */ "./public/src/components/Characteristics.module.css");
+/* harmony import */ var _Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Characteristics.module.scss */ "./public/src/components/Characteristics.module.scss");
 /* harmony import */ var _NamedDotProgress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./NamedDotProgress */ "./public/src/components/NamedDotProgress.tsx");
 /* harmony import */ var _Separator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Separator */ "./public/src/components/Separator.tsx");
 // deps
@@ -32450,11 +32446,11 @@ __webpack_require__.r(__webpack_exports__);
 
 // module
 function Characteristics({ title, globalMinValue, cols }) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].section, "aria-label": "Characteristics" },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].section, "aria-label": "Characteristics" },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Separator__WEBPACK_IMPORTED_MODULE_3__.Separator, { title: title }),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].columns }, cols.map((col, colIndex) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: colIndex, className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].list },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Characteristics_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].subTitle }, col.title),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].columns }, cols.map((col, colIndex) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: colIndex, className: _Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].list },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Characteristics_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subTitle }, col.title),
                 col.characteristics.map((characteristic, characteristicIndex) => {
                     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_NamedDotProgress__WEBPACK_IMPORTED_MODULE_2__.NamedDotProgress, { key: characteristicIndex, name: characteristic.name, value: characteristic.value ?? col.minValue ?? globalMinValue, max: 5 });
                 }));
@@ -32479,7 +32475,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HealthTrack.module.css */ "./public/src/components/HealthTrack.module.css");
+/* harmony import */ var _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HealthTrack.module.scss */ "./public/src/components/HealthTrack.module.scss");
 // deps
 // externals
 
@@ -32523,9 +32519,9 @@ function applyDamage(template, totalDamage) {
 }
 function BoxCell({ traits }) {
     const level = clampTraits(traits);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traits, "aria-hidden": true }, Array.from({ "length": TRAITS_PER_BOX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traitOn : _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].traitOff });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].marker, role: "group", "aria-label": `Health box with ${level} of ${TRAITS_PER_BOX} damages` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].traits, "aria-hidden": true }, Array.from({ "length": TRAITS_PER_BOX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < level ? _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].traitOn : _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].traitOff });
         })));
 }
 // module
@@ -32541,16 +32537,16 @@ function HealthTrack({ dammages, stages = DEFAULT_STAGES, className }) {
     const rendered = applyDamage(normalizedStages, dammages);
     const maxDamage = countSlots(normalizedStages);
     const filled = Math.min(Math.max(0, Math.floor(dammages)), maxDamage);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: [_HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, className].join(" "), "aria-label": `Health track, ${filled} of ${maxDamage} levels marked` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title },
             " ",
             t("health"),
             " "),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].table }, rendered.map((stage) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].row },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].stageLabel }, stage.label),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].penalty }, stage.penalty ?? ""),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].markerRow }, stage.boxes.map((box, i) => {
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].table }, rendered.map((stage) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { key: stage.label, className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].row },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].stageLabel }, stage.label),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].penalty }, stage.penalty ?? ""),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _HealthTrack_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].markerRow }, stage.boxes.map((box, i) => {
                     return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(BoxCell, { key: `${stage.label}-${i}`, traits: box.traits });
                 })));
         })));
@@ -32575,7 +32571,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Humanity.module.css */ "./public/src/components/Humanity.module.css");
+/* harmony import */ var _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Humanity.module.scss */ "./public/src/components/Humanity.module.scss");
 // deps
 // externals
 
@@ -32590,15 +32586,15 @@ const HUMANITY_MAX = 10;
  */
 function Humanity({ value }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.humanity") + `: ${value} of ${HUMANITY_MAX}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.humanity")),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, value),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, HUMANITY_MAX))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": HUMANITY_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Humanity_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.humanity") + `: ${value} of ${HUMANITY_MAX}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.humanity")),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].current }, value),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].max }, HUMANITY_MAX))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": HUMANITY_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Humanity_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -32618,7 +32614,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NamedDotProgress.module.css */ "./public/src/components/NamedDotProgress.module.css");
+/* harmony import */ var _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NamedDotProgress.module.scss */ "./public/src/components/NamedDotProgress.module.scss");
 // deps
 // externals
 
@@ -32629,10 +32625,10 @@ __webpack_require__.r(__webpack_exports__);
  * Horizontal dot rating for a named stat (VTM-style OOOOO track).
  */
 function NamedDotProgress({ name, value = 0, max = 5 }) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].row, role: "group", "aria-label": `${name}: ${value} of ${max}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].label, title: name }, name),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dots, "aria-hidden": true }, Array.from({ "length": max }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotFilled : _NamedDotProgress_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].dotEmpty });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].row, role: "group", "aria-label": `${name}: ${value} of ${max}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label, title: name }, name),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dots, "aria-hidden": true }, Array.from({ "length": max }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < value ? _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dotFilled : _NamedDotProgress_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dotEmpty });
         })));
 }
 
@@ -32652,17 +32648,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Separator_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Separator.module.css */ "./public/src/components/Separator.module.css");
+/* harmony import */ var _Separator_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Separator.module.scss */ "./public/src/components/Separator.module.scss");
 // deps
 // externals
 
 // locals
 
 function Separator({ title }) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Separator_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].wrap },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Separator_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].line, "aria-hidden": true }),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", { className: _Separator_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].title }, title),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Separator_module_css__WEBPACK_IMPORTED_MODULE_1__["default"].line, "aria-hidden": true }));
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Separator_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrap },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Separator_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].line, "aria-hidden": true }),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", { className: _Separator_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title }, title),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Separator_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].line, "aria-hidden": true }));
 }
 
 
@@ -32683,7 +32679,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_i18next__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-i18next */ "./node_modules/react-i18next/dist/es/index.js");
-/* harmony import */ var _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Willpower.module.css */ "./public/src/components/Willpower.module.css");
+/* harmony import */ var _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Willpower.module.scss */ "./public/src/components/Willpower.module.scss");
 // deps
 // externals
 
@@ -32700,15 +32696,15 @@ function Willpower({ current, max }) {
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
     const safeMax = Math.max(0, Math.floor(max));
     const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.willpower") + `: ${clamped} of ${safeMax}` },
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].header },
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.willpower")),
-            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].current }, clamped),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].max }, safeMax))),
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Willpower_module_css__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("characteristics.willpower") + `: ${clamped} of ${safeMax}` },
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title }, t("characteristics.willpower")),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].values },
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].current }, clamped),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].max }, safeMax))),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 

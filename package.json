@@ -26,7 +26,7 @@
     "clean-front": "npx rimraf ./public/dist",
     "clean": "npm run clean-front",
 
-    "build-front": "npm run clean-front && npx tsc --project ./tsconfig.json",
+    "build-front": "npm run clean-front && npx webpack --config \"./webpack.config-front.js\" && npx tsc --project ./tsconfig.json --emitDeclarationOnly",
     "build-tests": "npx webpack --config \"./webpack.config-test.js\"",
     "build": "npm run build-front && npm run build-tests",
 
@@ -53,6 +53,8 @@
     "check-version-modules": "2.2.2",
     "colors": "1.4.0",
     "css-loader": "7.1.4",
+    "sass": "1.93.3",
+    "sass-loader": "16.0.6",
     "eslint-plugin-personnallinter": "git+ssh://git@github.com/Psychopoulet/eslint-plugin-personnallinter",
     "husky": "9.1.7",
     "i18next": "26.0.3",

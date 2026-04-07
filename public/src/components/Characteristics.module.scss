@@ -1,0 +1,32 @@
+@use "../styles/variables" as *;
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.subTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+  text-align: center;
+}
+
+.titleSpacing {
+  margin-top: 0.85rem;
+}

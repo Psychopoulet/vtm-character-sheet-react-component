@@ -5,7 +5,7 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./Willpower.module.css";
+    import styles from "./Willpower.module.scss";
     import type { WillpowerValue } from "../types";
 
     export interface WillpowerProps {

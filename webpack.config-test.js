@@ -36,7 +36,7 @@ module.exports = {
         ]
       },
       {
-        "test": /\.css$/,
+        "test": /\.scss$/,
         "use": [
           "style-loader",
           {
@@ -47,14 +47,15 @@ module.exports = {
                 "exportLocalsConvention": "camel-case"
               }
             }
-          }
+          },
+          "sass-loader"
         ]
       }
     ]
   },
 
   "resolve": {
-    "extensions": [ ".tsx", ".ts", ".js", ".css" ],
+    "extensions": [ ".tsx", ".ts", ".js", ".scss" ],
   }
 
 };

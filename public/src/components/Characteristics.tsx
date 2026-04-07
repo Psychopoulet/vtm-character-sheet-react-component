@@ -4,7 +4,7 @@
     import React from "react";
 
     // locals
-    import styles from "./Characteristics.module.css";
+    import styles from "./Characteristics.module.scss";
     import { NamedDotProgress } from "./NamedDotProgress";
     import { Separator } from "./Separator";
 

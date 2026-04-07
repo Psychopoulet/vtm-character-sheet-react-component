@@ -1,0 +1,83 @@
+@use "../styles/variables" as *;
+
+.sheet {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: $color-ink;
+  background: $color-surface-sheet;
+  border: 2px solid $color-border-ink;
+  box-shadow: 4px 4px 0 $shadow-sheet-offset;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.headerCol {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.5rem;
+  row-gap: 0.65rem;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.fieldLabel {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+}
+
+.fieldLine {
+  min-width: 0;
+  min-height: 1.25rem;
+  line-height: 1.25rem;
+  border-bottom: 1px solid $color-border-rule;
+  background: linear-gradient(to bottom, transparent 70%, $shadow-field-fade);
+}
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $color-text-muted;
+}
+
+.twoCol {
+  display: grid;
+  gap: 1rem;
+}
+
+.sheetCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+  min-width: 0;
+}
+
+@media (min-width: 36rem) {
+  .twoCol {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}

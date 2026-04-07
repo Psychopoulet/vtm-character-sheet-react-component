@@ -5,7 +5,7 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./HealthTrack.module.css";
+    import styles from "./HealthTrack.module.scss";
 
     export interface HealthBoxState {
 

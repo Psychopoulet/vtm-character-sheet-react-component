@@ -5,7 +5,7 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./CharacterSheet.module.css";
+    import styles from "./CharacterSheet.module.scss";
     import { BloodPool } from "./BloodPool";
     import { Humanity } from "./Humanity";
     import { Willpower } from "./Willpower";

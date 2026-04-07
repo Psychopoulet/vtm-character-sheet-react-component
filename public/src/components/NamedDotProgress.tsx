@@ -4,7 +4,7 @@
     import React from "react";
 
     // locals
-    import styles from "./NamedDotProgress.module.css";
+    import styles from "./NamedDotProgress.module.scss";
 
 // types & interfaces
 

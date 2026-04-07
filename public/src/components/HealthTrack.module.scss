@@ -1,0 +1,113 @@
+@use "../styles/variables" as *;
+
+.wrap {
+  border: 1px solid $color-border-strong;
+  padding: 0.6rem 0.7rem;
+  background: $color-surface-panel;
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $color-ink-strong;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, 1fr) 2.25rem minmax(2.2rem, auto);
+  align-items: stretch;
+  margin-top: 0.16rem;
+}
+
+.row:first-child {
+  margin-top: 0;
+}
+
+.stageLabel {
+  display: flex;
+  align-items: center;
+  min-height: 1.65rem;
+  padding: 0.25rem 0.45rem;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1;
+  color: $color-ink-medium;
+  background: $color-surface-stage;
+}
+
+.penalty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1.65rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  color: $color-text-penalty;
+  background: $color-surface-penalty-cell;
+}
+
+.markerRow {
+  display: flex;
+  min-height: 1.65rem;
+  padding: 0.15rem 0.3rem;
+  justify-content: center;
+  align-items: center;
+  background: $color-surface-marker-row;
+}
+
+.marker {
+  display: flex;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid $color-border-marker;
+  border-radius: 1px;
+  background: $color-surface-white;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 $highlight-inset-strong;
+}
+
+.traits {
+  display: flex;
+  gap: 0.14rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 0.95rem;
+}
+
+.traitOn,
+.traitOff {
+  width: 0.18rem;
+  height: 0.88rem;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+
+.traitOn {
+  background: linear-gradient(to bottom, $color-trait-on-top, $color-trait-on-bottom);
+}
+
+.traitOff {
+  background: transparent;
+  border: 1px dashed $color-border-trait-off;
+}
+
+@media (max-width: 28rem) {
+  .row {
+    grid-template-columns: minmax(6.5rem, 1fr) 2rem minmax(2rem, auto);
+  }
+}

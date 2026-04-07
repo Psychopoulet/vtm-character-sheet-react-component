@@ -5,7 +5,7 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./Humanity.module.css";
+    import styles from "./Humanity.module.scss";
     import type { HumanityValue } from "../types";
 
     /** Classic Humanity / Path track is 1–10. */

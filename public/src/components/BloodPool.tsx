@@ -5,7 +5,7 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./BloodPool.module.css";
+    import styles from "./BloodPool.module.scss";
     import type { BloodValue } from "../types";
 
     export interface BloodPoolProps {

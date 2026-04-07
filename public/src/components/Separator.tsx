@@ -4,7 +4,7 @@
 import React from "react";
 
 // locals
-import styles from "./Separator.module.css";
+import styles from "./Separator.module.scss";
 
 export interface SeparatorProps {
     "title": string;

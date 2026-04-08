@@ -6,32 +6,31 @@
 
     // locals
     import styles from "./BloodPool.module.scss";
+
+// types & interfaces
+
+    // locals
     import type { BloodValue } from "../types";
 
     export interface BloodPoolProps {
-
-        /** Current blood in the pool (filled cells from the start of the grid, e.g. remaining points). */
         "current": BloodValue;
-
-        /** Maximum blood pool capacity for the character. */
         "max": BloodValue;
-
     }
 
-    /** Classic Blood Pool track is 1–40. */
+// consts
+
     export const BLOOD_POOL_MAX = 40;
 
 // module
 
-/** Blood pool grid: shows current vs max as filled / empty cells. */
 export function BloodPool ({
     current,
     max
 }: BloodPoolProps): React.JSX.Element {
 
-    const properCurrent = Math.min(current, max);
-
     const { t } = useTranslation();
+
+    const properCurrent = Math.min(current, max);
 
     return <section
         className={ styles.wrap }
@@ -45,7 +44,7 @@ export function BloodPool ({
             <p className={ styles.values }>
                 <span className={ styles.current }>{ properCurrent }</span>
                 <span className={ styles.sep }>/</span>
-                <span className={ styles.max }>{max}</span>
+                <span className={ styles.max }>{ max }</span>
             </p>
 
         </header>

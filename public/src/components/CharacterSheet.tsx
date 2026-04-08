@@ -37,10 +37,13 @@
         // "concept": Concept;
         "characteristics"?: UsedCharacteristic[];
         "bloodPool"?: BloodValue;
-        "humanity"?: HumanityValue;
+        "humanity"?: {
+            "current": HumanityValue;
+            "max"?: HumanityValue;
+        };
         "willpower"?: {
-            "current"?: WillpowerValue;
-            "characterMax"?: WillpowerValue;
+            "current": WillpowerValue;
+            "max"?: WillpowerValue;
         };
         "experience"?: ExperienceValue;
         "dammages"?: number;
@@ -60,10 +63,13 @@ export function CharacterSheet ({
     experience = 0,
     characteristics = [],
     bloodPool = 10,
-    humanity = 7,
+    humanity = {
+        "current": 7,
+        "max": 7
+    },
     willpower = {
-        "current": 5,
-        "characterMax": 6
+        "current": 7,
+        "max": 7
     },
     dammages = 0
 }: CharacterSheetProps): React.JSX.Element {
@@ -120,12 +126,8 @@ export function CharacterSheet ({
 
             <div className={ styles.sheetCol }>
 
-                <Humanity value={ humanity } />
-
-                <Willpower
-                    current={ willpower.current ?? willpower.characterMax ?? 6 }
-                    max={ willpower.characterMax ?? 6 }
-                />
+                <Humanity current={ humanity.current } max={ humanity.max ?? 7 } />
+                <Willpower current={ willpower.current } max={ willpower.max ?? 7 } />
 
                 <BloodPool
                     current={ bloodPool }

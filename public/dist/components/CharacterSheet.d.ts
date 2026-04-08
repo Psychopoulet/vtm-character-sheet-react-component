@@ -10,10 +10,13 @@ export interface CharacterSheetProps {
     "demeanor": Archetype;
     "characteristics"?: UsedCharacteristic[];
     "bloodPool"?: BloodValue;
-    "humanity"?: HumanityValue;
+    "humanity"?: {
+        "current": HumanityValue;
+        "max"?: HumanityValue;
+    };
     "willpower"?: {
-        "current"?: WillpowerValue;
-        "characterMax"?: WillpowerValue;
+        "current": WillpowerValue;
+        "max"?: WillpowerValue;
     };
     "experience"?: ExperienceValue;
     "dammages"?: number;

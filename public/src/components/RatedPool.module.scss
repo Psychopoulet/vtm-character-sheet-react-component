@@ -1,0 +1,72 @@
+@use "../styles/variables" as *;
+
+.wrap {
+  border: 1px solid $color-border;
+  padding: 0.65rem 0.85rem;
+  background: $color-surface-panel;
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: $font-size-subtitle;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.values {
+  margin: 0;
+  font-size: $font-size-body;
+  font-variant-numeric: tabular-nums;
+  color: $color-text;
+}
+
+.current {
+  font-weight: 700;
+}
+
+.sep {
+  margin: 0 0.12rem;
+  opacity: 0.55;
+}
+
+.max {
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  gap: 0.3rem;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+}
+
+.cellFilled,
+.cellEmpty {
+  aspect-ratio: 1;
+  max-width: 0.95rem;
+  max-height: 0.95rem;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cellFilled {
+  background: $color-text;
+  border: none;
+}
+
+.cellEmpty {
+  background: transparent;
+  border: 1px solid $color-border;
+}

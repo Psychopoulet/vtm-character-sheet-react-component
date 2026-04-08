@@ -5,71 +5,31 @@
     import { useTranslation } from "react-i18next";
 
     // locals
-    import styles from "./Willpower.module.scss";
+    import { RatedPool } from "./RatedPool";
+
+// types & interfaces
+
+    // locals
     import type { WillpowerValue } from "../types";
 
     export interface WillpowerProps {
-
-      /** Temporary Willpower remaining (filled cells from the start). */
-      "current": WillpowerValue;
-
-      /** Permanent Willpower rating (pool size). */
-      "max": WillpowerValue;
-
+        "current": WillpowerValue;
+        "max": WillpowerValue;
     }
-
-    /** Classic Willpower / Path track is 1–10. */
-    export const WILLPOWER_MAX = 10;
 
 // module
 
-/**
- * Willpower pool: filled vs empty circles for current temporary Willpower vs permanent maximum.
- */
 export function Willpower ({
-  current,
-  max
+    current,
+    max
 }: WillpowerProps): React.JSX.Element {
 
-  const { t } = useTranslation();
+    const { t } = useTranslation();
 
-  const safeMax = Math.max(0, Math.floor(max));
-  const clamped = Math.min(Math.max(0, Math.floor(current)), safeMax);
-
-  return <section
-      className={ styles.wrap }
-      aria-label={ t("characteristics.willpower") + `: ${clamped} of ${safeMax}` }
-    >
-
-      <header className={styles.header}>
-
-        <h3 className={styles.title}>{ t("characteristics.willpower") }</h3>
-
-        <p className={styles.values}>
-          <span className={styles.current}>{clamped}</span>
-          <span className={styles.sep}>/</span>
-          <span className={styles.max}>{safeMax}</span>
-        </p>
-
-      </header>
-
-      <div
-        className={ styles.grid }
-        role="presentation"
-      >
-
-        {Array.from({ "length": WILLPOWER_MAX }, (_: number, i: number) => {
-
-          return <span
-              key={i}
-              className={i < clamped ? styles.cellFilled : styles.cellEmpty}
-              aria-hidden
-            />;
-
-        })}
-
-      </div>
-
-    </section>;
+    return <RatedPool
+        title={ t("characteristics.willpower") }
+        current={ current }
+        max={ max }
+    />;
 
 }

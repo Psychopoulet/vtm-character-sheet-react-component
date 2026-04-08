@@ -109,10 +109,13 @@ class App extends React.Component<{}> {
 
 			] }
 			bloodPool={ 20 }
-			humanity={ 4 }
+			humanity={ {
+				"current": 4,
+				"max": 7
+			} }
 			willpower={ {
 				"current": 5,
-				"characterMax": 6
+				"max": 7
 			} }
 			dammages={ 4 }
 		/>;

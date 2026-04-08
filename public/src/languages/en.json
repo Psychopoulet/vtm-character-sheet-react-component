@@ -186,7 +186,27 @@
                 "visceratika": "visceratika"
             },
             "backgrounds": {
-                "title": "backgrounds"
+                "title": "backgrounds",
+                "allies": "allies",
+                "alternate-identity": "alternate identity",
+                "armory": "armory",
+                "black-hand-membership": "black hand membership",
+                "contacts": "contacts",
+                "cult": "cult",
+                "domain": "domain",
+                "fame": "fame",
+                "haven": "haven",
+                "herd": "herd",
+                "generation": "generation",
+                "influence": "influence",
+                "memento-de-morte": "memento de morte",
+                "mentor": "mentor",
+                "oubliette": "oubliette",
+                "resources": "resources",
+                "retainers": "servants",
+                "rituals": "rituals",
+                "spirit-slaves": "spirit slaves",
+                "status": "status"
             },
             "virtues": {
                 "title": "virtues"

@@ -11,13 +11,9 @@
     // locals
 
     export interface NamedDotProgressProps {
-
         "name": string;
         "value": number;
-
-        /** Total dots in the track (default 5, common for attributes). */
-        "max"?: number;
-
+        "max": number;
     }
 
 // module
@@ -27,8 +23,8 @@
  */
 export function NamedDotProgress ({
     name,
-    value = 0,
-    max = 5
+    value,
+    max
 }: NamedDotProgressProps): React.JSX.Element {
 
     return <div

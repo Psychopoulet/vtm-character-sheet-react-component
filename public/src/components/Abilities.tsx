@@ -81,7 +81,7 @@ export function Abilities ({
                             "name": t(`characteristics.abilities.talents.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -95,7 +95,7 @@ export function Abilities ({
                             "name": t(`characteristics.abilities.skills.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -109,7 +109,7 @@ export function Abilities ({
                             "name": t(`characteristics.abilities.knowledges.${ ability }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })

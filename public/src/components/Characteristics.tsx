@@ -11,7 +11,7 @@
 // types & interfaces
 
     // locals
-    import type { NamedUsedCharacteristic } from "../types";
+    import type { NamedUsedCharacteristic, CharacteristicValue } from "../types";
 
     export interface CharacteristicsProps {
         "title": string;
@@ -22,6 +22,10 @@
             "minValue"?: number;
         }>;
     }
+
+// consts
+
+    const MAX_VALUE: CharacteristicValue = 6;
 
 // module
 
@@ -47,7 +51,7 @@ export function Characteristics ({
 
                         return <NamedDotProgress key={ characteristicIndex }
                             name={ characteristic.name }
-                            value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ 5 }
+                            value={ characteristic.value ?? col.minValue ?? globalMinValue } max={ MAX_VALUE }
                         />;
 
                     }) }

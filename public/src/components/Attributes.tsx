@@ -56,7 +56,7 @@ export function Attributes ({
                             "name": t(`characteristics.attributes.physical.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -70,7 +70,7 @@ export function Attributes ({
                             "name": t(`characteristics.attributes.social.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -84,7 +84,7 @@ export function Attributes ({
                             "name": t(`characteristics.attributes.mental.${ attribute }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })

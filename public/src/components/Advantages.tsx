@@ -58,14 +58,26 @@ export function Advantages ({
     ];
 
     const BACKGROUNDS: Advantage["background"][] = [
-      "Troupeau",
-      "Génération",
-      "Ressources",
-      "Concacts",
-      "Influence",
-      "Statut",
-      "Alliés",
-      "Mentor"
+      "allies",
+      "alternate-identity",
+      "armory",
+      "black-hand-membership",
+      "contacts",
+      "cult",
+      "domain",
+      "fame",
+      "haven",
+      "herd",
+      "generation",
+      "influence",
+      "memento-de-morte",
+      "mentor",
+      "oubliette",
+      "resources",
+      "retainers",
+      "rituals",
+      "spirit-slaves",
+      "status"
     ];
 
     const VIRTUES: Advantage["virtue"][] = [
@@ -94,7 +106,7 @@ export function Advantages ({
                             "name": t(`characteristics.advantages.disciplines.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -114,7 +126,7 @@ export function Advantages ({
                             "name": t(`characteristics.advantages.backgrounds.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })
@@ -135,7 +147,7 @@ export function Advantages ({
                             "name": t(`characteristics.advantages.virtues.${ advantage }`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
-                            })?.value
+                            })?.value ?? 0
                         };
 
                     })

@@ -1,6 +1,6 @@
 import React from "react";
 import type { Secte, Clan, Archetype, // Concept,
-GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue, UsedCharacteristic } from "../types";
+BloodValue, HumanityValue, WillpowerValue, ExperienceValue, UsedCharacteristic } from "../types";
 export interface CharacterSheetProps {
     "name": string;
     "player": string;
@@ -8,7 +8,6 @@ export interface CharacterSheetProps {
     "clan": Clan;
     "nature": Archetype;
     "demeanor": Archetype;
-    "generation": GenerationValue;
     "characteristics"?: UsedCharacteristic[];
     "bloodPool"?: {
         "current"?: BloodValue;
@@ -23,4 +22,4 @@ export interface CharacterSheetProps {
     "dammages"?: number;
 }
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
-export declare function CharacterSheet({ name, player, secte, clan, nature, demeanor, generation, experience, characteristics, bloodPool, humanity, willpower, dammages }: CharacterSheetProps): React.JSX.Element;
+export declare function CharacterSheet({ name, player, secte, clan, nature, demeanor, experience, characteristics, bloodPool, humanity, willpower, dammages }: CharacterSheetProps): React.JSX.Element;

@@ -186,7 +186,27 @@
                 "visceratika": "visceratika"
             },
             "backgrounds": {
-                "title": "historiques"
+                "title": "historiques",
+                "allies": "alliés",
+                "alternate-identity": "fausse identité",
+                "armory": "armurerie",
+                "black-hand-membership": "membre de la main noire",
+                "contacts": "contacts",
+                "cult": "culte",
+                "domain": "domaine",
+                "fame": "fame",
+                "haven": "havre",
+                "herd": "troupeau",
+                "generation": "génération",
+                "influence": "influence",
+                "memento-de-morte": "relique de la mort",
+                "mentor": "mentor",
+                "oubliette": "oubliette",
+                "resources": "ressources",
+                "retainers": "servants",
+                "rituals": "rituels",
+                "spirit-slaves": "esclaves spirituels",
+                "status": "statut"
             },
             "virtues": {
                 "title": "vertus"

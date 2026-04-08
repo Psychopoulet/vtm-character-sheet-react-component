@@ -19,7 +19,7 @@
     // locals
     import type {
         Secte, Clan, Archetype, // Concept,
-        GenerationValue, BloodValue, HumanityValue, WillpowerValue, ExperienceValue,
+        BloodValue, HumanityValue, WillpowerValue, ExperienceValue,
         UsedCharacteristic
     } from "../types";
 
@@ -31,7 +31,6 @@
         "nature": Archetype;
         "demeanor": Archetype;
         // "concept": Concept;
-        "generation": GenerationValue;
         "characteristics"?: UsedCharacteristic[];
         "bloodPool"?: {
             "current"?: BloodValue;
@@ -46,6 +45,16 @@
         "dammages"?: number;
     }
 
+// private
+
+    function getGeneration (characteristics: UsedCharacteristic[]): number {
+
+        const generation = characteristics.find(characteristic => characteristic.code === "generation")?.value ?? 1;
+
+        return 13 - generation;
+
+    }
+
 // module
 
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
@@ -57,7 +66,6 @@ export function CharacterSheet ({
     nature,
     demeanor,
     // concept,
-    generation,
     experience = 0,
     characteristics = [],
     bloodPool = {
@@ -110,7 +118,7 @@ export function CharacterSheet ({
                 <span className={ styles.fieldLine }>{ t(`clan.${clan}`) }</span>
 
                 <span className={ styles.fieldLabel }>{ t("generation") }</span>
-                <span className={ styles.fieldLine }>{ generation }</span>
+                <span className={ styles.fieldLine }>{ getGeneration(characteristics) }</span>
 
             </div>
 

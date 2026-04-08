@@ -2,8 +2,7 @@ import React from "react";
 export interface NamedDotProgressProps {
     "name": string;
     "value": number;
-    /** Total dots in the track (default 5, common for attributes). */
-    "max"?: number;
+    "max": number;
 }
 /**
  * Horizontal dot rating for a named stat (VTM-style OOOOO track).

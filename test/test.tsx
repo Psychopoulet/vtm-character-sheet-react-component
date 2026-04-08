@@ -27,7 +27,6 @@ class App extends React.Component<{}> {
 			name="Jacques-Henri Delafeuille" player="Sébastien VIDAL"
 			secte="camarilla" clan="ventrue"
 			nature="capitalist" demeanor="director"
-			generation={ 7 }
 			experience={ 5 }
 			characteristics={ [
 
@@ -88,14 +87,18 @@ class App extends React.Component<{}> {
 
 					// backgrounds
 
-					{ "code": "Troupeau", "value": 5 },
-					{ "code": "Génération", "value": 5 },
-					{ "code": "Ressources", "value": 5 },
-					{ "code": "Concacts", "value": 2 },
-					{ "code": "Influence", "value": 4 },
-					{ "code": "Statut", "value": 5 },
-					{ "code": "Alliés", "value": 2 },
-					{ "code": "Mentor", "value": 2 },
+					{ "code": "herd", "value": 5 },
+					{ "code": "generation", "value": 6 },
+					{ "code": "resources", "value": 5 },
+					{ "code": "contacts", "value": 2 },
+					{ "code": "influence", "value": 4 },
+					{ "code": "status", "value": 5 },
+					{ "code": "allies", "value": 2 },
+					{ "code": "mentor", "value": 2 },
+					// { "code": "domain", "value": 5 },
+
+					{ "code": "haven", "value": 5 },
+					{ "code": "retainers", "value": 1 },
 
 					// virtues
 					{ "code": "Conscience/Conviction", "value": 2 },

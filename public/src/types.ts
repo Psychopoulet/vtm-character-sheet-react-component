@@ -22,11 +22,11 @@ export type Archetype = "anarchist" | "architect" | "autocrat"
 
 // export type Concept = "";
 
-export type GenerationValue = IntRange<1, 13>;
-export type BloodValue = IntRange<0, 40>;
-export type HumanityValue = IntRange<1, 10>;
-export type WillpowerValue = IntRange<0, 10>;
-export type ExperienceValue = IntRange<0, 50>;
+export type BloodValue = IntRange<0, 41>;
+export type HumanityValue = IntRange<1, 11>;
+export type WillpowerValue = IntRange<0, 11>;
+export type ExperienceValue = IntRange<0, 51>;
+export type CharacteristicValue = IntRange<0, 7>;
 
 export interface Attribute {
     "physical": "strength" | "dexterity" | "stamina";
@@ -43,7 +43,7 @@ export interface Ability {
 export interface Advantage {
     "discipline": "alienation" | "animalism" | "auspex" | "bardo" | "celerity" | "chimery" | "daimoinon" | "domination" | "fortitude" | "kineticism" | "melpominee" | "mytherceria" | "necromancy" | "obeah" | "obtenebration" | "occultation" | "ogham"
         | "potence" | "presence" | "protean" | "quietus" | "sanguinus" | "serpentis" | "spiritus" | "temporis" | "thanatose" | "thaumaturgy" | "valeren" | "vicissitude" | "visceratika";
-    "background": "Troupeau" | "Génération" | "Ressources" | "Concacts" | "Influence" | "Statut" | "Alliés" | "Mentor";
+    "background": "allies" | "alternate-identity" | "armory" | "black-hand-membership" | "contacts" | "cult" | "domain" | "haven" | "fame" | "herd" | "generation" | "influence" | "memento-de-morte" | "mentor" | "oubliette" | "resources" | "retainers" | "rituals" | "spirit-slaves" | "status";
     "virtue": "Conscience/Conviction" | "Maîtrise de soi / Instinct" | "Courage";
 }
 
@@ -57,7 +57,7 @@ export type Characteristic = Attribute["physical"] | Attribute["social"] | Attri
 
 export interface UsedCharacteristic {
     "code": Characteristic;
-    "value"?: number | undefined;
+    "value": CharacteristicValue;
 }
 
 export interface NamedUsedCharacteristic extends UsedCharacteristic {

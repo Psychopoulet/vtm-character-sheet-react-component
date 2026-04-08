@@ -9,10 +9,7 @@ export interface CharacterSheetProps {
     "nature": Archetype;
     "demeanor": Archetype;
     "characteristics"?: UsedCharacteristic[];
-    "bloodPool"?: {
-        "current"?: BloodValue;
-        "characterMax"?: BloodValue;
-    };
+    "bloodPool"?: BloodValue;
     "humanity"?: HumanityValue;
     "willpower"?: {
         "current"?: WillpowerValue;

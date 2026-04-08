@@ -32335,19 +32335,20 @@ const BLOOD_POOL_MAX = 40;
 // module
 /** Blood pool grid: shows current vs max as filled / empty cells. */
 function BloodPool({ current, max }) {
+    const properCurrent = Math.min(current, max);
     const { t } = (0,react_i18next__WEBPACK_IMPORTED_MODULE_1__.useTranslation)();
-    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("bloodpool") + `: ${current} of ${max}` },
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].wrap, "aria-label": t("bloodpool") + `: ${properCurrent} of ${max}` },
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].header },
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].title },
                 " ",
                 t("bloodpool"),
                 " "),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].values },
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].current }, current),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].current }, properCurrent),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sep }, "/"),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].max }, max))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": BLOOD_POOL_MAX }, (_, i) => {
-            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < current ? _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < properCurrent ? _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _BloodPool_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
 }
 
@@ -32376,6 +32377,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Attributes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Attributes */ "./public/src/components/Attributes.tsx");
 /* harmony import */ var _Abilities__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Abilities */ "./public/src/components/Abilities.tsx");
 /* harmony import */ var _Advantages__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Advantages */ "./public/src/components/Advantages.tsx");
+/* harmony import */ var _utils_getGeneration__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./utils/getGeneration */ "./public/src/components/utils/getGeneration.ts");
+/* harmony import */ var _utils_getMaxBloodPool__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./utils/getMaxBloodPool */ "./public/src/components/utils/getMaxBloodPool.ts");
 // deps
 // externals
 
@@ -32389,19 +32392,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// private
-function getGeneration(characteristics) {
-    const generation = characteristics.find(characteristic => characteristic.code === "generation")?.value ?? 1;
-    return 13 - generation;
-}
+// utils
+
+
 // module
 /** Example layout inspired by the classic VTM sheet PDF (header + sample tracks). */
 function CharacterSheet({ name, player, secte, clan, nature, demeanor, 
 // concept,
-experience = 0, characteristics = [], bloodPool = {
-    "current": 15,
-    "characterMax": 15
-}, humanity = 7, willpower = {
+experience = 0, characteristics = [], bloodPool = 10, humanity = 7, willpower = {
     "current": 5,
     "characterMax": 6
 }, dammages = 0 }) {
@@ -32424,7 +32422,7 @@ experience = 0, characteristics = [], bloodPool = {
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("clan.title")),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, t(`clan.${clan}`)),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLabel }, t("generation")),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, getGeneration(characteristics)))),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fieldLine }, (0,_utils_getGeneration__WEBPACK_IMPORTED_MODULE_10__["default"])(characteristics)))),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Attributes__WEBPACK_IMPORTED_MODULE_7__.Attributes, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Abilities__WEBPACK_IMPORTED_MODULE_8__.Abilities, { characteristics: characteristics }),
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Advantages__WEBPACK_IMPORTED_MODULE_9__.Advantages, { characteristics: characteristics }),
@@ -32432,7 +32430,7 @@ experience = 0, characteristics = [], bloodPool = {
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].sheetCol },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Humanity__WEBPACK_IMPORTED_MODULE_4__.Humanity, { value: humanity }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Willpower__WEBPACK_IMPORTED_MODULE_5__.Willpower, { current: willpower.current ?? willpower.characterMax ?? 6, max: willpower.characterMax ?? 6 }),
-                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool.current ?? bloodPool.characterMax ?? 15, max: bloodPool.characterMax ?? 15 })),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BloodPool__WEBPACK_IMPORTED_MODULE_3__.BloodPool, { current: bloodPool, max: (0,_utils_getMaxBloodPool__WEBPACK_IMPORTED_MODULE_11__["default"])(characteristics) })),
             react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].rightCol },
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_HealthTrack__WEBPACK_IMPORTED_MODULE_6__.HealthTrack, { dammages: dammages }),
                 react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _CharacterSheet_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].headerCol },
@@ -32730,6 +32728,77 @@ function Willpower({ current, max }) {
         react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", { className: _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].grid, role: "presentation" }, Array.from({ "length": WILLPOWER_MAX }, (_, i) => {
             return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", { key: i, className: i < clamped ? _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellFilled : _Willpower_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].cellEmpty, "aria-hidden": true });
         })));
+}
+
+
+/***/ },
+
+/***/ "./public/src/components/utils/getGeneration.ts"
+/*!******************************************************!*\
+  !*** ./public/src/components/utils/getGeneration.ts ***!
+  \******************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ getGeneration)
+/* harmony export */ });
+// types & interfaces
+// module
+function getGeneration(characteristics) {
+    const generation = characteristics.find(characteristic => characteristic.code === "generation")?.value ?? 1;
+    return 13 - generation;
+}
+
+
+/***/ },
+
+/***/ "./public/src/components/utils/getMaxBloodPool.ts"
+/*!********************************************************!*\
+  !*** ./public/src/components/utils/getMaxBloodPool.ts ***!
+  \********************************************************/
+(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ getMaxBloodPool)
+/* harmony export */ });
+/* harmony import */ var _getGeneration__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getGeneration */ "./public/src/components/utils/getGeneration.ts");
+// deps
+// internals
+
+// module
+function getMaxBloodPool(characteristics) {
+    switch ((0,_getGeneration__WEBPACK_IMPORTED_MODULE_0__["default"])(characteristics)) {
+        case 1:
+            return 100;
+        case 2:
+            return 75;
+        case 3:
+            return 60;
+        case 4:
+            return 50;
+        case 5:
+            return 40;
+        case 6:
+            return 30;
+        case 7:
+            return 20;
+        case 8:
+            return 15;
+        case 9:
+            return 14;
+        case 10:
+            return 13;
+        case 11:
+            return 12;
+        case 12:
+            return 11;
+        default:
+            return 10;
+    }
 }
 
 
@@ -37486,7 +37555,7 @@ const withTranslation = (ns, options = {}) => function Extend(WrappedComponent) 
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":{"title":"clan","assamite":"assamite","banu-haqim":"banu haqim","brujah":"brujah","gangrel":"gangrel","giovanni":"giovanni","lasombra":"lasombra","malkavian":"malkavian","nosferatu":"nosferatu","ravnos":"ravnos","salubri":"salubri","the-ministry":"the ministry","toreador":"toreador","tremere":"tremere","tzimisce":"tzimisce","ventrue":"ventrue"},"secte":"secte","archetype":{"nature":"nature","demeanor":"demeanor","anarchist":"anarchist","architect":"architect","autocrat":"autocrat","bon-vivant":"bon vivant","bravo":"bravo","capitalist":"capitalist","caregiver":"caregiver","celebrant":"celebrant","chameleon":"chameleon","child":"child","competitor":"competitor","conformist":"conformist","conniver":"conniver","dabbler":"dabbler","deviant":"deviant","director":"director","enigma":"enigma","eye-of-the-storm":"eye of the storm","fanatic":"fanatic","gallant":"gallant","guru":"guru","idealist":"idealist","judge":"judge","loner":"loner","martyr":"martyr","masochist":"masochist","monster":"monster","pedagogue":"pedagogue","penitent":"pénitent","perfectionist":"perfectionist","rebel":"rebel","sadist":"sadist","scientist":"scientist","sociopath":"sociopath","soldier":"soldier","survivor":"survivor","thrill-seeker":"thrill-seeker","traditionalist":"traditionalist","visionary":"visionary","creep-show":"creep-show","critic":"critic","curmudgeon":"curmudgeon","nihilist":"nihilist","rogue":"rogue","trickster":"trickster","bouffon":"[MT]bouffon","grand-guignol":"[MT]grand-guignol","grincheux":"[MT]grincheux","individualiste":"[MT]individualiste"},"concept":"concept","generation":"generation","experience":"experience","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","legerdemain":"legerdemain","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animal ken","crafts":"crafts","drive":"drive","etiquette":"etiquette","firearms":"firearms","larceny":"larceny","melee":"melee","performance":"performance","ride":"ride","stealth":"stealth","survival":"survival"},"knowledges":{"title":"knowledges","academics":"academics","awareness":"awareness","enigmas":"enigmas","finance":"finance","investigation":"investigation","law":"law","linguistics":"linguistics","medicine":"medicine","occult":"occult","politics":"politics","science":"science","technology":"technology"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines","alienation":"alienation","animalism":"animalism","auspex":"auspex","bardo":"bardo","celerity":"celerity","chimery":"chimery","daimoinon":"daimoinon","domination":"domination","fortitude":"fortitude","kineticism":"kineticism","melpominee":"melpominee","mytherceria":"mytherceria","necromancy":"necromancy","obeah":"obeah","obtenebration":"obtenebration","occultation":"occultation","ogham":"ogham","potence":"potence","presence":"presence","protean":"protean","quietus":"quietus","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","temporis":"temporis","thanatose":"thanatose","thaumaturgy":"thaumaturgy","valeren":"valeren","vicissitude":"vicissitude","visceratika":"visceratika"},"backgrounds":{"title":"backgrounds","allies":"allies","alternate-identity":"alternate identity","armory":"armory","black-hand-membership":"black hand membership","contacts":"contacts","cult":"cult","domain":"domain","fame":"fame","haven":"haven","herd":"herd","generation":"generation","influence":"influence","memento-de-morte":"memento de morte","mentor":"mentor","oubliette":"oubliette","resources":"resources","retainers":"servants","rituals":"rituals","spirit-slaves":"spirit slaves","status":"status"},"virtues":{"title":"virtues","conscience":"conscience / conviction","self-control":"self-control / instinct","courage":"courage"}},"humanity":"humanity","willpower":"willpower"},"bloodpool":"blood pool","healt":"health"}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","name":"name","player":"player","clan":{"title":"clan","assamite":"assamite","banu-haqim":"banu haqim","brujah":"brujah","gangrel":"gangrel","giovanni":"giovanni","lasombra":"lasombra","malkavian":"malkavian","nosferatu":"nosferatu","ravnos":"ravnos","salubri":"salubri","the-ministry":"the ministry","toreador":"toreador","tremere":"tremere","tzimisce":"tzimisce","ventrue":"ventrue"},"secte":"secte","archetype":{"nature":"nature","demeanor":"demeanor","anarchist":"anarchist","architect":"architect","autocrat":"autocrat","bon-vivant":"bon vivant","bravo":"bravo","capitalist":"capitalist","caregiver":"caregiver","celebrant":"celebrant","chameleon":"chameleon","child":"child","competitor":"competitor","conformist":"conformist","conniver":"conniver","dabbler":"dabbler","deviant":"deviant","director":"director","enigma":"enigma","eye-of-the-storm":"eye of the storm","fanatic":"fanatic","gallant":"gallant","guru":"guru","idealist":"idealist","judge":"judge","loner":"loner","martyr":"martyr","masochist":"masochist","monster":"monster","pedagogue":"pedagogue","penitent":"pénitent","perfectionist":"perfectionist","rebel":"rebel","sadist":"sadist","scientist":"scientist","sociopath":"sociopath","soldier":"soldier","survivor":"survivor","thrill-seeker":"thrill-seeker","traditionalist":"traditionalist","visionary":"visionary","creep-show":"creep-show","critic":"critic","curmudgeon":"curmudgeon","nihilist":"nihilist","rogue":"rogue","trickster":"trickster","bouffon":"[MT]bouffon","grand-guignol":"[MT]grand-guignol","grincheux":"[MT]grincheux","individualiste":"[MT]individualiste"},"concept":"concept","generation":"generation","experience":"experience","characteristics":{"attributes":{"title":"attributes","physical":{"title":"physical","strength":"strength","dexterity":"dexterity","stamina":"stamina"},"social":{"title":"social","charisma":"charisma","manipulation":"manipulation","appearance":"appearance"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"wits"}},"abilities":{"title":"abilities","talents":{"title":"talents","alertness":"alertness","athletics":"athletics","brawl":"brawl","dodge":"dodge","empathy":"empathy","expression":"expression","intimidation":"intimidation","leadership":"leadership","legerdemain":"legerdemain","streetwise":"streetwise","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animal ken","crafts":"crafts","drive":"drive","etiquette":"etiquette","firearms":"firearms","larceny":"larceny","melee":"melee","performance":"performance","ride":"ride","stealth":"stealth","survival":"survival"},"knowledges":{"title":"knowledges","academics":"academics","awareness":"awareness","enigmas":"enigmas","finance":"finance","investigation":"investigation","law":"law","linguistics":"linguistics","medicine":"medicine","occult":"occult","politics":"politics","science":"science","technology":"technology / computer science"}},"advantages":{"title":"advantages","disciplines":{"title":"disciplines","alienation":"alienation","animalism":"animalism","auspex":"auspex","bardo":"bardo","celerity":"celerity","chimery":"chimery","daimoinon":"daimoinon","domination":"domination","fortitude":"fortitude","kineticism":"kineticism","melpominee":"melpominee","mytherceria":"mytherceria","necromancy":"necromancy","obeah":"obeah","obtenebration":"obtenebration","occultation":"occultation","ogham":"ogham","potence":"potence","presence":"presence","protean":"protean","quietus":"quietus","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","temporis":"temporis","thanatose":"thanatose","thaumaturgy":"thaumaturgy","valeren":"valeren","vicissitude":"vicissitude","visceratika":"visceratika"},"backgrounds":{"title":"backgrounds","allies":"allies","alternate-identity":"alternate identity","armory":"armory","black-hand-membership":"black hand membership","contacts":"contacts","cult":"cult","domain":"domain","fame":"fame","haven":"haven","herd":"herd","generation":"generation","influence":"influence","memento-de-morte":"memento de morte","mentor":"mentor","oubliette":"oubliette","resources":"resources","retainers":"servants","rituals":"rituals","spirit-slaves":"spirit slaves","status":"status"},"virtues":{"title":"virtues","conscience":"conscience / conviction","self-control":"self-control / instinct","courage":"courage"}},"humanity":"humanity","willpower":"willpower"},"bloodpool":"blood pool","healt":"health"}');
 
 /***/ },
 
@@ -37497,7 +37566,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"character sheet","n
 (module) {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":{"title":"clan","assamite":"assamite","banu-haqim":"banu-haqim","brujah":"brujah","gangrel":"gangrel","giovanni":"giovanni","lasombra":"lasombra","malkavian":"malkavien","nosferatu":"nosferatu","ravnos":"ravnos","salubri":"salubri","the-ministry":"disciples de set","toreador":"toreador","tremere":"tremere","tzimisce":"tzimisce","ventrue":"ventrue"},"secte":"secte","archetype":{"nature":"nature","demeanor":"attitude","anarchist":"anarchiste","architect":"architecte","autocrat":"autocrate","bon-vivant":"bon vivant","bravo":"brute","capitalist":"capitaliste","caregiver":"ange gardien","celebrant":"passionné","chameleon":"caméléon","child":"enfants","competitor":"battant","conformist":"conformiste","conniver":"opportuniste","dabbler":"amateur","deviant":"déviant","director":"dirigiste","enigma":"énigme","eye-of-the-storm":"oeil de la tempête","fanatic":"fanatique","gallant":"séducteur","guru":"gourou","idealist":"idéaliste","judge":"juge","loner":"solitaire","martyr":"martyre","masochist":"masochiste","monster":"monstre","pedagogue":"pédagogue","penitent":"pénitent","perfectionist":"perfectionniste","rebel":"rebèle","sadist":"sadique","scientist":"scientifique","sociopath":"sociopathe","soldier":"soldat","survivor":"survivant","thrill-seeker":"casse-cou","traditionalist":"traditionaliste","visionary":"visionnaire","creep-show":"[MT]creep-show","critic":"[MT]critic","curmudgeon":"[MT]curmudgeon","nihilist":"[MT]nihilist","rogue":"[MT]rogue","trickster":"[MT]trickster","bouffon":"bouffon","grand-guignol":"grand-guignol","grincheux":"grincheux","individualiste":"individualiste"},"concept":"concept","generation":"génération","experience":"expérience","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","legerdemain":"prestidigitation","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animaux","crafts":"artisanat","etiquette":"étiquette","drive":"conduite","firearms":"armes à feu","larceny":"furtivité","melee":"mêlée","performance":"représentation","ride":"monter","stealth":"sécurité","survival":"survie"},"knowledges":{"title":"connaissances","academics":"érudition","awareness":"conscience","enigmas":"énigmes","finance":"finance","investigation":"investigation","law":"loi","linguistics":"linguistique","medicine":"médecine","occult":"occultisme","politics":"politique","science":"science","technology":"technologie"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines","alienation":"aliénation","animalism":"animalisme","auspex":"augure","bardo":"bardo","celerity":"célérité","chimery":"chimérie","daimoinon":"daïmoïnon","domination":"domination","fortitude":"force d\'âme","kineticism":"cinétique","melpominee":"melpominée","mytherceria":"mythercellerie","necromancy":"nécromancie","obeah":"obeah","obtenebration":"obténébration","occultation":"occultation","ogham":"ogham","potence":"puissance","presence":"présence","protean":"protéisme","quietus":"silence","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","temporis":"temporis","thanatose":"thanatosis","thaumaturgy":"thaumaturgie","valeren":"valeren","vicissitude":"vicissitude","visceratika":"visceratika"},"backgrounds":{"title":"historiques","allies":"alliés","alternate-identity":"fausse identité","armory":"armurerie","black-hand-membership":"membre de la main noire","contacts":"contacts","cult":"culte","domain":"domaine","fame":"fame","haven":"havre","herd":"troupeau","generation":"génération","influence":"influence","memento-de-morte":"relique de la mort","mentor":"mentor","oubliette":"oubliette","resources":"ressources","retainers":"servants","rituals":"rituels","spirit-slaves":"esclaves spirituels","status":"statut"},"virtues":{"title":"vertus","conscience":"conscience / conviction","self-control":"maîtrise de soi / instinct","courage":"courage"}},"humanity":"humanité","willpower":"volonté"},"bloodpool":"points de sang","health":"santé"}');
+module.exports = /*#__PURE__*/JSON.parse('{"characterSheet":"feuille de personnage","name":"nom","player":"joueur","clan":{"title":"clan","assamite":"assamite","banu-haqim":"banu-haqim","brujah":"brujah","gangrel":"gangrel","giovanni":"giovanni","lasombra":"lasombra","malkavian":"malkavien","nosferatu":"nosferatu","ravnos":"ravnos","salubri":"salubri","the-ministry":"disciples de set","toreador":"toreador","tremere":"tremere","tzimisce":"tzimisce","ventrue":"ventrue"},"secte":"secte","archetype":{"nature":"nature","demeanor":"attitude","anarchist":"anarchiste","architect":"architecte","autocrat":"autocrate","bon-vivant":"bon vivant","bravo":"brute","capitalist":"capitaliste","caregiver":"ange gardien","celebrant":"passionné","chameleon":"caméléon","child":"enfants","competitor":"battant","conformist":"conformiste","conniver":"opportuniste","dabbler":"amateur","deviant":"déviant","director":"dirigiste","enigma":"énigme","eye-of-the-storm":"oeil de la tempête","fanatic":"fanatique","gallant":"séducteur","guru":"gourou","idealist":"idéaliste","judge":"juge","loner":"solitaire","martyr":"martyre","masochist":"masochiste","monster":"monstre","pedagogue":"pédagogue","penitent":"pénitent","perfectionist":"perfectionniste","rebel":"rebèle","sadist":"sadique","scientist":"scientifique","sociopath":"sociopathe","soldier":"soldat","survivor":"survivant","thrill-seeker":"casse-cou","traditionalist":"traditionaliste","visionary":"visionnaire","creep-show":"[MT]creep-show","critic":"[MT]critic","curmudgeon":"[MT]curmudgeon","nihilist":"[MT]nihilist","rogue":"[MT]rogue","trickster":"[MT]trickster","bouffon":"bouffon","grand-guignol":"grand-guignol","grincheux":"grincheux","individualiste":"individualiste"},"concept":"concept","generation":"génération","experience":"expérience","characteristics":{"attributes":{"title":"attributs","physical":{"title":"physique","strength":"force","dexterity":"dexterité","stamina":"vigueur"},"social":{"title":"social","charisma":"charisme","manipulation":"manipulation","appearance":"apparence"},"mental":{"title":"mental","perception":"perception","intelligence":"intelligence","wits":"astuce"}},"abilities":{"title":"capacités","talents":{"title":"talents","alertness":"vigilance","athletics":"athlétisme","brawl":"bagarre","dodge":"esquive","empathy":"empathie","expression":"expression","legerdemain":"prestidigitation","intimidation":"intimidation","leadership":"commandement","streetwise":"expression de la rue","subterfuge":"subterfuge"},"skills":{"title":"skills","animal_ken":"animaux","crafts":"artisanat","etiquette":"étiquette","drive":"conduite","firearms":"armes à feu","larceny":"furtivité","melee":"mêlée","performance":"représentation","ride":"monter","stealth":"sécurité","survival":"survie"},"knowledges":{"title":"connaissances","academics":"érudition","awareness":"conscience","enigmas":"énigmes","finance":"finance","investigation":"investigation","law":"loi","linguistics":"linguistique","medicine":"médecine","occult":"occultisme","politics":"politique","science":"science","technology":"technologie / informatique"}},"advantages":{"title":"avantages","disciplines":{"title":"disciplines","alienation":"aliénation","animalism":"animalisme","auspex":"augure","bardo":"bardo","celerity":"célérité","chimery":"chimérie","daimoinon":"daïmoïnon","domination":"domination","fortitude":"force d\'âme","kineticism":"cinétique","melpominee":"melpominée","mytherceria":"mythercellerie","necromancy":"nécromancie","obeah":"obeah","obtenebration":"obténébration","occultation":"occultation","ogham":"ogham","potence":"puissance","presence":"présence","protean":"protéisme","quietus":"silence","sanguinus":"sanguinus","serpentis":"serpentis","spiritus":"spiritus","temporis":"temporis","thanatose":"thanatosis","thaumaturgy":"thaumaturgie","valeren":"valeren","vicissitude":"vicissitude","visceratika":"visceratika"},"backgrounds":{"title":"historiques","allies":"alliés","alternate-identity":"fausse identité","armory":"armurerie","black-hand-membership":"membre de la main noire","contacts":"contacts","cult":"culte","domain":"domaine","fame":"fame","haven":"havre","herd":"troupeau","generation":"génération","influence":"influence","memento-de-morte":"relique de la mort","mentor":"mentor","oubliette":"oubliette","resources":"ressources","retainers":"servants","rituals":"rituels","spirit-slaves":"esclaves spirituels","status":"statut"},"virtues":{"title":"vertus","conscience":"conscience / conviction","self-control":"maîtrise de soi / instinct","courage":"courage"}},"humanity":"humanité","willpower":"volonté"},"bloodpool":"points de sang","health":"santé"}');
 
 /***/ }
 
@@ -37626,7 +37695,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 // social
                 { "code": "charisma", "value": 3 },
                 { "code": "manipulation", "value": 4 },
-                { "code": "appearance", "value": 4 },
+                { "code": "appearance", "value": 3 },
                 // mental
                 { "code": "perception", "value": 3 },
                 { "code": "intelligence", "value": 3 },
@@ -37635,6 +37704,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 // talents
                 { "code": "alertness", "value": 3 },
                 { "code": "awareness", "value": 2 },
+                { "code": "empathy", "value": 2 },
                 { "code": "leadership", "value": 1 },
                 { "code": "dodge", "value": 3 },
                 { "code": "expression", "value": 1 },
@@ -37654,6 +37724,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "linguistics", "value": 3 },
                 { "code": "occult", "value": 1 },
                 { "code": "politics", "value": 4 },
+                { "code": "technology", "value": 2 },
                 // advantages
                 // disciplines
                 { "code": "domination", "value": 3 },
@@ -37678,10 +37749,7 @@ class App extends (react__WEBPACK_IMPORTED_MODULE_0___default().Component) {
                 { "code": "conscience", "value": 2 },
                 { "code": "self-control", "value": 4 },
                 { "code": "courage", "value": 2 }
-            ], bloodPool: {
-                "current": 10,
-                "characterMax": 15,
-            }, humanity: 7, willpower: {
+            ], bloodPool: 20, humanity: 4, willpower: {
                 "current": 5,
                 "characterMax": 6
             }, dammages: 4 });

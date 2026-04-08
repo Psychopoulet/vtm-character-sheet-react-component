@@ -40,7 +40,7 @@ class App extends React.Component<{}> {
 					// social
 					{ "code": "charisma", "value": 3 },
 					{ "code": "manipulation", "value": 4 },
-					{ "code": "appearance", "value": 4 },
+					{ "code": "appearance", "value": 3 },
 
 					// mental
 					{ "code": "perception", "value": 3 },
@@ -52,6 +52,7 @@ class App extends React.Component<{}> {
 					// talents
 					{ "code": "alertness", "value": 3 },
 					{ "code": "awareness", "value": 2 },
+					{ "code": "empathy", "value": 2 },
 					{ "code": "leadership", "value": 1 },
 					{ "code": "dodge", "value": 3 },
 					{ "code": "expression", "value": 1 },
@@ -73,6 +74,7 @@ class App extends React.Component<{}> {
 					{ "code": "linguistics", "value": 3 },
 					{ "code": "occult", "value": 1 },
 					{ "code": "politics", "value": 4 },
+					{ "code": "technology", "value": 2 },
 
 				// advantages
 
@@ -106,11 +108,8 @@ class App extends React.Component<{}> {
 					{ "code": "courage", "value": 2 }
 
 			] }
-			bloodPool={ {
-				"current": 10,
-				"characterMax": 15,
-			} }
-			humanity={ 7 }
+			bloodPool={ 20 }
+			humanity={ 4 }
 			willpower={ {
 				"current": 5,
 				"characterMax": 6

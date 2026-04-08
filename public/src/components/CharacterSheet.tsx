@@ -14,6 +14,10 @@
     import { Abilities } from "./Abilities";
     import { Advantages } from "./Advantages";
 
+    // utils
+    import getGeneration from "./utils/getGeneration";
+    import getMaxBloodPool from "./utils/getMaxBloodPool";
+
 // types & interfaces
 
     // locals
@@ -32,10 +36,7 @@
         "demeanor": Archetype;
         // "concept": Concept;
         "characteristics"?: UsedCharacteristic[];
-        "bloodPool"?: {
-            "current"?: BloodValue;
-            "characterMax"?: BloodValue;
-        };
+        "bloodPool"?: BloodValue;
         "humanity"?: HumanityValue;
         "willpower"?: {
             "current"?: WillpowerValue;
@@ -43,16 +44,6 @@
         };
         "experience"?: ExperienceValue;
         "dammages"?: number;
-    }
-
-// private
-
-    function getGeneration (characteristics: UsedCharacteristic[]): number {
-
-        const generation = characteristics.find(characteristic => characteristic.code === "generation")?.value ?? 1;
-
-        return 13 - generation;
-
     }
 
 // module
@@ -68,10 +59,7 @@ export function CharacterSheet ({
     // concept,
     experience = 0,
     characteristics = [],
-    bloodPool = {
-        "current": 15,
-        "characterMax": 15
-    },
+    bloodPool = 10,
     humanity = 7,
     willpower = {
         "current": 5,
@@ -140,8 +128,8 @@ export function CharacterSheet ({
                 />
 
                 <BloodPool
-                    current={ bloodPool.current ?? bloodPool.characterMax ?? 15 }
-                    max={ bloodPool.characterMax ?? 15 }
+                    current={ bloodPool }
+                    max={ getMaxBloodPool(characteristics) }
                 />
 
             </div>

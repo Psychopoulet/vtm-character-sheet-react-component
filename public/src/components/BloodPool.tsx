@@ -29,21 +29,23 @@ export function BloodPool ({
     max
 }: BloodPoolProps): React.JSX.Element {
 
+    const properCurrent = Math.min(current, max);
+
     const { t } = useTranslation();
 
     return <section
         className={ styles.wrap }
-        aria-label={ t("bloodpool") + `: ${current} of ${max}` }
+        aria-label={ t("bloodpool") + `: ${properCurrent} of ${max}` }
     >
 
-        <header className={styles.header}>
+        <header className={ styles.header }>
 
-            <h3 className={styles.title}> { t("bloodpool")} </h3>
+            <h3 className={ styles.title }> { t("bloodpool")} </h3>
 
-            <p className={styles.values}>
-                <span className={styles.current}>{current}</span>
-                <span className={styles.sep}>/</span>
-                <span className={styles.max}>{max}</span>
+            <p className={ styles.values }>
+                <span className={ styles.current }>{ properCurrent }</span>
+                <span className={ styles.sep }>/</span>
+                <span className={ styles.max }>{max}</span>
             </p>
 
         </header>
@@ -56,8 +58,8 @@ export function BloodPool ({
             { Array.from({ "length": BLOOD_POOL_MAX }, (_, i): React.JSX.Element => {
 
                 return <span
-                    key={i}
-                    className={i < current ? styles.cellFilled : styles.cellEmpty}
+                    key={ i }
+                    className={ i < properCurrent ? styles.cellFilled : styles.cellEmpty }
                     aria-hidden
                 />;
 

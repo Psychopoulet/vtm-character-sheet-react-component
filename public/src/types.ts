@@ -22,7 +22,7 @@ export type Archetype = "anarchist" | "architect" | "autocrat"
 
 // export type Concept = "";
 
-export type BloodValue = IntRange<0, 41>;
+export type BloodValue = IntRange<0, 101>;
 export type HumanityValue = IntRange<1, 11>;
 export type WillpowerValue = IntRange<0, 11>;
 export type ExperienceValue = IntRange<0, 51>;

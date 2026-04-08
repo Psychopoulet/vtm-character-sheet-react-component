@@ -101,9 +101,9 @@ class App extends React.Component<{}> {
 					{ "code": "retainers", "value": 1 },
 
 					// virtues
-					{ "code": "Conscience/Conviction", "value": 2 },
-					{ "code": "Maîtrise de soi / Instinct", "value": 4 },
-					{ "code": "Courage", "value": 2 }
+					{ "code": "conscience", "value": 2 },
+					{ "code": "self-control", "value": 4 },
+					{ "code": "courage", "value": 2 }
 
 			] }
 			bloodPool={ {

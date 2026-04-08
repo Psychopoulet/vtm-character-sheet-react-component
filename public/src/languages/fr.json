@@ -209,7 +209,10 @@
                 "status": "statut"
             },
             "virtues": {
-                "title": "vertus"
+                "title": "vertus",
+                "conscience": "conscience / conviction",
+                "self-control": "maîtrise de soi / instinct",
+                "courage": "courage"
             }
         },
         "humanity": "humanité",

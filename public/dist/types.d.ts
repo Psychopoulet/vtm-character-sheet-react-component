@@ -21,7 +21,7 @@ export interface Ability {
 export interface Advantage {
     "discipline": "alienation" | "animalism" | "auspex" | "bardo" | "celerity" | "chimery" | "daimoinon" | "domination" | "fortitude" | "kineticism" | "melpominee" | "mytherceria" | "necromancy" | "obeah" | "obtenebration" | "occultation" | "ogham" | "potence" | "presence" | "protean" | "quietus" | "sanguinus" | "serpentis" | "spiritus" | "temporis" | "thanatose" | "thaumaturgy" | "valeren" | "vicissitude" | "visceratika";
     "background": "allies" | "alternate-identity" | "armory" | "black-hand-membership" | "contacts" | "cult" | "domain" | "haven" | "fame" | "herd" | "generation" | "influence" | "memento-de-morte" | "mentor" | "oubliette" | "resources" | "retainers" | "rituals" | "spirit-slaves" | "status";
-    "virtue": "Conscience/Conviction" | "Maîtrise de soi / Instinct" | "Courage";
+    "virtue": "conscience" | "self-control" | "courage";
 }
 export type Humanity = "humanity";
 export type WillPower = "willpower";

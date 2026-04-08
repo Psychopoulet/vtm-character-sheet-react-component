@@ -81,9 +81,9 @@ export function Advantages ({
     ];
 
     const VIRTUES: Advantage["virtue"][] = [
-      "Conscience/Conviction",
-      "Maîtrise de soi / Instinct",
-      "Courage"
+      "conscience",
+      "self-control",
+      "courage"
     ];
 
     return <Characteristics

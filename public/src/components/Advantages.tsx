@@ -24,7 +24,7 @@ export function Advantages ({
 
     const { t } = useTranslation();
 
-    const DISCIPLINES: Advantage["discipline"][] = [
+    const DISCIPLINES: Array<Advantage["discipline"]> = [
         "alienation",
         "animalism",
         "auspex",
@@ -57,7 +57,7 @@ export function Advantages ({
         "visceratika"
     ];
 
-    const BACKGROUNDS: Advantage["background"][] = [
+    const BACKGROUNDS: Array<Advantage["background"]> = [
       "allies",
       "alternate-identity",
       "armory",
@@ -80,7 +80,7 @@ export function Advantages ({
       "status"
     ];
 
-    const VIRTUES: Advantage["virtue"][] = [
+    const VIRTUES: Array<Advantage["virtue"]> = [
       "conscience",
       "self-control",
       "courage"
@@ -103,7 +103,7 @@ export function Advantages ({
 
                         return {
                             "code": advantage,
-                            "name": t(`characteristics.advantages.disciplines.${ advantage }`),
+                            "name": t(`characteristics.advantages.disciplines.${advantage}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
                             })?.value ?? 0
@@ -123,7 +123,7 @@ export function Advantages ({
 
                         return {
                             "code": advantage,
-                            "name": t(`characteristics.advantages.backgrounds.${ advantage }`),
+                            "name": t(`characteristics.advantages.backgrounds.${advantage}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
                             })?.value ?? 0
@@ -144,7 +144,7 @@ export function Advantages ({
 
                         return {
                             "code": advantage,
-                            "name": t(`characteristics.advantages.virtues.${ advantage }`),
+                            "name": t(`characteristics.advantages.virtues.${advantage}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === advantage;
                             })?.value ?? 0

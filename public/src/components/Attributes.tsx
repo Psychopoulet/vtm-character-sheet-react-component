@@ -24,19 +24,19 @@ export function Attributes ({
 
     const { t } = useTranslation();
 
-    const PHYSICAL: Attribute["physical"][] = [
+    const PHYSICAL: Array<Attribute["physical"]> = [
         "strength",
         "dexterity",
         "stamina"
     ];
 
-    const SOCIAL: Attribute["social"][] = [
+    const SOCIAL: Array<Attribute["social"]> = [
         "charisma",
         "manipulation",
         "appearance"
     ];
 
-    const MENTAL: Attribute["mental"][] = [
+    const MENTAL: Array<Attribute["mental"]> = [
         "intelligence",
         "perception",
         "wits"
@@ -53,7 +53,7 @@ export function Attributes ({
 
                         return {
                             "code": attribute,
-                            "name": t(`characteristics.attributes.physical.${ attribute }`),
+                            "name": t(`characteristics.attributes.physical.${attribute}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value ?? 0
@@ -67,7 +67,7 @@ export function Attributes ({
 
                         return {
                             "code": attribute,
-                            "name": t(`characteristics.attributes.social.${ attribute }`),
+                            "name": t(`characteristics.attributes.social.${attribute}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value ?? 0
@@ -81,7 +81,7 @@ export function Attributes ({
 
                         return {
                             "code": attribute,
-                            "name": t(`characteristics.attributes.mental.${ attribute }`),
+                            "name": t(`characteristics.attributes.mental.${attribute}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === attribute;
                             })?.value ?? 0

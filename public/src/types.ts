@@ -1,8 +1,8 @@
 type Enumerate<N extends number, Acc extends number[] = []> = Acc["length"] extends N
   ? Acc[number]
-  : Enumerate<N, [...Acc, Acc["length"]]>
+  : Enumerate<N, [...Acc, Acc["length"]]>;
 
-type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>
+type IntRange<F extends number, T extends number> = Exclude<Enumerate<T>, Enumerate<F>>;
 
 export type Secte = "sabbat" | "camarilla" | "anarch" | "independent";
 export type Clan = "brujah" | "gangrel" | "malkavian" | "nosferatu" | "toreador" | "tremere" | "ventrue"

@@ -24,7 +24,7 @@ export function Abilities ({
 
     const { t } = useTranslation();
 
-    const TALENTS: Ability["talent"][] = [
+    const TALENTS: Array<Ability["talent"]> = [
       "alertness",
       "athletics",
       "brawl",
@@ -38,7 +38,7 @@ export function Abilities ({
       "subterfuge"
     ];
 
-    const SKILLS: Ability["skill"][] = [
+    const SKILLS: Array<Ability["skill"]> = [
       "animal_ken",
       "crafts",
       "etiquette",
@@ -52,7 +52,7 @@ export function Abilities ({
       "survival"
     ];
 
-    const KNOWLEDGES: Ability["knowledge"][] = [
+    const KNOWLEDGES: Array<Ability["knowledge"]> = [
       "academics",
       "awareness",
       "enigmas",
@@ -78,7 +78,7 @@ export function Abilities ({
 
                         return {
                             "code": ability,
-                            "name": t(`characteristics.abilities.talents.${ ability }`),
+                            "name": t(`characteristics.abilities.talents.${ability}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
                             })?.value ?? 0
@@ -92,7 +92,7 @@ export function Abilities ({
 
                         return {
                             "code": ability,
-                            "name": t(`characteristics.abilities.skills.${ ability }`),
+                            "name": t(`characteristics.abilities.skills.${ability}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
                             })?.value ?? 0
@@ -106,7 +106,7 @@ export function Abilities ({
 
                         return {
                             "code": ability,
-                            "name": t(`characteristics.abilities.knowledges.${ ability }`),
+                            "name": t(`characteristics.abilities.knowledges.${ability}`),
                             "value": characteristics.find((characteristic: UsedCharacteristic) => {
                                 return characteristic.code === ability;
                             })?.value ?? 0

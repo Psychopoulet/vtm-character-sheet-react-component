@@ -45,7 +45,7 @@
     "/public/languages"
   ],
   "engines": {
-    "node": ">=22.22.0"
+    "node": ">=22.22.3"
   },
 
   "dependencies": {},

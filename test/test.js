@@ -28765,11 +28765,11 @@ var t=/\s([^'"/\s><]+?)[\s/>]|([^\s=]+)=\s?(".*?"|'.*?')/g;function n(n){var r={
     };
     (function () {
       var isomorphicReactPackageVersion = React.version;
-      if ("19.2.4" !== isomorphicReactPackageVersion)
+      if ("19.2.6" !== isomorphicReactPackageVersion)
         throw Error(
           'Incompatible React versions: The "react" and "react-dom" packages must have the exact same version. Instead got:\n  - react:      ' +
             (isomorphicReactPackageVersion +
-              "\n  - react-dom:  19.2.4\nLearn more: https://react.dev/warnings/version-mismatch")
+              "\n  - react-dom:  19.2.6\nLearn more: https://react.dev/warnings/version-mismatch")
         );
     })();
     ("function" === typeof Map &&
@@ -28806,10 +28806,10 @@ var t=/\s([^'"/\s><]+?)[\s/>]|([^\s=]+)=\s?(".*?"|'.*?')/g;function n(n){var r={
       !(function () {
         var internals = {
           bundleType: 1,
-          version: "19.2.4",
+          version: "19.2.6",
           rendererPackageName: "react-dom",
           currentDispatcherRef: ReactSharedInternals,
-          reconcilerVersion: "19.2.4"
+          reconcilerVersion: "19.2.6"
         };
         internals.overrideHookState = overrideHookState;
         internals.overrideHookStateDeletePath = overrideHookStateDeletePath;
@@ -28947,7 +28947,7 @@ var t=/\s([^'"/\s><]+?)[\s/>]|([^\s=]+)=\s?(".*?"|'.*?')/g;function n(n){var r={
       listenToAllSupportedEvents(container);
       return new ReactDOMHydrationRoot(initialChildren);
     };
-    exports.version = "19.2.4";
+    exports.version = "19.2.6";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ &&
       "function" ===
         typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop &&
@@ -29382,7 +29382,7 @@ var t=/\s([^'"/\s><]+?)[\s/>]|([^\s=]+)=\s?(".*?"|'.*?')/g;function n(n){var r={
     exports.useFormStatus = function () {
       return resolveDispatcher().useHostTransitionStatus();
     };
-    exports.version = "19.2.4";
+    exports.version = "19.2.6";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ &&
       "function" ===
         typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop &&
@@ -30756,7 +30756,7 @@ if (false) // removed by dead control flow
     exports.useTransition = function () {
       return resolveDispatcher().useTransition();
     };
-    exports.version = "19.2.4";
+    exports.version = "19.2.6";
     "undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ &&
       "function" ===
         typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop &&
@@ -32595,7 +32595,9 @@ __webpack_require__.r(__webpack_exports__);
 // types & interfaces
 // module
 function getGeneration(characteristics) {
-    const generation = characteristics.find(characteristic => characteristic.code === "generation")?.value ?? 1;
+    const generation = characteristics.find((characteristic) => {
+        return "generation" === characteristic.code;
+    })?.value ?? 1;
     return 13 - generation;
 }
 
@@ -32686,6 +32688,8 @@ i18next__WEBPACK_IMPORTED_MODULE_0__["default"].use(i18next_browser_languagedete
         "fr": { "translation": _languages_fr_json__WEBPACK_IMPORTED_MODULE_3__ },
         "en": { "translation": _languages_en_json__WEBPACK_IMPORTED_MODULE_4__ }
     }
+}).catch((error) => {
+    console.error(error);
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (i18next__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
@@ -33583,6 +33587,7 @@ class Logger {
   }
   forward(args, lvl, prefix, debugOnly) {
     if (debugOnly && !this.debug) return null;
+    args = args.map(a => isString(a) ? a.replace(/[\r\n\x00-\x1F\x7F]/g, ' ') : a);
     if (isString(args[0])) args[0] = `${prefix}${this.prefix} ${args[0]}`;
     return this.logger[lvl](args);
   }
@@ -33813,11 +33818,15 @@ function keysFromSelector(selector, opts) {
   } = selector(createProxy());
   const keySeparator = opts?.keySeparator ?? '.';
   const nsSeparator = opts?.nsSeparator ?? ':';
+  const strict = opts?.enableSelector === 'strict';
   if (path.length > 1 && nsSeparator) {
     const ns = opts?.ns;
-    const nsArray = Array.isArray(ns) ? ns : null;
-    if (nsArray && nsArray.length > 1 && nsArray.slice(1).includes(path[0])) {
-      return `${path[0]}${nsSeparator}${path.slice(1).join(keySeparator)}`;
+    const nsList = strict ? Array.isArray(ns) ? ns : ns ? [ns] : null : Array.isArray(ns) ? ns : null;
+    if (nsList) {
+      const candidates = strict ? nsList : nsList.length > 1 ? nsList.slice(1) : [];
+      if (candidates.includes(path[0])) {
+        return `${path[0]}${nsSeparator}${path.slice(1).join(keySeparator)}`;
+      }
     }
   }
   return path.join(keySeparator);
@@ -34020,7 +34029,7 @@ class Translator extends EventEmitter {
       const resForMissing = missingKeyNoValueFallbackToKey && usedKey ? undefined : res;
       const updateMissing = hasDefaultValue && defaultValue !== res && this.options.updateMissing;
       if (usedKey || usedDefault || updateMissing) {
-        this.logger.log(updateMissing ? 'updateKey' : 'missingKey', lng, namespace, key, updateMissing ? defaultValue : res);
+        this.logger.log(updateMissing ? 'updateKey' : 'missingKey', lng, namespace, needsPluralHandling && !updateMissing ? `${key}${this.pluralResolver.getSuffix(lng, opt.count, opt)}` : key, updateMissing ? defaultValue : res);
         if (keySeparator) {
           const fk = this.resolve(key, {
             ...opt,
@@ -34488,8 +34497,8 @@ class Interpolator {
     this.prefix = prefix ? regexEscape(prefix) : prefixEscaped || '{{';
     this.suffix = suffix ? regexEscape(suffix) : suffixEscaped || '}}';
     this.formatSeparator = formatSeparator || ',';
-    this.unescapePrefix = unescapeSuffix ? '' : unescapePrefix || '-';
-    this.unescapeSuffix = this.unescapePrefix ? '' : unescapeSuffix || '';
+    this.unescapePrefix = unescapeSuffix ? '' : unescapePrefix ? regexEscape(unescapePrefix) : '-';
+    this.unescapeSuffix = this.unescapePrefix ? '' : unescapeSuffix ? regexEscape(unescapeSuffix) : '';
     this.nestingPrefix = nestingPrefix ? regexEscape(nestingPrefix) : nestingPrefixEscaped || regexEscape('$t(');
     this.nestingSuffix = nestingSuffix ? regexEscape(nestingSuffix) : nestingSuffixEscaped || regexEscape(')');
     this.nestingOptionsSeparator = nestingOptionsSeparator || ',';
@@ -34536,6 +34545,9 @@ class Interpolator {
       });
     };
     this.resetRegExp();
+    if (!this.escapeValue && typeof str === 'string' && /\$t\([^)]*\{[^}]*\{\{/.test(str)) {
+      this.logger.warn('nesting options string contains interpolated variables with escapeValue: false — ' + 'if any of those values are attacker-controlled they can inject additional ' + 'nesting options (e.g. redirect lng/ns). Sanitise untrusted input before passing ' + 'it to t(), or keep escapeValue: true.');
+    }
     const missingInterpolationHandler = options?.missingInterpolationHandler || this.options.missingInterpolationHandler;
     const skipOnVariables = options?.interpolation?.skipOnVariables !== undefined ? options.interpolation.skipOnVariables : this.options.interpolation.skipOnVariables;
     const todos = [{
@@ -35013,6 +35025,7 @@ const get = () => ({
   nsSeparator: ':',
   pluralSeparator: '_',
   contextSeparator: '_',
+  enableSelector: false,
   partialBundledLanguages: false,
   saveMissing: false,
   updateMissing: false,
@@ -35214,7 +35227,7 @@ class I18n extends EventEmitter {
         deferred.resolve(t);
         callback(err, t);
       };
-      if (this.languages && !this.isInitialized) return finish(null, this.t.bind(this));
+      if ((this.languages || this.isLanguageChangingTo) && !this.isInitialized) return finish(null, this.t.bind(this));
       this.changeLanguage(this.options.lng, finish);
     };
     if (this.options.resources || !this.options.initAsync) {
@@ -35369,7 +35382,8 @@ class I18n extends EventEmitter {
     }
     return deferred;
   }
-  getFixedT(lng, ns, keyPrefix) {
+  getFixedT(lng, ns, keyPrefix, fixedOpts) {
+    const scopeNs = fixedOpts?.scopeNs;
     const fixedT = (key, opts, ...rest) => {
       let o;
       if (typeof opts !== 'object') {
@@ -35381,12 +35395,14 @@ class I18n extends EventEmitter {
       }
       o.lng = o.lng || fixedT.lng;
       o.lngs = o.lngs || fixedT.lngs;
+      const explicitCallNs = o.ns !== undefined && o.ns !== null;
       o.ns = o.ns || fixedT.ns;
       if (o.keyPrefix !== '') o.keyPrefix = o.keyPrefix || keyPrefix || fixedT.keyPrefix;
       const selectorOpts = {
         ...this.options,
         ...o
       };
+      if (Array.isArray(scopeNs) && !explicitCallNs) selectorOpts.ns = scopeNs;
       if (typeof o.keyPrefix === 'function') o.keyPrefix = keysFromSelector(o.keyPrefix, selectorOpts);
       const keySeparator = this.options.keySeparator || '.';
       let resultKey;
@@ -36462,14 +36478,24 @@ const renderNodes = (children, knownComponentsMap, targetString, i18n, i18nOptio
       }, isVoid ? undefined : inner));
     } else {
       mem.push(...react__WEBPACK_IMPORTED_MODULE_0__.Children.map([child], c => {
-        const INTERNAL_DYNAMIC_MARKER = 'data-i18n-is-dynamic-list';
+        if (c.type === react__WEBPACK_IMPORTED_MODULE_0__.Fragment || c.props?.i18nIsDynamicList !== undefined) {
+          const freshProps = {
+            key: i
+          };
+          if (c && c.props) {
+            Object.keys(c.props).forEach(k => {
+              if (k === 'children' || k === 'i18nIsDynamicList') return;
+              freshProps[k] = c.props[k];
+            });
+          }
+          return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(c.type, freshProps, isVoid ? null : inner);
+        }
         const override = {
-          key: i,
-          [INTERNAL_DYNAMIC_MARKER]: undefined
+          key: i
         };
         if (c && c.props) {
           Object.keys(c.props).forEach(k => {
-            if (k === 'ref' || k === 'children' || k === 'i18nIsDynamicList' || k === INTERNAL_DYNAMIC_MARKER) return;
+            if (k === 'ref' || k === 'children') return;
             override[k] = c.props[k];
           });
         }
@@ -36480,6 +36506,7 @@ const renderNodes = (children, knownComponentsMap, targetString, i18n, i18nOptio
   const mapAST = (reactNode, astNode, rootReactNode) => {
     const reactNodes = getAsArray(reactNode);
     const astNodes = getAsArray(astNode);
+    const keepTagOccurrence = {};
     return astNodes.reduce((mem, node, i) => {
       const translationContent = node.children?.[0]?.content && i18n.services.interpolator.interpolate(node.children[0].content, opts, i18n.language);
       if (node.type === 'tag') {
@@ -36524,7 +36551,22 @@ const renderNodes = (children, knownComponentsMap, targetString, i18n, i18nOptio
                 key: `${node.name}-${i}`
               }));
             } else {
-              const inner = mapAST(reactNodes, node.children, rootReactNode);
+              const occurrence = keepTagOccurrence[node.name] || 0;
+              keepTagOccurrence[node.name] = occurrence + 1;
+              let matched;
+              let seen = 0;
+              for (let r = 0; r < reactNodes.length; r += 1) {
+                const rn = reactNodes[r];
+                if ((0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(rn) && rn.type === node.name) {
+                  if (seen === occurrence) {
+                    matched = rn;
+                    break;
+                  }
+                  seen += 1;
+                }
+              }
+              const innerScope = matched ? getAsArray(getChildren(matched)) : reactNodes;
+              const inner = mapAST(innerScope, node.children, rootReactNode);
               mem.push((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(node.name, {
                 key: `${node.name}-${i}`
               }, inner));
@@ -37137,7 +37179,9 @@ const useTranslation = (ns, props = {}) => {
     if (lastSnapshot && lastSnapshot.ready === calculatedReady && lastSnapshot.lng === currentLng && lastSnapshot.keyPrefix === keyPrefix && lastSnapshot.revision === currentRevision) {
       return lastSnapshot;
     }
-    const calculatedT = i18n.getFixedT(currentLng, i18nOptions.nsMode === 'fallback' ? namespaces : namespaces[0], keyPrefix);
+    const calculatedT = i18n.getFixedT(currentLng, i18nOptions.nsMode === 'fallback' ? namespaces : namespaces[0], keyPrefix, {
+      scopeNs: namespaces
+    });
     const newSnapshot = {
       t: calculatedT,
       ready: calculatedReady,

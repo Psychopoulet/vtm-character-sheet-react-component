@@ -21,6 +21,8 @@ i18n
             "fr": { "translation": fr },
             "en": { "translation": en }
         }
+    }).catch((error: Error): void => {
+        console.error(error);
     });
 
 export default i18n;

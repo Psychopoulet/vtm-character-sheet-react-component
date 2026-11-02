@@ -18,6 +18,9 @@
 
   "scripts": {
 
+    "install-prod": "npm install --omit=dev --omit=optional && npm audit fix --omit=dev --omit=optional",
+    "install-dev": "npm install --allow-git=root && npm audit fix --allow-git=root && npx husky",
+
     "lint-front": "npx eslint --config .eslintrc-front.js --ext .ts,.tsx,.cts,.mts ./public/src/**/*",
     "lint": "npm run lint-front",
 
@@ -43,7 +46,7 @@
     "/public/languages"
   ],
   "engines": {
-    "node": ">=22.23.4"
+    "node": ">=24.22.2"
   },
 
   "dependencies": {},
